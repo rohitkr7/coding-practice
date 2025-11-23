@@ -1,0 +1,38 @@
+# Jira credentials and sensitive data
+*.env
+.env.local
+credentials.json
+
+# Personal notes that shouldn't be shared
+notes/personal/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+jira-sync/*.tmp
+
+# Node modules if you add any scripts
+node_modules/
+package-lock.json
+
+# Python cache if you use Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Logs
+*.log
+logs/

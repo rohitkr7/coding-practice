@@ -1,0 +1,18 @@
+{
+  "jira": {
+    "board_url": "https://rohitroy007.atlassian.net/jira/software/c/projects/LND/boards/35",
+    "project_key": "LND",
+    "assignee": "Rohit",
+    "board_id": "35"
+  },
+  "github_reference": {
+    "repo": "Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews",
+    "patterns_count": 16
+  },
+  "study_settings": {
+    "hint_mode": "progressive",
+    "auto_solve": false,
+    "track_time": true,
+    "weekly_review": true
+  }
+}

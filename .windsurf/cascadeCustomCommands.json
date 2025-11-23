@@ -1,0 +1,44 @@
+{
+  "commands": [
+    {
+      "name": "learn",
+      "description": "Start learning a new problem with guided hints and concepts",
+      "prompt": "I want to learn how to solve this problem step-by-step. Please provide:\n\n1. **Core Concepts** - What fundamental concepts do I need to understand?\n2. **Pattern Recognition** - Why does this pattern apply? What clues point to it?\n3. **Approach Analysis** - Walk me through different approaches (brute force → optimized)\n4. **Key Insights** - What's the \"aha!\" moment or key insight?\n5. **Implementation Guidance** - Guide me with hints, not complete solutions\n6. **Edge Cases** - What edge cases should I consider?\n7. **Complexity Analysis** - Help me understand time/space trade-offs\n\nRemember: I want HINTS and GUIDANCE, not complete solutions. Help me learn the problem-solving patterns!\n\nLet's start! What are the core concepts I need to understand for this problem?"
+    },
+    {
+      "name": "document",
+      "description": "Document a completed solution with comprehensive comments and explanations",
+      "prompt": "I've solved this problem! Can you help me document my solution with:\n\n1. **Well-commented code** - Add comprehensive comments explaining the logic\n2. **Visual walkthrough** - Step-by-step example with my solution\n3. **Complexity analysis** - Detailed time/space complexity breakdown\n4. **Key learnings** - What I learned and mistakes I made\n5. **Test cases** - Comprehensive test cases with explanations\n6. **Similar problems** - Related problems to practice this pattern\n7. **Quick reference** - Template code for future reference\n\nPlease update the problem file with all this documentation so I can easily reference it later!"
+    },
+    {
+      "name": "hint",
+      "description": "Get a hint for the current problem without spoiling the solution",
+      "prompt": "I'm working on this problem and need a hint. Please:\n\n1. Don't give me the complete solution\n2. Ask me what I've tried so far\n3. Identify where I might be stuck\n4. Give me a nudge in the right direction\n5. Suggest what to think about next\n\nWhat have I tried so far, and where am I stuck?"
+    },
+    {
+      "name": "pattern",
+      "description": "Identify which coding pattern applies to this problem",
+      "prompt": "Help me identify the coding pattern for this problem:\n\n1. What pattern(s) from the 16 coding patterns apply here?\n2. What clues in the problem statement point to this pattern?\n3. What are the characteristics of this pattern?\n4. When should this pattern be used vs alternatives?\n5. What are common variations of this pattern?\n\nDon't solve the problem - just help me recognize the pattern!"
+    },
+    {
+      "name": "complexity",
+      "description": "Analyze time and space complexity of an approach",
+      "prompt": "Help me analyze the complexity of my approach:\n\n1. What's the time complexity? Walk me through counting operations.\n2. What's the space complexity? What extra space am I using?\n3. What are the best/average/worst case scenarios?\n4. How does this compare to alternative approaches?\n5. Are there any trade-offs I should consider?\n\nLet me explain my approach first, then guide me through the analysis."
+    },
+    {
+      "name": "test",
+      "description": "Generate comprehensive test cases for the problem",
+      "prompt": "Help me create comprehensive test cases for this problem:\n\n1. Basic examples from the problem statement\n2. Edge cases (empty, single element, etc.)\n3. Boundary conditions\n4. Special values (negatives, zero, duplicates)\n5. Large inputs\n\nFor each test case, explain what it's testing and why it's important."
+    },
+    {
+      "name": "review",
+      "description": "Review and improve my solution code",
+      "prompt": "Please review my solution and suggest improvements:\n\n1. Is my approach correct and optimal?\n2. Are there any bugs or edge cases I'm missing?\n3. Can the code be more readable or maintainable?\n4. Are there better variable names or structure?\n5. Any best practices I should follow?\n\nProvide constructive feedback to help me improve!"
+    },
+    {
+      "name": "similar",
+      "description": "Find similar problems to practice the same pattern",
+      "prompt": "Based on this problem, suggest similar problems I should practice:\n\n1. Direct variations of this problem\n2. Problems using the same pattern\n3. Problems with similar concepts\n4. Next difficulty level problems\n5. Categorize by difficulty: Easy/Medium/Hard\n\nHelp me build mastery of this pattern!"
+    }
+  ]
+}
