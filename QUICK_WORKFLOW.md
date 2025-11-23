@@ -1,61 +1,75 @@
-# ⚡ Quick Workflow Commands
+# ⚡ Quick Workflow - Windsurf Workflows
 
-Use these commands to streamline your problem-solving workflow with Cascade AI.
+Use Windsurf workflows to streamline your problem-solving with Cascade AI.
 
 ---
 
 ## 🚀 Starting a New Problem
 
-```bash
-./start-problem.sh problems/two-pointers/LND-30-2-contains-duplicate.md
+In Windsurf Cascade, use:
+
+```
+@[/start-problem-learning] @[path/to/problem-file.md]
+```
+
+**Example:**
+```
+@[/start-problem-learning] @[problems/two-pointers/LND-30-2-contains-duplicate.md]
 ```
 
 **What it does:**
-1. Reads your problem file
-2. Generates a comprehensive learning prompt
-3. Copies it to clipboard (if pyperclip installed)
-4. You paste into Cascade and start learning!
+1. ✅ Analyzes the problem file
+2. ✅ Provides core concepts teaching
+3. ✅ Guides with hints (not solutions)
+4. ✅ Explains pattern recognition
+5. ✅ Walks through approaches step-by-step
 
 ---
 
 ## ✅ Documenting a Completed Problem
 
-```bash
-./start-problem.sh --complete problems/two-pointers/LND-29-1-two-sum.md
+After solving, document your solution:
+
+```
+@[/document-solution] @[path/to/problem-file.md]
+```
+
+**Example:**
+```
+@[/document-solution] @[problems/two-pointers/LND-29-1-two-sum.md]
 ```
 
 **What it does:**
-1. Generates a documentation prompt
-2. Asks Cascade to help you create comprehensive docs
-3. Updates your problem file with all learnings
+1. ✅ Adds comprehensive code comments
+2. ✅ Creates visual walkthroughs
+3. ✅ Documents complexity analysis
+4. ✅ Records key learnings and mistakes
+5. ✅ Adds test cases and similar problems
+6. ✅ Creates quick reference card
 
 ---
 
 ## 💡 Pro Tips
 
-### Create Shell Aliases
+### Available Workflows
 
-Add to your `~/.zshrc`:
+All workflows in `.windsurf/workflows/`:
+- `/start-problem-learning` - Start learning a new problem
+- `/document-solution` - Document completed solution
+- `/debug-solution` - Debug a failing solution
+- `/quick-review` - Quick review of solution
+- `/study-helper` - Track progress from Jira
 
-```bash
-# Quick aliases for problem workflow
-alias learn='cd /Users/rohit.roy/Documents/LnD && ./start-problem.sh'
-alias complete='cd /Users/rohit.roy/Documents/LnD && ./start-problem.sh --complete'
-```
+### Quick Access
 
-Then use anywhere:
-```bash
-learn problems/two-pointers/LND-30-2-contains-duplicate.md
-complete problems/two-pointers/LND-29-1-two-sum.md
-```
+Type `/` in Cascade to see all available workflows!
 
-### Install Clipboard Support
+### Natural Language
 
-```bash
-pip install pyperclip
-```
-
-This auto-copies the prompt to your clipboard!
+Cascade also understands natural language:
+- "start learning" → triggers learning workflow
+- "document this" → triggers documentation workflow
+- "help me debug" → triggers debug workflow
 
 ---
 

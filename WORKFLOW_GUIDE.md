@@ -1,12 +1,12 @@
 # 🚀 Problem Learning Workflow Guide
 
-This guide explains how to use the automated workflow to streamline your problem-solving learning process with Cascade AI.
+This guide explains how to use Windsurf workflows to streamline your problem-solving learning process with Cascade AI.
 
 ---
 
 ## 📋 Overview
 
-The workflow automates the process of starting a new problem or documenting a completed solution. Instead of manually writing prompts, you can use a simple command to generate comprehensive learning prompts.
+Windsurf workflows provide integrated AI assistance directly in Cascade. Simply reference a workflow and problem file to get structured guidance.
 
 ---
 
@@ -14,19 +14,21 @@ The workflow automates the process of starting a new problem or documenting a co
 
 ### Starting a New Problem
 
-When you want to start learning a new problem:
+When you want to start learning a new problem, use the learning workflow in Cascade:
 
-```bash
-./start-problem.sh problems/two-pointers/LND-30-2-contains-duplicate.md
+```
+@[/start-problem-learning] @[problems/two-pointers/LND-30-2-contains-duplicate.md]
 ```
 
 This will:
-1. ✅ Read the problem file
+1. ✅ Analyze the problem file
 2. ✅ Extract key information (title, pattern, difficulty, etc.)
-3. ✅ Generate a comprehensive learning prompt
-4. ✅ Copy the prompt to your clipboard (if pyperclip is installed)
+3. ✅ Provide core concepts teaching
+4. ✅ Guide with hints and questions (not solutions)
+5. ✅ Explain pattern recognition
+6. ✅ Walk through approaches step-by-step
 
-**Then simply paste the prompt into Cascade!**
+**Cascade responds immediately with structured guidance!**
 
 ---
 
@@ -34,17 +36,18 @@ This will:
 
 When you've solved a problem and want to document it:
 
-```bash
-./start-problem.sh --complete problems/two-pointers/LND-29-1-two-sum.md
+```
+@[/document-solution] @[problems/two-pointers/LND-29-1-two-sum.md]
 ```
 
-This generates a prompt asking Cascade to help you:
-- Add well-commented code
+This asks Cascade to help you:
+- Add well-commented code with JavaDoc
 - Create visual walkthroughs
 - Document complexity analysis
-- Record key learnings
-- Add test cases
-- Create a quick reference template
+- Record key learnings and mistakes
+- Add comprehensive test cases
+- Link to similar problems
+- Create a quick reference card
 
 ---
 
