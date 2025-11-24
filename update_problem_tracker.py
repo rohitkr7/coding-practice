@@ -94,6 +94,18 @@ def generate_difficulty_badge(difficulty):
     else:
         return '⚪ Unknown'
 
+def generate_progress_bar(completed, total, width=50):
+    """Generate ASCII progress bar"""
+    if total == 0:
+        return "[" + " " * width + "] 0%"
+    
+    percentage = completed / total
+    filled = int(width * percentage)
+    bar = "█" * filled + "░" * (width - filled)
+    percent_text = f"{int(percentage * 100)}%"
+    
+    return f"[{bar}] {percent_text}"
+
 def generate_tracker_markdown(problems_by_pattern):
     """Generate markdown table for the tracker"""
     lines = []
@@ -101,48 +113,137 @@ def generate_tracker_markdown(problems_by_pattern):
     # Calculate statistics
     total = 0
     completed = 0
+    easy_total = 0
+    medium_total = 0
+    hard_total = 0
+    easy_done = 0
+    medium_done = 0
+    hard_done = 0
     
     for pattern in sorted(problems_by_pattern.keys()):
         problems = problems_by_pattern[pattern]
-        total += len(problems)
-        completed += sum(1 for p in problems if '✅' in p['status'] or 'completed' in p['status'].lower())
+        for p in problems:
+            total += 1
+            is_completed = '✅' in p['status'] or 'completed' in p['status'].lower()
+            
+            if is_completed:
+                completed += 1
+            
+            # Count by difficulty
+            diff = p['difficulty'].lower()
+            if diff == 'easy':
+                easy_total += 1
+                if is_completed:
+                    easy_done += 1
+            elif diff == 'medium':
+                medium_total += 1
+                if is_completed:
+                    medium_done += 1
+            elif diff == 'hard':
+                hard_total += 1
+                if is_completed:
+                    hard_done += 1
     
-    # Header
+    # Header with visual progress
     lines.append("## 📊 Problem Tracker")
     lines.append("")
-    lines.append(f"**Progress:** {completed}/{total} problems completed ({int(completed/total*100) if total > 0 else 0}%)")
+    lines.append(f"### Overall Progress: {completed}/{total} Problems ({int(completed/total*100) if total > 0 else 0}%)")
+    lines.append("")
+    lines.append("```")
+    lines.append(generate_progress_bar(completed, total, 50))
+    lines.append("```")
+    lines.append("")
+    
+    # Difficulty breakdown
+    lines.append("### 📈 Progress by Difficulty")
+    lines.append("")
+    lines.append("| Difficulty | Solved | Total | Progress |")
+    lines.append("|------------|--------|-------|----------|")
+    
+    if easy_total > 0:
+        easy_pct = int(easy_done/easy_total*100)
+        easy_bar = generate_progress_bar(easy_done, easy_total, 20)
+        lines.append(f"| 🟢 Easy | {easy_done} | {easy_total} | `{easy_bar}` {easy_pct}% |")
+    
+    if medium_total > 0:
+        medium_pct = int(medium_done/medium_total*100)
+        medium_bar = generate_progress_bar(medium_done, medium_total, 20)
+        lines.append(f"| 🟡 Medium | {medium_done} | {medium_total} | `{medium_bar}` {medium_pct}% |")
+    
+    if hard_total > 0:
+        hard_pct = int(hard_done/hard_total*100)
+        hard_bar = generate_progress_bar(hard_done, hard_total, 20)
+        lines.append(f"| 🔴 Hard | {hard_done} | {hard_total} | `{hard_bar}` {hard_pct}% |")
+    
     lines.append("")
     lines.append("---")
     lines.append("")
     
-    # By Pattern
+    # Quick filters section
+    lines.append("### 🔍 Quick Filters")
+    lines.append("")
+    lines.append("**Filter by Status:**")
+    lines.append("- ✅ Completed: Use browser search (Ctrl/Cmd+F) for \"✅\"")
+    lines.append("- ⏳ To Do: Search for \"⏳\"")
+    lines.append("- 🟡 In Progress: Search for \"🟡\"")
+    lines.append("")
+    lines.append("**Filter by Difficulty:**")
+    lines.append("- 🟢 Easy | 🟡 Medium | 🔴 Hard")
+    lines.append("")
+    lines.append("**Filter by Pattern:** Jump to section below")
+    lines.append("")
+    lines.append("---")
+    lines.append("")
+    
+    # By Pattern - Enhanced table
+    problem_number = 1
+    
     for pattern in sorted(problems_by_pattern.keys()):
         problems = sorted(problems_by_pattern[pattern], key=lambda x: x['file_name'])
         pattern_completed = sum(1 for p in problems if '✅' in p['status'] or 'completed' in p['status'].lower())
+        pattern_pct = int(pattern_completed/len(problems)*100) if len(problems) > 0 else 0
         
         lines.append(f"### {pattern}")
-        lines.append(f"**Progress:** {pattern_completed}/{len(problems)} completed")
+        lines.append(f"**Progress:** {pattern_completed}/{len(problems)} completed ({pattern_pct}%)")
         lines.append("")
-        lines.append("| Status | Problem | Difficulty | Jira | Links |")
-        lines.append("|--------|---------|------------|------|-------|")
+        
+        # Enhanced table with more columns
+        lines.append("| # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |")
+        lines.append("|---|--------|---------|------------|---------|-----------|------|-------|")
         
         for problem in problems:
             status_icon = generate_status_icon(problem['status'])
             difficulty_badge = generate_difficulty_badge(problem['difficulty'])
             
-            # Create problem link
-            problem_link = f"[{problem['title']}](problems/{problem['file_path']})"
+            # Create problem link with cleaner title
+            clean_title = problem['title'].replace(' - ', ' • ')
+            problem_link = f"[{clean_title}](problems/{problem['file_path']})"
             
-            # Create Jira link
-            jira_cell = problem['jira_id'] if problem['jira_id'] else "-"
+            # Shorter pattern name for table
+            pattern_short = pattern[:20] + "..." if len(pattern) > 20 else pattern
             
-            # Create external links
-            links = []
+            # Create Jira link with icon
+            if problem['jira_id']:
+                jira_cell = f"[{problem['jira_id']}](https://rohitroy007.atlassian.net/browse/{problem['jira_id']})"
+            else:
+                jira_cell = "-"
+            
+            # Create resource links with icons
+            resources = []
             if problem['leetcode_url']:
-                links.append(f"[LC]({problem['leetcode_url']})")
-            link_cell = " ".join(links) if links else "-"
+                resources.append(f"[📝 LC]({problem['leetcode_url']})") 
+            if problem.get('solution_url'):
+                resources.append(f"[💡 Sol]({problem['solution_url']})")
+            if problem.get('video_url'):
+                resources.append(f"[🎥 Vid]({problem['video_url']})")
             
-            lines.append(f"| {status_icon} | {problem_link} | {difficulty_badge} | {jira_cell} | {link_cell} |")
+            resource_cell = " ".join(resources) if resources else "-"
+            
+            # Notes placeholder
+            notes_cell = "📝" if '✅' in problem['status'] or 'completed' in problem['status'].lower() else "-"
+            
+            lines.append(f"| {problem_number} | {status_icon} | {problem_link} | {difficulty_badge} | {pattern_short} | {resource_cell} | {jira_cell} | {notes_cell} |")
+            problem_number += 1
         
         lines.append("")
     
