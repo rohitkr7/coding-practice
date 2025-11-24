@@ -36,66 +36,23 @@ All ready for your solutions:
 - fast-slow-pointers
 - merge-intervals
 - cyclic-sort
-- linkedlist-reversal
-- tree-bfs
-- tree-dfs
-- two-heaps
-- subsets
-- binary-search
-- bitwise-xor
-- top-k-elements
-- k-way-merge
-- knapsack-dp
-- topological-sort
+
+3. **`TRACKER_GUIDE.md`** - Complete documentation
+   - How the system works
+   - Usage instructions
+   - Customization guide
+   - Troubleshooting tips
 
 ---
 
-## 🎯 Your Jira Integration
+## What the Tracker Shows
 
-**Board URL:** https://rohitroy007.atlassian.net/jira/software/c/projects/LND/boards/35  
-**Project:** LND (Learning & Development)  
-**Board ID:** 35  
-**Assignee:** Rohit
+### In README.md, you now have:
 
----
+```markdown
+## Problem Tracker
 
-## 📚 Reference Repository
-
-I've studied the complete coding patterns repository:
-**GitHub:** https://github.com/Chanda-Abdul/Several-Coding-Patterns-for-Solving-Data-Structures-and-Algorithms-Problems-during-Interviews
-
-This repository contains:
-- 16 essential coding patterns
-- JavaScript implementations
-- Detailed explanations
-- Multiple practice problems per pattern
-
----
-
-## 🚀 Next Steps
-
-### 1. Fetch Your Jira Work Items
-Tell me:
-```
-"Fetch my Jira work items"
-```
-
-I'll retrieve all tasks assigned to you from your LND board.
-
-### 2. Start Solving Problems
-Once you see your work items, pick one:
-```
-"Let's work on [problem name or ID]"
-```
-
-### 3. Get Guided Help
-I'll help you by:
-- ✅ Suggesting which pattern to use
-- ✅ Asking guiding questions
-- ✅ Providing hints when stuck
-- ✅ Validating your approach
-- ✅ Analyzing complexity
-- ❌ **NOT giving complete solutions**
+**Progress:** 3/77 problems completed (3%)
 
 ---
 

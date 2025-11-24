@@ -107,6 +107,19 @@ Update the markdown file with all sections:
 - ✅ Similar problems
 - ✅ Quick reference
 
+### 10. Update README Problem Tracker
+After documenting the solution, update the centralized problem tracker:
+- Run the tracker update script: `./update_tracker.sh` or `python3 update_problem_tracker.py`
+- This automatically scans all problem files and updates the README with current status
+- The tracker shows:
+  - Overall progress (X/Y problems completed)
+  - Progress by pattern
+  - Clickable links to each problem file
+  - Difficulty badges and status icons
+  - Links to LeetCode and Jira tickets
+
+**Cascade Action:** Automatically run the update script after documenting a problem
+
 ## Documentation Template Structure
 
 ```markdown
