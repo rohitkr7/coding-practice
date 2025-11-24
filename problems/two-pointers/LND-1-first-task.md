@@ -2,7 +2,7 @@
 
 **Jira Ticket:** [LND-1](https://rohitroy007.atlassian.net/browse/LND-1)  
 **LeetCode:** N/A  
-**Pattern:** Two Pointers  
+**Pattern:** Two Pointers
 **Difficulty:** Medium  
 **Status:** Done  
 **Priority:** Medium

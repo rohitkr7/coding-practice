@@ -1,13 +1,13 @@
-# 4 - Group Anagrams
+# 42 - Word Search II
 
-**Jira Ticket:** [LND-28](https://rohitroy007.atlassian.net/browse/LND-28)  
-**LeetCode:** https://leetcode.com/problems/group-anagrams  
-**Pattern:** Two Pointers  
-**Difficulty:** Medium  
+**Jira Ticket:** [LND-20](https://rohitroy007.atlassian.net/browse/LND-20)  
+**LeetCode:** https://leetcode.com/problems/word-search-ii  
+**Pattern:** Trie
+**Difficulty:** Hard  
 **Status:** To Do  
 **Priority:** Medium
 
-**Labels:** Array_Hashing, Medium  
+**Labels:** Hard, Tries  
 **Created:** 2025-08-21  
 **Last Updated:** 2025-08-22
 
@@ -15,25 +15,12 @@
 
 ## 📝 Problem Statement
 
-Problem URL: https://leetcode.com/problems/group-anagrams
+Problem URL: https://leetcode.com/problems/word-search-ii
 Problem Description:
-Given an array of strings strs, group the anagrams together. You can return the answer in any order.
-An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
-Example 1:
-Input: strs = ["eat","tea","tan","ate","nat","bat"]
-Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
-Example 2:
-Input: strs = [""]
-Output: [[""]]
-Example 3:
-Input: strs = ["a"]
-Output: [["a"]]
-Constraints:
-1 <= strs.length <= 10^4
-0 <= strs[i].length <= 100
-strs[i] consists of lowercase English letters.
-Difficulty: Medium
-Category: Array & Hashing
+Solve the Word Search II coding problem according to the LeetCode description.
+Visit the problem URL for the complete description and examples.
+Difficulty: Hard
+Category: Tries
 
 ---
 
@@ -169,7 +156,7 @@ Status: ⏳ Not Tested
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#two-pointers)
-- LeetCode Discussion: https://leetcode.com/problems/group-anagrams/discuss/
+- LeetCode Discussion: https://leetcode.com/problems/word-search-ii/discuss/
 
 ---
 

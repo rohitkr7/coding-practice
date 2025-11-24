@@ -1,13 +1,13 @@
-# 7 - Encode and Decode Strings
+# 71 - Set Matrix Zeroes
 
-**Jira Ticket:** [LND-32](https://rohitroy007.atlassian.net/browse/LND-32)  
-**LeetCode:** https://leetcode.com/problems/encode-and-decode-strings  
-**Pattern:** Two Pointers  
+**Jira Ticket:** [LND-94](https://rohitroy007.atlassian.net/browse/LND-94)  
+**LeetCode:** https://leetcode.com/problems/set-matrix-zeroes  
+**Pattern:** Matrix / Math & Geometry
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium
 
-**Labels:** Array_Hashing, Medium  
+**Labels:** Math_Geometry, Medium  
 **Created:** 2025-08-21  
 **Last Updated:** 2025-08-22
 
@@ -15,21 +15,12 @@
 
 ## 📝 Problem Statement
 
-Problem URL: https://leetcode.com/problems/encode-and-decode-strings
+Problem URL: https://leetcode.com/problems/set-matrix-zeroes
 Problem Description:
-Design an algorithm to encode a list of strings to a string. The encoded string is then sent over the network and is decoded back to the original list of strings.
-Example:
-Input: ["lint","code","love","you"]
-Output: ["lint","code","love","you"]
-Explanation:
-One possible encode method is: "lint:;code:;love:;you"
-Note:
-The string may contain any possible characters out of 256 valid ASCII characters.
-Your algorithm should be generalized enough to work on any possible characters.
-Do not use class member/global/static variables to store states. Your encode and decode algorithms should be stateless.
-Do not rely on any library method such as eval or serialize methods. You should implement your own encode/decode algorithm.
+Solve the Set Matrix Zeroes coding problem according to the LeetCode description.
+Visit the problem URL for the complete description and examples.
 Difficulty: Medium
-Category: Array & Hashing
+Category: Math & Geometry
 
 ---
 
@@ -165,7 +156,7 @@ Status: ⏳ Not Tested
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#two-pointers)
-- LeetCode Discussion: https://leetcode.com/problems/encode-and-decode-strings/discuss/
+- LeetCode Discussion: https://leetcode.com/problems/set-matrix-zeroes/discuss/
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Jira Ticket:** [LND-132](https://rohitroy007.atlassian.net/browse/LND-132)  
 **LeetCode:** https://leetcode.com/problems/remove-nth-node-from-end-of-list  
-**Pattern:** Two Pointers  
+**Pattern:** Two Pointers
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium

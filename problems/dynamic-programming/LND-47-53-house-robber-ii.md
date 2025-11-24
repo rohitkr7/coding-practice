@@ -1,8 +1,8 @@
-# 60 - Longest Increasing Subsequence
+# 53 - House Robber II
 
-**Jira Ticket:** [LND-76](https://rohitroy007.atlassian.net/browse/LND-76)  
-**LeetCode:** https://leetcode.com/problems/longest-increasing-subsequence  
-**Pattern:** Two Pointers  
+**Jira Ticket:** [LND-47](https://rohitroy007.atlassian.net/browse/LND-47)  
+**LeetCode:** https://leetcode.com/problems/house-robber-ii  
+**Pattern:** Dynamic Programming
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium
@@ -15,9 +15,9 @@
 
 ## 📝 Problem Statement
 
-Problem URL: https://leetcode.com/problems/longest-increasing-subsequence
+Problem URL: https://leetcode.com/problems/house-robber-ii
 Problem Description:
-Solve the Longest Increasing Subsequence coding problem according to the LeetCode description.
+Solve the House Robber II coding problem according to the LeetCode description.
 Visit the problem URL for the complete description and examples.
 Difficulty: Medium
 Category: 1-D Dynamic Programming
@@ -156,7 +156,7 @@ Status: ⏳ Not Tested
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#two-pointers)
-- LeetCode Discussion: https://leetcode.com/problems/longest-increasing-subsequence/discuss/
+- LeetCode Discussion: https://leetcode.com/problems/house-robber-ii/discuss/
 
 ---
 

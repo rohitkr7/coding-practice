@@ -2,7 +2,7 @@
 
 **Jira Ticket:** [LND-119](https://rohitroy007.atlassian.net/browse/LND-119)  
 **LeetCode:** https://leetcode.com/problems/valid-palindrome  
-**Pattern:** Two Pointers  
+**Pattern:** Two Pointers
 **Difficulty:** Easy  
 **Status:** To Do  
 **Priority:** Medium

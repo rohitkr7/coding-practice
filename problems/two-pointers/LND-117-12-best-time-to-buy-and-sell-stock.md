@@ -2,7 +2,7 @@
 
 **Jira Ticket:** [LND-117](https://rohitroy007.atlassian.net/browse/LND-117)  
 **LeetCode:** https://leetcode.com/problems/best-time-to-buy-and-sell-stock  
-**Pattern:** Two Pointers  
+**Pattern:** Two Pointers
 **Difficulty:** Easy  
 **Status:** To Do  
 **Priority:** Medium

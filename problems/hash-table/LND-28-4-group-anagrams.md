@@ -1,13 +1,13 @@
-# 71 - Set Matrix Zeroes
+# 4 - Group Anagrams
 
-**Jira Ticket:** [LND-94](https://rohitroy007.atlassian.net/browse/LND-94)  
-**LeetCode:** https://leetcode.com/problems/set-matrix-zeroes  
-**Pattern:** Two Pointers  
+**Jira Ticket:** [LND-28](https://rohitroy007.atlassian.net/browse/LND-28)  
+**LeetCode:** https://leetcode.com/problems/group-anagrams  
+**Pattern:** Hash Table / Array & Hashing
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium
 
-**Labels:** Math_Geometry, Medium  
+**Labels:** Array_Hashing, Medium  
 **Created:** 2025-08-21  
 **Last Updated:** 2025-08-22
 
@@ -15,12 +15,25 @@
 
 ## 📝 Problem Statement
 
-Problem URL: https://leetcode.com/problems/set-matrix-zeroes
+Problem URL: https://leetcode.com/problems/group-anagrams
 Problem Description:
-Solve the Set Matrix Zeroes coding problem according to the LeetCode description.
-Visit the problem URL for the complete description and examples.
+Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+Example 1:
+Input: strs = ["eat","tea","tan","ate","nat","bat"]
+Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+Example 2:
+Input: strs = [""]
+Output: [[""]]
+Example 3:
+Input: strs = ["a"]
+Output: [["a"]]
+Constraints:
+1 <= strs.length <= 10^4
+0 <= strs[i].length <= 100
+strs[i] consists of lowercase English letters.
 Difficulty: Medium
-Category: Math & Geometry
+Category: Array & Hashing
 
 ---
 
@@ -156,7 +169,7 @@ Status: ⏳ Not Tested
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#two-pointers)
-- LeetCode Discussion: https://leetcode.com/problems/set-matrix-zeroes/discuss/
+- LeetCode Discussion: https://leetcode.com/problems/group-anagrams/discuss/
 
 ---
 

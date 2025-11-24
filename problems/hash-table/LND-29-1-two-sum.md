@@ -2,7 +2,7 @@
 
 **Jira Ticket:** [LND-29](https://rohitroy007.atlassian.net/browse/LND-29)  
 **LeetCode:** https://leetcode.com/problems/two-sum  
-**Pattern:** Two Pointers  
+**Pattern:** Hash Table / Array & Hashing
 **Difficulty:** Easy  
 **Status:** ✅ Completed  
 **Priority:** Medium
@@ -503,7 +503,7 @@ Explanation: 1000000000 + (-1000000000) = 0, then 0 + 5 = 5
 
 ## 🎯 Quick Reference Card
 
-**Pattern:** Hash Map (Complement Pattern)  
+**Pattern:** Hash Table / Array & Hashing
 **Key Insight:** For each number X, look for (target - X)  
 **Time:** O(n) | **Space:** O(n)  
 

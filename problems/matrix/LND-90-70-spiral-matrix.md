@@ -1,13 +1,13 @@
-# 53 - House Robber II
+# 70 - Spiral Matrix
 
-**Jira Ticket:** [LND-47](https://rohitroy007.atlassian.net/browse/LND-47)  
-**LeetCode:** https://leetcode.com/problems/house-robber-ii  
-**Pattern:** Two Pointers  
+**Jira Ticket:** [LND-90](https://rohitroy007.atlassian.net/browse/LND-90)  
+**LeetCode:** https://leetcode.com/problems/spiral-matrix  
+**Pattern:** Matrix / Math & Geometry
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium
 
-**Labels:** 1-D_Dynamic_Programming, Medium  
+**Labels:** Math_Geometry, Medium  
 **Created:** 2025-08-21  
 **Last Updated:** 2025-08-22
 
@@ -15,12 +15,12 @@
 
 ## 📝 Problem Statement
 
-Problem URL: https://leetcode.com/problems/house-robber-ii
+Problem URL: https://leetcode.com/problems/spiral-matrix
 Problem Description:
-Solve the House Robber II coding problem according to the LeetCode description.
+Solve the Spiral Matrix coding problem according to the LeetCode description.
 Visit the problem URL for the complete description and examples.
 Difficulty: Medium
-Category: 1-D Dynamic Programming
+Category: Math & Geometry
 
 ---
 
@@ -156,7 +156,7 @@ Status: ⏳ Not Tested
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#two-pointers)
-- LeetCode Discussion: https://leetcode.com/problems/house-robber-ii/discuss/
+- LeetCode Discussion: https://leetcode.com/problems/spiral-matrix/discuss/
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Jira Ticket:** [LND-116](https://rohitroy007.atlassian.net/browse/LND-116)  
 **LeetCode:** https://leetcode.com/problems/container-with-most-water  
-**Pattern:** Two Pointers  
+**Pattern:** Two Pointers
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium

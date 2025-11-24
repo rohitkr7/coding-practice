@@ -1,13 +1,13 @@
-# 52 - House Robber
+# 62 - Longest Common Subsequence
 
-**Jira Ticket:** [LND-56](https://rohitroy007.atlassian.net/browse/LND-56)  
-**LeetCode:** https://leetcode.com/problems/house-robber  
-**Pattern:** Two Pointers  
+**Jira Ticket:** [LND-73](https://rohitroy007.atlassian.net/browse/LND-73)  
+**LeetCode:** https://leetcode.com/problems/longest-common-subsequence  
+**Pattern:** Dynamic Programming
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium
 
-**Labels:** 1-D_Dynamic_Programming, Medium  
+**Labels:** 2-D_Dynamic_Programming, Medium  
 **Created:** 2025-08-21  
 **Last Updated:** 2025-08-22
 
@@ -15,12 +15,12 @@
 
 ## 📝 Problem Statement
 
-Problem URL: https://leetcode.com/problems/house-robber
+Problem URL: https://leetcode.com/problems/longest-common-subsequence
 Problem Description:
-Solve the House Robber coding problem according to the LeetCode description.
+Solve the Longest Common Subsequence coding problem according to the LeetCode description.
 Visit the problem URL for the complete description and examples.
 Difficulty: Medium
-Category: 1-D Dynamic Programming
+Category: 2-D Dynamic Programming
 
 ---
 
@@ -156,7 +156,7 @@ Status: ⏳ Not Tested
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#two-pointers)
-- LeetCode Discussion: https://leetcode.com/problems/house-robber/discuss/
+- LeetCode Discussion: https://leetcode.com/problems/longest-common-subsequence/discuss/
 
 ---
 

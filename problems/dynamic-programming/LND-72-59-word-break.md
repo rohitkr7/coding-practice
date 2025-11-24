@@ -1,13 +1,13 @@
-# 8 - Longest Consecutive Sequence
+# 59 - Word Break
 
-**Jira Ticket:** [LND-35](https://rohitroy007.atlassian.net/browse/LND-35)  
-**LeetCode:** https://leetcode.com/problems/longest-consecutive-sequence  
-**Pattern:** Two Pointers  
+**Jira Ticket:** [LND-72](https://rohitroy007.atlassian.net/browse/LND-72)  
+**LeetCode:** https://leetcode.com/problems/word-break  
+**Pattern:** Dynamic Programming
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium
 
-**Labels:** Array_Hashing, Medium  
+**Labels:** 1-D_Dynamic_Programming, Medium  
 **Created:** 2025-08-21  
 **Last Updated:** 2025-08-22
 
@@ -15,22 +15,12 @@
 
 ## 📝 Problem Statement
 
-Problem URL: https://leetcode.com/problems/longest-consecutive-sequence
+Problem URL: https://leetcode.com/problems/word-break
 Problem Description:
-Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
-You must write an algorithm that runs in O(n) time.
-Example 1:
-Input: nums = [100,4,200,1,3,2]
-Output: 4
-Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
-Example 2:
-Input: nums = [0,3,7,2,5,8,4,6,0,1]
-Output: 9
-Constraints:
-0 <= nums.length <= 10^5
--10^9 <= nums[i] <= 10^9
+Solve the Word Break coding problem according to the LeetCode description.
+Visit the problem URL for the complete description and examples.
 Difficulty: Medium
-Category: Array & Hashing
+Category: 1-D Dynamic Programming
 
 ---
 
@@ -166,7 +156,7 @@ Status: ⏳ Not Tested
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#two-pointers)
-- LeetCode Discussion: https://leetcode.com/problems/longest-consecutive-sequence/discuss/
+- LeetCode Discussion: https://leetcode.com/problems/word-break/discuss/
 
 ---
 

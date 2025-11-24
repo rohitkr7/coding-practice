@@ -2,7 +2,7 @@
 
 **Jira Ticket:** [LND-141](https://rohitroy007.atlassian.net/browse/LND-141)  
 **LeetCode:** https://leetcode.com/problems/reorder-list  
-**Pattern:** Two Pointers  
+**Pattern:** Two Pointers
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium

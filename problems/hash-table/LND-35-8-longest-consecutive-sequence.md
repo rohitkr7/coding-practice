@@ -1,13 +1,13 @@
-# 56 - Decode Ways
+# 8 - Longest Consecutive Sequence
 
-**Jira Ticket:** [LND-45](https://rohitroy007.atlassian.net/browse/LND-45)  
-**LeetCode:** https://leetcode.com/problems/decode-ways  
-**Pattern:** Two Pointers  
+**Jira Ticket:** [LND-35](https://rohitroy007.atlassian.net/browse/LND-35)  
+**LeetCode:** https://leetcode.com/problems/longest-consecutive-sequence  
+**Pattern:** Hash Table / Array & Hashing
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium
 
-**Labels:** 1-D_Dynamic_Programming, Medium  
+**Labels:** Array_Hashing, Medium  
 **Created:** 2025-08-21  
 **Last Updated:** 2025-08-22
 
@@ -15,12 +15,22 @@
 
 ## 📝 Problem Statement
 
-Problem URL: https://leetcode.com/problems/decode-ways
+Problem URL: https://leetcode.com/problems/longest-consecutive-sequence
 Problem Description:
-Solve the Decode Ways coding problem according to the LeetCode description.
-Visit the problem URL for the complete description and examples.
+Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+You must write an algorithm that runs in O(n) time.
+Example 1:
+Input: nums = [100,4,200,1,3,2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+Example 2:
+Input: nums = [0,3,7,2,5,8,4,6,0,1]
+Output: 9
+Constraints:
+0 <= nums.length <= 10^5
+-10^9 <= nums[i] <= 10^9
 Difficulty: Medium
-Category: 1-D Dynamic Programming
+Category: Array & Hashing
 
 ---
 
@@ -156,7 +166,7 @@ Status: ⏳ Not Tested
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#two-pointers)
-- LeetCode Discussion: https://leetcode.com/problems/decode-ways/discuss/
+- LeetCode Discussion: https://leetcode.com/problems/longest-consecutive-sequence/discuss/
 
 ---
 

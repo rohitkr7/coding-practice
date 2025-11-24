@@ -2,7 +2,7 @@
 
 **Jira Ticket:** [LND-78](https://rohitroy007.atlassian.net/browse/LND-78)  
 **LeetCode:** https://leetcode.com/problems/unique-paths  
-**Pattern:** Two Pointers  
+**Pattern:** Dynamic Programming
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium

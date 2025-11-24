@@ -2,7 +2,7 @@
 
 **Jira Ticket:** [LND-89](https://rohitroy007.atlassian.net/browse/LND-89)  
 **LeetCode:** https://leetcode.com/problems/rotate-image  
-**Pattern:** Two Pointers  
+**Pattern:** Matrix / Math & Geometry
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium

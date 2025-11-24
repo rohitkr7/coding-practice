@@ -1,13 +1,13 @@
-# 62 - Longest Common Subsequence
+# 41 - Design Add and Search Words Data Structure
 
-**Jira Ticket:** [LND-73](https://rohitroy007.atlassian.net/browse/LND-73)  
-**LeetCode:** https://leetcode.com/problems/longest-common-subsequence  
-**Pattern:** Two Pointers  
+**Jira Ticket:** [LND-34](https://rohitroy007.atlassian.net/browse/LND-34)  
+**LeetCode:** https://leetcode.com/problems/design-add-and-search-words-data-structure  
+**Pattern:** Trie
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium
 
-**Labels:** 2-D_Dynamic_Programming, Medium  
+**Labels:** Medium, Tries  
 **Created:** 2025-08-21  
 **Last Updated:** 2025-08-22
 
@@ -15,12 +15,12 @@
 
 ## 📝 Problem Statement
 
-Problem URL: https://leetcode.com/problems/longest-common-subsequence
+Problem URL: https://leetcode.com/problems/design-add-and-search-words-data-structure
 Problem Description:
-Solve the Longest Common Subsequence coding problem according to the LeetCode description.
+Solve the Design Add and Search Words Data Structure coding problem according to the LeetCode description.
 Visit the problem URL for the complete description and examples.
 Difficulty: Medium
-Category: 2-D Dynamic Programming
+Category: Tries
 
 ---
 
@@ -156,7 +156,7 @@ Status: ⏳ Not Tested
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#two-pointers)
-- LeetCode Discussion: https://leetcode.com/problems/longest-common-subsequence/discuss/
+- LeetCode Discussion: https://leetcode.com/problems/design-add-and-search-words-data-structure/discuss/
 
 ---
 

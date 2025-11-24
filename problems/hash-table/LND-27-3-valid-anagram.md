@@ -2,7 +2,7 @@
 
 **Jira Ticket:** [LND-27](https://rohitroy007.atlassian.net/browse/LND-27)  
 **LeetCode:** https://leetcode.com/problems/valid-anagram  
-**Pattern:** Hash Table / Frequency Counter  
+**Pattern:** Hash Table / Array & Hashing
 **Difficulty:** Easy  
 **Status:** ✅ Completed  
 **Priority:** Medium

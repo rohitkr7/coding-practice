@@ -2,7 +2,7 @@
 
 **Jira Ticket:** [LND-30](https://rohitroy007.atlassian.net/browse/LND-30)  
 **LeetCode:** https://leetcode.com/problems/contains-duplicate  
-**Pattern:** Two Pointers  
+**Pattern:** Hash Table / Array & Hashing
 **Difficulty:** Easy  
 **Status:** ✅ Completed  
 **Priority:** Medium

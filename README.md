@@ -244,156 +244,180 @@ Happy Learning! 🚀
 | 8 | ⏳ | [74 • Reverse Bits](problems/bitwise-xor/LND-93-74-reverse-bits.md) | 🟢 Easy | Bitwise Xor | [📝 LC](https://leetcode.com/problems/reverse-bits) | [LND-93](https://rohitroy007.atlassian.net/browse/LND-93) | - |
 | 9 | ⏳ | [72 • Number of 1 Bits](problems/bitwise-xor/LND-96-72-number-of-1-bits.md) | 🟢 Easy | Bitwise Xor | [📝 LC](https://leetcode.com/problems/number-of-1-bits) | [LND-96](https://rohitroy007.atlassian.net/browse/LND-96) | - |
 
+### Dynamic Programming
+**Progress:** 0/7 completed (0%)
+
+| # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
+|---|--------|---------|------------|---------|-----------|------|-------|
+| 10 | ⏳ | [56 • Decode Ways](problems/dynamic-programming/LND-45-56-decode-ways.md) | 🟡 Medium | Dynamic Programming | [📝 LC](https://leetcode.com/problems/decode-ways) | [LND-45](https://rohitroy007.atlassian.net/browse/LND-45) | - |
+| 11 | ⏳ | [53 • House Robber II](problems/dynamic-programming/LND-47-53-house-robber-ii.md) | 🟡 Medium | Dynamic Programming | [📝 LC](https://leetcode.com/problems/house-robber-ii) | [LND-47](https://rohitroy007.atlassian.net/browse/LND-47) | - |
+| 12 | ⏳ | [52 • House Robber](problems/dynamic-programming/LND-56-52-house-robber.md) | 🟡 Medium | Dynamic Programming | [📝 LC](https://leetcode.com/problems/house-robber) | [LND-56](https://rohitroy007.atlassian.net/browse/LND-56) | - |
+| 13 | ⏳ | [59 • Word Break](problems/dynamic-programming/LND-72-59-word-break.md) | 🟡 Medium | Dynamic Programming | [📝 LC](https://leetcode.com/problems/word-break) | [LND-72](https://rohitroy007.atlassian.net/browse/LND-72) | - |
+| 14 | ⏳ | [62 • Longest Common Subsequence](problems/dynamic-programming/LND-73-62-longest-common-subsequence.md) | 🟡 Medium | Dynamic Programming | [📝 LC](https://leetcode.com/problems/longest-common-subsequence) | [LND-73](https://rohitroy007.atlassian.net/browse/LND-73) | - |
+| 15 | ⏳ | [60 • Longest Increasing Subsequence](problems/dynamic-programming/LND-76-60-longest-increasing-subsequence.md) | 🟡 Medium | Dynamic Programming | [📝 LC](https://leetcode.com/problems/longest-increasing-subsequence) | [LND-76](https://rohitroy007.atlassian.net/browse/LND-76) | - |
+| 16 | ⏳ | [61 • Unique Paths](problems/dynamic-programming/LND-78-61-unique-paths.md) | 🟡 Medium | Dynamic Programming | [📝 LC](https://leetcode.com/problems/unique-paths) | [LND-78](https://rohitroy007.atlassian.net/browse/LND-78) | - |
+
 ### Fast Slow Pointers
 **Progress:** 0/1 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 10 | ⏳ | [29 • Linked List Cycle](problems/fast-slow-pointers/LND-14-29-linked-list-cycle.md) | 🟢 Easy | Fast Slow Pointers | [📝 LC](https://leetcode.com/problems/linked-list-cycle) | [LND-14](https://rohitroy007.atlassian.net/browse/LND-14) | - |
+| 17 | ⏳ | [29 • Linked List Cycle](problems/fast-slow-pointers/LND-14-29-linked-list-cycle.md) | 🟢 Easy | Fast Slow Pointers | [📝 LC](https://leetcode.com/problems/linked-list-cycle) | [LND-14](https://rohitroy007.atlassian.net/browse/LND-14) | - |
 
-### Hash Table / Frequency Counter
-**Progress:** 1/1 completed (100%)
+### Hash Table / Array & Hashing
+**Progress:** 3/5 completed (60%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 11 | ✅ | [3 • Valid Anagram](problems/two-pointers/LND-27-3-valid-anagram.md) | 🟢 Easy | Hash Table / Frequen... | [📝 LC](https://leetcode.com/problems/valid-anagram) | [LND-27](https://rohitroy007.atlassian.net/browse/LND-27) | 📝 |
+| 18 | ✅ | [3 • Valid Anagram](problems/hash-table/LND-27-3-valid-anagram.md) | 🟢 Easy | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/valid-anagram) | [LND-27](https://rohitroy007.atlassian.net/browse/LND-27) | 📝 |
+| 19 | ⏳ | [4 • Group Anagrams](problems/hash-table/LND-28-4-group-anagrams.md) | 🟡 Medium | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/group-anagrams) | [LND-28](https://rohitroy007.atlassian.net/browse/LND-28) | - |
+| 20 | ✅ | [1 • Two Sum](problems/hash-table/LND-29-1-two-sum.md) | 🟢 Easy | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/two-sum) | [LND-29](https://rohitroy007.atlassian.net/browse/LND-29) | 📝 |
+| 21 | ✅ | [2 • Contains Duplicate](problems/hash-table/LND-30-2-contains-duplicate.md) | 🟢 Easy | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/contains-duplicate) | [LND-30](https://rohitroy007.atlassian.net/browse/LND-30) | 📝 |
+| 22 | ⏳ | [8 • Longest Consecutive Sequence](problems/hash-table/LND-35-8-longest-consecutive-sequence.md) | 🟡 Medium | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/longest-consecutive-sequence) | [LND-35](https://rohitroy007.atlassian.net/browse/LND-35) | - |
 
 ### K Way Merge
 **Progress:** 0/2 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 12 | ⏳ | [26 • Merge Two Sorted Lists](problems/k-way-merge/LND-140-26-merge-two-sorted-lists.md) | 🟢 Easy | K Way Merge | [📝 LC](https://leetcode.com/problems/merge-two-sorted-lists) | [LND-140](https://rohitroy007.atlassian.net/browse/LND-140) | - |
-| 13 | ⏳ | [30 • Merge k Sorted Lists](problems/k-way-merge/LND-16-30-merge-k-sorted-lists.md) | 🔴 Hard | K Way Merge | [📝 LC](https://leetcode.com/problems/merge-k-sorted-lists) | [LND-16](https://rohitroy007.atlassian.net/browse/LND-16) | - |
+| 23 | ⏳ | [26 • Merge Two Sorted Lists](problems/k-way-merge/LND-140-26-merge-two-sorted-lists.md) | 🟢 Easy | K Way Merge | [📝 LC](https://leetcode.com/problems/merge-two-sorted-lists) | [LND-140](https://rohitroy007.atlassian.net/browse/LND-140) | - |
+| 24 | ⏳ | [30 • Merge k Sorted Lists](problems/k-way-merge/LND-16-30-merge-k-sorted-lists.md) | 🔴 Hard | K Way Merge | [📝 LC](https://leetcode.com/problems/merge-k-sorted-lists) | [LND-16](https://rohitroy007.atlassian.net/browse/LND-16) | - |
 
 ### Knapsack Dp
 **Progress:** 0/2 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 14 | ⏳ | [57 • Coin Change](problems/knapsack-dp/LND-50-57-coin-change.md) | 🟡 Medium | Knapsack Dp | [📝 LC](https://leetcode.com/problems/coin-change) | [LND-50](https://rohitroy007.atlassian.net/browse/LND-50) | - |
-| 15 | ⏳ | [51 • Climbing Stairs](problems/knapsack-dp/LND-55-51-climbing-stairs.md) | 🟢 Easy | Knapsack Dp | [📝 LC](https://leetcode.com/problems/climbing-stairs) | [LND-55](https://rohitroy007.atlassian.net/browse/LND-55) | - |
+| 25 | ⏳ | [57 • Coin Change](problems/knapsack-dp/LND-50-57-coin-change.md) | 🟡 Medium | Knapsack Dp | [📝 LC](https://leetcode.com/problems/coin-change) | [LND-50](https://rohitroy007.atlassian.net/browse/LND-50) | - |
+| 26 | ⏳ | [51 • Climbing Stairs](problems/knapsack-dp/LND-55-51-climbing-stairs.md) | 🟢 Easy | Knapsack Dp | [📝 LC](https://leetcode.com/problems/climbing-stairs) | [LND-55](https://rohitroy007.atlassian.net/browse/LND-55) | - |
 
 ### Linkedlist Reversal
 **Progress:** 0/1 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 16 | ⏳ | [25 • Reverse Linked List](problems/linkedlist-reversal/LND-145-25-reverse-linked-list.md) | 🟢 Easy | Linkedlist Reversal | [📝 LC](https://leetcode.com/problems/reverse-linked-list) | [LND-145](https://rohitroy007.atlassian.net/browse/LND-145) | - |
+| 27 | ⏳ | [25 • Reverse Linked List](problems/linkedlist-reversal/LND-145-25-reverse-linked-list.md) | 🟢 Easy | Linkedlist Reversal | [📝 LC](https://leetcode.com/problems/reverse-linked-list) | [LND-145](https://rohitroy007.atlassian.net/browse/LND-145) | - |
+
+### Matrix / Math & Geometry
+**Progress:** 0/3 completed (0%)
+
+| # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
+|---|--------|---------|------------|---------|-----------|------|-------|
+| 28 | ⏳ | [69 • Rotate Image](problems/matrix/LND-89-69-rotate-image.md) | 🟡 Medium | Matrix / Math & Geom... | [📝 LC](https://leetcode.com/problems/rotate-image) | [LND-89](https://rohitroy007.atlassian.net/browse/LND-89) | - |
+| 29 | ⏳ | [70 • Spiral Matrix](problems/matrix/LND-90-70-spiral-matrix.md) | 🟡 Medium | Matrix / Math & Geom... | [📝 LC](https://leetcode.com/problems/spiral-matrix) | [LND-90](https://rohitroy007.atlassian.net/browse/LND-90) | - |
+| 30 | ⏳ | [71 • Set Matrix Zeroes](problems/matrix/LND-94-71-set-matrix-zeroes.md) | 🟡 Medium | Matrix / Math & Geom... | [📝 LC](https://leetcode.com/problems/set-matrix-zeroes) | [LND-94](https://rohitroy007.atlassian.net/browse/LND-94) | - |
 
 ### Merge Intervals
 **Progress:** 0/5 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 17 | ⏳ | [66 • Non-overlapping Intervals](problems/merge-intervals/LND-62-66-non-overlapping-intervals.md) | 🟡 Medium | Merge Intervals | [📝 LC](https://leetcode.com/problems/non-overlapping-intervals) | [LND-62](https://rohitroy007.atlassian.net/browse/LND-62) | - |
-| 18 | ⏳ | [67 • Meeting Rooms](problems/merge-intervals/LND-63-67-meeting-rooms.md) | 🟢 Easy | Merge Intervals | [📝 LC](https://leetcode.com/problems/meeting-rooms) | [LND-63](https://rohitroy007.atlassian.net/browse/LND-63) | - |
-| 19 | ⏳ | [64 • Insert Interval](problems/merge-intervals/LND-65-64-insert-interval.md) | 🟡 Medium | Merge Intervals | [📝 LC](https://leetcode.com/problems/insert-interval) | [LND-65](https://rohitroy007.atlassian.net/browse/LND-65) | - |
-| 20 | ⏳ | [65 • Merge Intervals](problems/merge-intervals/LND-67-65-merge-intervals.md) | 🟡 Medium | Merge Intervals | [📝 LC](https://leetcode.com/problems/merge-intervals) | [LND-67](https://rohitroy007.atlassian.net/browse/LND-67) | - |
-| 21 | ⏳ | [68 • Meeting Rooms II](problems/merge-intervals/LND-69-68-meeting-rooms-ii.md) | 🟡 Medium | Merge Intervals | [📝 LC](https://leetcode.com/problems/meeting-rooms-ii) | [LND-69](https://rohitroy007.atlassian.net/browse/LND-69) | - |
+| 31 | ⏳ | [66 • Non-overlapping Intervals](problems/merge-intervals/LND-62-66-non-overlapping-intervals.md) | 🟡 Medium | Merge Intervals | [📝 LC](https://leetcode.com/problems/non-overlapping-intervals) | [LND-62](https://rohitroy007.atlassian.net/browse/LND-62) | - |
+| 32 | ⏳ | [67 • Meeting Rooms](problems/merge-intervals/LND-63-67-meeting-rooms.md) | 🟢 Easy | Merge Intervals | [📝 LC](https://leetcode.com/problems/meeting-rooms) | [LND-63](https://rohitroy007.atlassian.net/browse/LND-63) | - |
+| 33 | ⏳ | [64 • Insert Interval](problems/merge-intervals/LND-65-64-insert-interval.md) | 🟡 Medium | Merge Intervals | [📝 LC](https://leetcode.com/problems/insert-interval) | [LND-65](https://rohitroy007.atlassian.net/browse/LND-65) | - |
+| 34 | ⏳ | [65 • Merge Intervals](problems/merge-intervals/LND-67-65-merge-intervals.md) | 🟡 Medium | Merge Intervals | [📝 LC](https://leetcode.com/problems/merge-intervals) | [LND-67](https://rohitroy007.atlassian.net/browse/LND-67) | - |
+| 35 | ⏳ | [68 • Meeting Rooms II](problems/merge-intervals/LND-69-68-meeting-rooms-ii.md) | 🟡 Medium | Merge Intervals | [📝 LC](https://leetcode.com/problems/meeting-rooms-ii) | [LND-69](https://rohitroy007.atlassian.net/browse/LND-69) | - |
 
 ### Sliding Window
 **Progress:** 0/6 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 22 | ⏳ | [15 • Minimum Window Substring](problems/sliding-window/LND-122-15-minimum-window-substring.md) | 🔴 Hard | Sliding Window | [📝 LC](https://leetcode.com/problems/minimum-window-substring) | [LND-122](https://rohitroy007.atlassian.net/browse/LND-122) | - |
-| 23 | ⏳ | [13 • Longest Substring Without Repeating Characters](problems/sliding-window/LND-126-13-longest-substring-without-repeating-characters.md) | 🟡 Medium | Sliding Window | [📝 LC](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [LND-126](https://rohitroy007.atlassian.net/browse/LND-126) | - |
-| 24 | ⏳ | [14 • Longest Repeating Character Replacement](problems/sliding-window/LND-127-14-longest-repeating-character-replacement.md) | 🟡 Medium | Sliding Window | [📝 LC](https://leetcode.com/problems/longest-repeating-character-replacement) | [LND-127](https://rohitroy007.atlassian.net/browse/LND-127) | - |
-| 25 | ⏳ | [55 • Palindromic Substrings](problems/sliding-window/LND-43-55-palindromic-substrings.md) | 🟡 Medium | Sliding Window | [📝 LC](https://leetcode.com/problems/palindromic-substrings) | [LND-43](https://rohitroy007.atlassian.net/browse/LND-43) | - |
-| 26 | ⏳ | [54 • Longest Palindromic Substring](problems/sliding-window/LND-48-54-longest-palindromic-substring.md) | 🟡 Medium | Sliding Window | [📝 LC](https://leetcode.com/problems/longest-palindromic-substring) | [LND-48](https://rohitroy007.atlassian.net/browse/LND-48) | - |
-| 27 | ⏳ | [58 • Maximum Product Subarray](problems/sliding-window/LND-52-58-maximum-product-subarray.md) | 🟡 Medium | Sliding Window | [📝 LC](https://leetcode.com/problems/maximum-product-subarray) | [LND-52](https://rohitroy007.atlassian.net/browse/LND-52) | - |
+| 36 | ⏳ | [15 • Minimum Window Substring](problems/sliding-window/LND-122-15-minimum-window-substring.md) | 🔴 Hard | Sliding Window | [📝 LC](https://leetcode.com/problems/minimum-window-substring) | [LND-122](https://rohitroy007.atlassian.net/browse/LND-122) | - |
+| 37 | ⏳ | [13 • Longest Substring Without Repeating Characters](problems/sliding-window/LND-126-13-longest-substring-without-repeating-characters.md) | 🟡 Medium | Sliding Window | [📝 LC](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [LND-126](https://rohitroy007.atlassian.net/browse/LND-126) | - |
+| 38 | ⏳ | [14 • Longest Repeating Character Replacement](problems/sliding-window/LND-127-14-longest-repeating-character-replacement.md) | 🟡 Medium | Sliding Window | [📝 LC](https://leetcode.com/problems/longest-repeating-character-replacement) | [LND-127](https://rohitroy007.atlassian.net/browse/LND-127) | - |
+| 39 | ⏳ | [55 • Palindromic Substrings](problems/sliding-window/LND-43-55-palindromic-substrings.md) | 🟡 Medium | Sliding Window | [📝 LC](https://leetcode.com/problems/palindromic-substrings) | [LND-43](https://rohitroy007.atlassian.net/browse/LND-43) | - |
+| 40 | ⏳ | [54 • Longest Palindromic Substring](problems/sliding-window/LND-48-54-longest-palindromic-substring.md) | 🟡 Medium | Sliding Window | [📝 LC](https://leetcode.com/problems/longest-palindromic-substring) | [LND-48](https://rohitroy007.atlassian.net/browse/LND-48) | - |
+| 41 | ⏳ | [58 • Maximum Product Subarray](problems/sliding-window/LND-52-58-maximum-product-subarray.md) | 🟡 Medium | Sliding Window | [📝 LC](https://leetcode.com/problems/maximum-product-subarray) | [LND-52](https://rohitroy007.atlassian.net/browse/LND-52) | - |
+
+### String Manipulation
+**Progress:** 0/1 completed (0%)
+
+| # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
+|---|--------|---------|------------|---------|-----------|------|-------|
+| 42 | ⏳ | [7 • Encode and Decode Strings](problems/string-manipulation/LND-32-7-encode-and-decode-strings.md) | 🟡 Medium | String Manipulation | [📝 LC](https://leetcode.com/problems/encode-and-decode-strings) | [LND-32](https://rohitroy007.atlassian.net/browse/LND-32) | - |
 
 ### Subsets
 **Progress:** 0/2 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 28 | ⏳ | [44 • Combination Sum](problems/subsets/LND-17-44-combination-sum.md) | 🟡 Medium | Subsets | [📝 LC](https://leetcode.com/problems/combination-sum) | [LND-17](https://rohitroy007.atlassian.net/browse/LND-17) | - |
-| 29 | ⏳ | [45 • Word Search](problems/subsets/LND-19-45-word-search.md) | 🟡 Medium | Subsets | [📝 LC](https://leetcode.com/problems/word-search) | [LND-19](https://rohitroy007.atlassian.net/browse/LND-19) | - |
+| 43 | ⏳ | [44 • Combination Sum](problems/subsets/LND-17-44-combination-sum.md) | 🟡 Medium | Subsets | [📝 LC](https://leetcode.com/problems/combination-sum) | [LND-17](https://rohitroy007.atlassian.net/browse/LND-17) | - |
+| 44 | ⏳ | [45 • Word Search](problems/subsets/LND-19-45-word-search.md) | 🟡 Medium | Subsets | [📝 LC](https://leetcode.com/problems/word-search) | [LND-19](https://rohitroy007.atlassian.net/browse/LND-19) | - |
 
 ### Top K Elements
 **Progress:** 0/3 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 30 | 🟡 | [Blind75-NeetCode](problems/top-k-elements/LND-152-blind75-neetcode.md) | 🟡 Medium | Top K Elements | - | [LND-152](https://rohitroy007.atlassian.net/browse/LND-152) | - |
-| 31 | ⏳ | [5 • Top K Frequent Elements](problems/top-k-elements/LND-36-5-top-k-frequent-elements.md) | 🟡 Medium | Top K Elements | [📝 LC](https://leetcode.com/problems/top-k-frequent-elements) | [LND-36](https://rohitroy007.atlassian.net/browse/LND-36) | - |
-| 32 | ⏳ | [63 • Jump Game](problems/top-k-elements/LND-74-63-jump-game.md) | 🟡 Medium | Top K Elements | [📝 LC](https://leetcode.com/problems/jump-game) | [LND-74](https://rohitroy007.atlassian.net/browse/LND-74) | - |
+| 45 | 🟡 | [Blind75-NeetCode](problems/top-k-elements/LND-152-blind75-neetcode.md) | 🟡 Medium | Top K Elements | - | [LND-152](https://rohitroy007.atlassian.net/browse/LND-152) | - |
+| 46 | ⏳ | [5 • Top K Frequent Elements](problems/top-k-elements/LND-36-5-top-k-frequent-elements.md) | 🟡 Medium | Top K Elements | [📝 LC](https://leetcode.com/problems/top-k-frequent-elements) | [LND-36](https://rohitroy007.atlassian.net/browse/LND-36) | - |
+| 47 | ⏳ | [63 • Jump Game](problems/top-k-elements/LND-74-63-jump-game.md) | 🟡 Medium | Top K Elements | [📝 LC](https://leetcode.com/problems/jump-game) | [LND-74](https://rohitroy007.atlassian.net/browse/LND-74) | - |
 
 ### Topological Sort
 **Progress:** 0/5 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 33 | ⏳ | [48 • Pacific Atlantic Water Flow](problems/topological-sort/LND-23-48-pacific-atlantic-water-flow.md) | 🟡 Medium | Topological Sort | [📝 LC](https://leetcode.com/problems/pacific-atlantic-water-flow) | [LND-23](https://rohitroy007.atlassian.net/browse/LND-23) | - |
-| 34 | ⏳ | [46 • Number of Islands](problems/topological-sort/LND-24-46-number-of-islands.md) | 🟡 Medium | Topological Sort | [📝 LC](https://leetcode.com/problems/number-of-islands) | [LND-24](https://rohitroy007.atlassian.net/browse/LND-24) | - |
-| 35 | ⏳ | [47 • Clone Graph](problems/topological-sort/LND-25-47-clone-graph.md) | 🟡 Medium | Topological Sort | [📝 LC](https://leetcode.com/problems/clone-graph) | [LND-25](https://rohitroy007.atlassian.net/browse/LND-25) | - |
-| 36 | ⏳ | [49 • Course Schedule](problems/topological-sort/LND-58-49-course-schedule.md) | 🟡 Medium | Topological Sort | [📝 LC](https://leetcode.com/problems/course-schedule) | [LND-58](https://rohitroy007.atlassian.net/browse/LND-58) | - |
-| 37 | ⏳ | [50 • Number of Connected Components In An Undirected Graph](problems/topological-sort/LND-59-50-number-of-connected-components-in-an-undirected-graph.md) | 🟡 Medium | Topological Sort | [📝 LC](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph) | [LND-59](https://rohitroy007.atlassian.net/browse/LND-59) | - |
+| 48 | ⏳ | [48 • Pacific Atlantic Water Flow](problems/topological-sort/LND-23-48-pacific-atlantic-water-flow.md) | 🟡 Medium | Topological Sort | [📝 LC](https://leetcode.com/problems/pacific-atlantic-water-flow) | [LND-23](https://rohitroy007.atlassian.net/browse/LND-23) | - |
+| 49 | ⏳ | [46 • Number of Islands](problems/topological-sort/LND-24-46-number-of-islands.md) | 🟡 Medium | Topological Sort | [📝 LC](https://leetcode.com/problems/number-of-islands) | [LND-24](https://rohitroy007.atlassian.net/browse/LND-24) | - |
+| 50 | ⏳ | [47 • Clone Graph](problems/topological-sort/LND-25-47-clone-graph.md) | 🟡 Medium | Topological Sort | [📝 LC](https://leetcode.com/problems/clone-graph) | [LND-25](https://rohitroy007.atlassian.net/browse/LND-25) | - |
+| 51 | ⏳ | [49 • Course Schedule](problems/topological-sort/LND-58-49-course-schedule.md) | 🟡 Medium | Topological Sort | [📝 LC](https://leetcode.com/problems/course-schedule) | [LND-58](https://rohitroy007.atlassian.net/browse/LND-58) | - |
+| 52 | ⏳ | [50 • Number of Connected Components In An Undirected Graph](problems/topological-sort/LND-59-50-number-of-connected-components-in-an-undirected-graph.md) | 🟡 Medium | Topological Sort | [📝 LC](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph) | [LND-59](https://rohitroy007.atlassian.net/browse/LND-59) | - |
 
 ### Tree Bfs
 **Progress:** 0/1 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 38 | ⏳ | [36 • Binary Tree Level Order Traversal](problems/tree-bfs/LND-13-36-binary-tree-level-order-traversal.md) | 🟡 Medium | Tree Bfs | [📝 LC](https://leetcode.com/problems/binary-tree-level-order-traversal) | [LND-13](https://rohitroy007.atlassian.net/browse/LND-13) | - |
+| 53 | ⏳ | [36 • Binary Tree Level Order Traversal](problems/tree-bfs/LND-13-36-binary-tree-level-order-traversal.md) | 🟡 Medium | Tree Bfs | [📝 LC](https://leetcode.com/problems/binary-tree-level-order-traversal) | [LND-13](https://rohitroy007.atlassian.net/browse/LND-13) | - |
 
 ### Tree Dfs
 **Progress:** 0/14 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 39 | ⏳ | [38 • Kth Smallest Element in a BST](problems/tree-dfs/LND-10-38-kth-smallest-element-in-a-bst.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | [LND-10](https://rohitroy007.atlassian.net/browse/LND-10) | - |
-| 40 | ⏳ | [17 • Min Stack](problems/tree-dfs/LND-112-17-min-stack.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/min-stack) | [LND-112](https://rohitroy007.atlassian.net/browse/LND-112) | - |
-| 41 | ⏳ | [18 • Evaluate Reverse Polish Notation](problems/tree-dfs/LND-114-18-evaluate-reverse-polish-notation.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/evaluate-reverse-polish-notation) | [LND-114](https://rohitroy007.atlassian.net/browse/LND-114) | - |
-| 42 | ⏳ | [35 • Lowest Common Ancestor of a Binary Search Tree](problems/tree-dfs/LND-12-35-lowest-common-ancestor-of-a-binary-search-tree.md) | 🟢 Easy | Tree Dfs | [📝 LC](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [LND-12](https://rohitroy007.atlassian.net/browse/LND-12) | - |
-| 43 | ⏳ | [16 • Valid Parentheses](problems/tree-dfs/LND-124-16-valid-parentheses.md) | 🟢 Easy | Tree Dfs | [📝 LC](https://leetcode.com/problems/valid-parentheses) | [LND-124](https://rohitroy007.atlassian.net/browse/LND-124) | - |
-| 44 | ⏳ | [20 • Daily Temperatures](problems/tree-dfs/LND-136-20-daily-temperatures.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/daily-temperatures) | [LND-136](https://rohitroy007.atlassian.net/browse/LND-136) | - |
-| 45 | ⏳ | [19 • Generate Parentheses](problems/tree-dfs/LND-150-19-generate-parentheses.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/generate-parentheses) | [LND-150](https://rohitroy007.atlassian.net/browse/LND-150) | - |
-| 46 | ⏳ | [33 • Same Tree](problems/tree-dfs/LND-3-33-same-tree.md) | 🟢 Easy | Tree Dfs | [📝 LC](https://leetcode.com/problems/same-tree) | [LND-3](https://rohitroy007.atlassian.net/browse/LND-3) | - |
-| 47 | ⏳ | [40 • Implement Trie (Prefix Tree)](problems/tree-dfs/LND-31-40-implement-trie-prefix-tree.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/implement-trie-prefix-tree) | [LND-31](https://rohitroy007.atlassian.net/browse/LND-31) | - |
-| 48 | ⏳ | [39 • Binary Tree Maximum Path Sum](problems/tree-dfs/LND-39-39-binary-tree-maximum-path-sum.md) | 🔴 Hard | Tree Dfs | [📝 LC](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [LND-39](https://rohitroy007.atlassian.net/browse/LND-39) | - |
-| 49 | ⏳ | [34 • Subtree of Another Tree](problems/tree-dfs/LND-4-34-subtree-of-another-tree.md) | 🟢 Easy | Tree Dfs | [📝 LC](https://leetcode.com/problems/subtree-of-another-tree) | [LND-4](https://rohitroy007.atlassian.net/browse/LND-4) | - |
-| 50 | ⏳ | [31 • Invert Binary Tree](problems/tree-dfs/LND-6-31-invert-binary-tree.md) | 🟢 Easy | Tree Dfs | [📝 LC](https://leetcode.com/problems/invert-binary-tree) | [LND-6](https://rohitroy007.atlassian.net/browse/LND-6) | - |
-| 51 | ⏳ | [32 • Maximum Depth of Binary Tree](problems/tree-dfs/LND-7-32-maximum-depth-of-binary-tree.md) | 🟢 Easy | Tree Dfs | [📝 LC](https://leetcode.com/problems/maximum-depth-of-binary-tree) | [LND-7](https://rohitroy007.atlassian.net/browse/LND-7) | - |
-| 52 | ⏳ | [37 • Validate Binary Search Tree](problems/tree-dfs/LND-9-37-validate-binary-search-tree.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/validate-binary-search-tree) | [LND-9](https://rohitroy007.atlassian.net/browse/LND-9) | - |
+| 54 | ⏳ | [38 • Kth Smallest Element in a BST](problems/tree-dfs/LND-10-38-kth-smallest-element-in-a-bst.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/kth-smallest-element-in-a-bst) | [LND-10](https://rohitroy007.atlassian.net/browse/LND-10) | - |
+| 55 | ⏳ | [17 • Min Stack](problems/tree-dfs/LND-112-17-min-stack.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/min-stack) | [LND-112](https://rohitroy007.atlassian.net/browse/LND-112) | - |
+| 56 | ⏳ | [18 • Evaluate Reverse Polish Notation](problems/tree-dfs/LND-114-18-evaluate-reverse-polish-notation.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/evaluate-reverse-polish-notation) | [LND-114](https://rohitroy007.atlassian.net/browse/LND-114) | - |
+| 57 | ⏳ | [35 • Lowest Common Ancestor of a Binary Search Tree](problems/tree-dfs/LND-12-35-lowest-common-ancestor-of-a-binary-search-tree.md) | 🟢 Easy | Tree Dfs | [📝 LC](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | [LND-12](https://rohitroy007.atlassian.net/browse/LND-12) | - |
+| 58 | ⏳ | [16 • Valid Parentheses](problems/tree-dfs/LND-124-16-valid-parentheses.md) | 🟢 Easy | Tree Dfs | [📝 LC](https://leetcode.com/problems/valid-parentheses) | [LND-124](https://rohitroy007.atlassian.net/browse/LND-124) | - |
+| 59 | ⏳ | [20 • Daily Temperatures](problems/tree-dfs/LND-136-20-daily-temperatures.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/daily-temperatures) | [LND-136](https://rohitroy007.atlassian.net/browse/LND-136) | - |
+| 60 | ⏳ | [19 • Generate Parentheses](problems/tree-dfs/LND-150-19-generate-parentheses.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/generate-parentheses) | [LND-150](https://rohitroy007.atlassian.net/browse/LND-150) | - |
+| 61 | ⏳ | [33 • Same Tree](problems/tree-dfs/LND-3-33-same-tree.md) | 🟢 Easy | Tree Dfs | [📝 LC](https://leetcode.com/problems/same-tree) | [LND-3](https://rohitroy007.atlassian.net/browse/LND-3) | - |
+| 62 | ⏳ | [40 • Implement Trie (Prefix Tree)](problems/tree-dfs/LND-31-40-implement-trie-prefix-tree.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/implement-trie-prefix-tree) | [LND-31](https://rohitroy007.atlassian.net/browse/LND-31) | - |
+| 63 | ⏳ | [39 • Binary Tree Maximum Path Sum](problems/tree-dfs/LND-39-39-binary-tree-maximum-path-sum.md) | 🔴 Hard | Tree Dfs | [📝 LC](https://leetcode.com/problems/binary-tree-maximum-path-sum) | [LND-39](https://rohitroy007.atlassian.net/browse/LND-39) | - |
+| 64 | ⏳ | [34 • Subtree of Another Tree](problems/tree-dfs/LND-4-34-subtree-of-another-tree.md) | 🟢 Easy | Tree Dfs | [📝 LC](https://leetcode.com/problems/subtree-of-another-tree) | [LND-4](https://rohitroy007.atlassian.net/browse/LND-4) | - |
+| 65 | ⏳ | [31 • Invert Binary Tree](problems/tree-dfs/LND-6-31-invert-binary-tree.md) | 🟢 Easy | Tree Dfs | [📝 LC](https://leetcode.com/problems/invert-binary-tree) | [LND-6](https://rohitroy007.atlassian.net/browse/LND-6) | - |
+| 66 | ⏳ | [32 • Maximum Depth of Binary Tree](problems/tree-dfs/LND-7-32-maximum-depth-of-binary-tree.md) | 🟢 Easy | Tree Dfs | [📝 LC](https://leetcode.com/problems/maximum-depth-of-binary-tree) | [LND-7](https://rohitroy007.atlassian.net/browse/LND-7) | - |
+| 67 | ⏳ | [37 • Validate Binary Search Tree](problems/tree-dfs/LND-9-37-validate-binary-search-tree.md) | 🟡 Medium | Tree Dfs | [📝 LC](https://leetcode.com/problems/validate-binary-search-tree) | [LND-9](https://rohitroy007.atlassian.net/browse/LND-9) | - |
+
+### Trie
+**Progress:** 0/2 completed (0%)
+
+| # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
+|---|--------|---------|------------|---------|-----------|------|-------|
+| 68 | ⏳ | [42 • Word Search II](problems/trie/LND-20-42-word-search-ii.md) | 🔴 Hard | Trie | [📝 LC](https://leetcode.com/problems/word-search-ii) | [LND-20](https://rohitroy007.atlassian.net/browse/LND-20) | - |
+| 69 | ⏳ | [41 • Design Add and Search Words Data Structure](problems/trie/LND-34-41-design-add-and-search-words-data-structure.md) | 🟡 Medium | Trie | [📝 LC](https://leetcode.com/problems/design-add-and-search-words-data-structure) | [LND-34](https://rohitroy007.atlassian.net/browse/LND-34) | - |
 
 ### Two Heaps
 **Progress:** 0/1 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 53 | ⏳ | [43 • Find Median from Data Stream](problems/two-heaps/LND-22-43-find-median-from-data-stream.md) | 🔴 Hard | Two Heaps | [📝 LC](https://leetcode.com/problems/find-median-from-data-stream) | [LND-22](https://rohitroy007.atlassian.net/browse/LND-22) | - |
+| 70 | ⏳ | [43 • Find Median from Data Stream](problems/two-heaps/LND-22-43-find-median-from-data-stream.md) | 🔴 Hard | Two Heaps | [📝 LC](https://leetcode.com/problems/find-median-from-data-stream) | [LND-22](https://rohitroy007.atlassian.net/browse/LND-22) | - |
 
 ### Two Pointers
-**Progress:** 2/24 completed (8%)
+**Progress:** 0/7 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 54 | ✅ | [First Task](problems/two-pointers/LND-1-first-task.md) | 🟡 Medium | Two Pointers | - | [LND-1](https://rohitroy007.atlassian.net/browse/LND-1) | - |
-| 55 | ⏳ | [11 • Container With Most Water](problems/two-pointers/LND-116-11-container-with-most-water.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/container-with-most-water) | [LND-116](https://rohitroy007.atlassian.net/browse/LND-116) | - |
-| 56 | ⏳ | [12 • Best Time to Buy and Sell Stock](problems/two-pointers/LND-117-12-best-time-to-buy-and-sell-stock.md) | 🟢 Easy | Two Pointers | [📝 LC](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [LND-117](https://rohitroy007.atlassian.net/browse/LND-117) | - |
-| 57 | ⏳ | [9 • Valid Palindrome](problems/two-pointers/LND-119-9-valid-palindrome.md) | 🟢 Easy | Two Pointers | [📝 LC](https://leetcode.com/problems/valid-palindrome) | [LND-119](https://rohitroy007.atlassian.net/browse/LND-119) | - |
-| 58 | ⏳ | [10 • 3Sum](problems/two-pointers/LND-121-10-3sum.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/3sum) | [LND-121](https://rohitroy007.atlassian.net/browse/LND-121) | - |
-| 59 | ⏳ | [28 • Remove Nth Node From End of List](problems/two-pointers/LND-132-28-remove-nth-node-from-end-of-list.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | [LND-132](https://rohitroy007.atlassian.net/browse/LND-132) | - |
-| 60 | ⏳ | [27 • Reorder List](problems/two-pointers/LND-141-27-reorder-list.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/reorder-list) | [LND-141](https://rohitroy007.atlassian.net/browse/LND-141) | - |
-| 61 | ⏳ | [42 • Word Search II](problems/two-pointers/LND-20-42-word-search-ii.md) | 🔴 Hard | Two Pointers | [📝 LC](https://leetcode.com/problems/word-search-ii) | [LND-20](https://rohitroy007.atlassian.net/browse/LND-20) | - |
-| 62 | ⏳ | [4 • Group Anagrams](problems/two-pointers/LND-28-4-group-anagrams.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/group-anagrams) | [LND-28](https://rohitroy007.atlassian.net/browse/LND-28) | - |
-| 63 | ✅ | [1 • Two Sum](problems/two-pointers/LND-29-1-two-sum.md) | 🟢 Easy | Two Pointers | [📝 LC](https://leetcode.com/problems/two-sum) | [LND-29](https://rohitroy007.atlassian.net/browse/LND-29) | 📝 |
-| 64 | ✅ | [2 • Contains Duplicate](problems/two-pointers/LND-30-2-contains-duplicate.md) | 🟢 Easy | Two Pointers | [📝 LC](https://leetcode.com/problems/contains-duplicate) | [LND-30](https://rohitroy007.atlassian.net/browse/LND-30) | 📝 |
-| 65 | ⏳ | [7 • Encode and Decode Strings](problems/two-pointers/LND-32-7-encode-and-decode-strings.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/encode-and-decode-strings) | [LND-32](https://rohitroy007.atlassian.net/browse/LND-32) | - |
-| 66 | ⏳ | [41 • Design Add and Search Words Data Structure](problems/two-pointers/LND-34-41-design-add-and-search-words-data-structure.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/design-add-and-search-words-data-structure) | [LND-34](https://rohitroy007.atlassian.net/browse/LND-34) | - |
-| 67 | ⏳ | [8 • Longest Consecutive Sequence](problems/two-pointers/LND-35-8-longest-consecutive-sequence.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/longest-consecutive-sequence) | [LND-35](https://rohitroy007.atlassian.net/browse/LND-35) | - |
-| 68 | ⏳ | [56 • Decode Ways](problems/two-pointers/LND-45-56-decode-ways.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/decode-ways) | [LND-45](https://rohitroy007.atlassian.net/browse/LND-45) | - |
-| 69 | ⏳ | [53 • House Robber II](problems/two-pointers/LND-47-53-house-robber-ii.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/house-robber-ii) | [LND-47](https://rohitroy007.atlassian.net/browse/LND-47) | - |
-| 70 | ⏳ | [52 • House Robber](problems/two-pointers/LND-56-52-house-robber.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/house-robber) | [LND-56](https://rohitroy007.atlassian.net/browse/LND-56) | - |
-| 71 | ⏳ | [59 • Word Break](problems/two-pointers/LND-72-59-word-break.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/word-break) | [LND-72](https://rohitroy007.atlassian.net/browse/LND-72) | - |
-| 72 | ⏳ | [62 • Longest Common Subsequence](problems/two-pointers/LND-73-62-longest-common-subsequence.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/longest-common-subsequence) | [LND-73](https://rohitroy007.atlassian.net/browse/LND-73) | - |
-| 73 | ⏳ | [60 • Longest Increasing Subsequence](problems/two-pointers/LND-76-60-longest-increasing-subsequence.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/longest-increasing-subsequence) | [LND-76](https://rohitroy007.atlassian.net/browse/LND-76) | - |
-| 74 | ⏳ | [61 • Unique Paths](problems/two-pointers/LND-78-61-unique-paths.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/unique-paths) | [LND-78](https://rohitroy007.atlassian.net/browse/LND-78) | - |
-| 75 | ⏳ | [69 • Rotate Image](problems/two-pointers/LND-89-69-rotate-image.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/rotate-image) | [LND-89](https://rohitroy007.atlassian.net/browse/LND-89) | - |
-| 76 | ⏳ | [70 • Spiral Matrix](problems/two-pointers/LND-90-70-spiral-matrix.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/spiral-matrix) | [LND-90](https://rohitroy007.atlassian.net/browse/LND-90) | - |
-| 77 | ⏳ | [71 • Set Matrix Zeroes](problems/two-pointers/LND-94-71-set-matrix-zeroes.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/set-matrix-zeroes) | [LND-94](https://rohitroy007.atlassian.net/browse/LND-94) | - |
+| 71 | ✅ | [First Task](problems/two-pointers/LND-1-first-task.md) | 🟡 Medium | Two Pointers | - | [LND-1](https://rohitroy007.atlassian.net/browse/LND-1) | - |
+| 72 | ⏳ | [11 • Container With Most Water](problems/two-pointers/LND-116-11-container-with-most-water.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/container-with-most-water) | [LND-116](https://rohitroy007.atlassian.net/browse/LND-116) | - |
+| 73 | ⏳ | [12 • Best Time to Buy and Sell Stock](problems/two-pointers/LND-117-12-best-time-to-buy-and-sell-stock.md) | 🟢 Easy | Two Pointers | [📝 LC](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [LND-117](https://rohitroy007.atlassian.net/browse/LND-117) | - |
+| 74 | ⏳ | [9 • Valid Palindrome](problems/two-pointers/LND-119-9-valid-palindrome.md) | 🟢 Easy | Two Pointers | [📝 LC](https://leetcode.com/problems/valid-palindrome) | [LND-119](https://rohitroy007.atlassian.net/browse/LND-119) | - |
+| 75 | ⏳ | [10 • 3Sum](problems/two-pointers/LND-121-10-3sum.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/3sum) | [LND-121](https://rohitroy007.atlassian.net/browse/LND-121) | - |
+| 76 | ⏳ | [28 • Remove Nth Node From End of List](problems/two-pointers/LND-132-28-remove-nth-node-from-end-of-list.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | [LND-132](https://rohitroy007.atlassian.net/browse/LND-132) | - |
+| 77 | ⏳ | [27 • Reorder List](problems/two-pointers/LND-141-27-reorder-list.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/reorder-list) | [LND-141](https://rohitroy007.atlassian.net/browse/LND-141) | - |
 
 <!-- PROBLEM_TRACKER_END -->

@@ -1,13 +1,13 @@
-# 41 - Design Add and Search Words Data Structure
+# 60 - Longest Increasing Subsequence
 
-**Jira Ticket:** [LND-34](https://rohitroy007.atlassian.net/browse/LND-34)  
-**LeetCode:** https://leetcode.com/problems/design-add-and-search-words-data-structure  
-**Pattern:** Two Pointers  
+**Jira Ticket:** [LND-76](https://rohitroy007.atlassian.net/browse/LND-76)  
+**LeetCode:** https://leetcode.com/problems/longest-increasing-subsequence  
+**Pattern:** Dynamic Programming
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium
 
-**Labels:** Medium, Tries  
+**Labels:** 1-D_Dynamic_Programming, Medium  
 **Created:** 2025-08-21  
 **Last Updated:** 2025-08-22
 
@@ -15,12 +15,12 @@
 
 ## 📝 Problem Statement
 
-Problem URL: https://leetcode.com/problems/design-add-and-search-words-data-structure
+Problem URL: https://leetcode.com/problems/longest-increasing-subsequence
 Problem Description:
-Solve the Design Add and Search Words Data Structure coding problem according to the LeetCode description.
+Solve the Longest Increasing Subsequence coding problem according to the LeetCode description.
 Visit the problem URL for the complete description and examples.
 Difficulty: Medium
-Category: Tries
+Category: 1-D Dynamic Programming
 
 ---
 
@@ -156,7 +156,7 @@ Status: ⏳ Not Tested
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#two-pointers)
-- LeetCode Discussion: https://leetcode.com/problems/design-add-and-search-words-data-structure/discuss/
+- LeetCode Discussion: https://leetcode.com/problems/longest-increasing-subsequence/discuss/
 
 ---
 

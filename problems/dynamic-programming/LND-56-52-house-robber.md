@@ -1,13 +1,13 @@
-# 42 - Word Search II
+# 52 - House Robber
 
-**Jira Ticket:** [LND-20](https://rohitroy007.atlassian.net/browse/LND-20)  
-**LeetCode:** https://leetcode.com/problems/word-search-ii  
-**Pattern:** Two Pointers  
-**Difficulty:** Hard  
+**Jira Ticket:** [LND-56](https://rohitroy007.atlassian.net/browse/LND-56)  
+**LeetCode:** https://leetcode.com/problems/house-robber  
+**Pattern:** Dynamic Programming
+**Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium
 
-**Labels:** Hard, Tries  
+**Labels:** 1-D_Dynamic_Programming, Medium  
 **Created:** 2025-08-21  
 **Last Updated:** 2025-08-22
 
@@ -15,12 +15,12 @@
 
 ## 📝 Problem Statement
 
-Problem URL: https://leetcode.com/problems/word-search-ii
+Problem URL: https://leetcode.com/problems/house-robber
 Problem Description:
-Solve the Word Search II coding problem according to the LeetCode description.
+Solve the House Robber coding problem according to the LeetCode description.
 Visit the problem URL for the complete description and examples.
-Difficulty: Hard
-Category: Tries
+Difficulty: Medium
+Category: 1-D Dynamic Programming
 
 ---
 
@@ -156,7 +156,7 @@ Status: ⏳ Not Tested
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#two-pointers)
-- LeetCode Discussion: https://leetcode.com/problems/word-search-ii/discuss/
+- LeetCode Discussion: https://leetcode.com/problems/house-robber/discuss/
 
 ---
 
