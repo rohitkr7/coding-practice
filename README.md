@@ -17,7 +17,7 @@ Your Jira Board: [LND Project](https://rohitroy007.atlassian.net/jira/software/c
 ## 📚 Resources
 
 ### 1. Patterns Guide
-See [`PATTERNS_GUIDE.md`](./PATTERNS_GUIDE.md) for a comprehensive guide to 16 coding patterns that solve most interview problems.
+See [`PATTERNS_GUIDE.md`](./PATTERNS_GUIDE.md) for a comprehensive guide to 20 coding patterns that solve most interview problems.
 
 ### 2. Windsurf Workflow
 The `.windsurf/workflows/study-helper.md` file contains the automated workflow for:
@@ -126,22 +126,27 @@ LnD/
 │   └── workflows/
 │       └── study-helper.md
 ├── problems/
-│   ├── sliding-window/
-│   ├── two-pointers/
-│   ├── fast-slow-pointers/
-│   ├── merge-intervals/
-│   ├── cyclic-sort/
-│   ├── linkedlist-reversal/
-│   ├── tree-bfs/
-│   ├── tree-dfs/
-│   ├── two-heaps/
-│   ├── subsets/
 │   ├── binary-search/
 │   ├── bitwise-xor/
-│   ├── top-k-elements/
+│   ├── cyclic-sort/
+│   ├── dynamic-programming/
+│   ├── fast-slow-pointers/
+│   ├── hash-table/
 │   ├── k-way-merge/
 │   ├── knapsack-dp/
-│   └── topological-sort/
+│   ├── linkedlist-reversal/
+│   ├── matrix/
+│   ├── merge-intervals/
+│   ├── sliding-window/
+│   ├── string-manipulation/
+│   ├── subsets/
+│   ├── top-k-elements/
+│   ├── topological-sort/
+│   ├── tree-bfs/
+│   ├── tree-dfs/
+│   ├── trie/
+│   ├── two-heaps/
+│   └── two-pointers/
 ├── notes/
 │   ├── weekly-reviews/
 │   └── key-learnings/
@@ -178,7 +183,7 @@ The AI assistant is configured to:
 ## 🎯 Goals
 
 - Build strong problem-solving fundamentals
-- Master the 16 essential coding patterns
+- Master the 20 essential coding patterns
 - Develop pattern recognition skills
 - Improve time and space complexity analysis
 - Build confidence in technical interviews
@@ -193,10 +198,10 @@ Happy Learning! 🚀
 <!-- PROBLEM_TRACKER_START -->
 ## 📊 Problem Tracker
 
-### Overall Progress: 3/77 Problems (3%)
+### Overall Progress: 4/77 Problems (5%)
 
 ```
-[█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 3%
+[██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 5%
 ```
 
 ### 📈 Progress by Difficulty
@@ -204,7 +209,7 @@ Happy Learning! 🚀
 | Difficulty | Solved | Total | Progress |
 |------------|--------|-------|----------|
 | 🟢 Easy | 3 | 21 | `[██░░░░░░░░░░░░░░░░░░] 14%` 14% |
-| 🟡 Medium | 0 | 51 | `[░░░░░░░░░░░░░░░░░░░░] 0%` 0% |
+| 🟡 Medium | 1 | 51 | `[░░░░░░░░░░░░░░░░░░░░] 1%` 1% |
 | 🔴 Hard | 0 | 5 | `[░░░░░░░░░░░░░░░░░░░░] 0%` 0% |
 
 ---
@@ -265,12 +270,12 @@ Happy Learning! 🚀
 | 17 | ⏳ | [29 • Linked List Cycle](problems/fast-slow-pointers/LND-14-29-linked-list-cycle.md) | 🟢 Easy | Fast Slow Pointers | [📝 LC](https://leetcode.com/problems/linked-list-cycle) | [LND-14](https://rohitroy007.atlassian.net/browse/LND-14) | - |
 
 ### Hash Table / Array & Hashing
-**Progress:** 3/5 completed (60%)
+**Progress:** 4/5 completed (80%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
 | 18 | ✅ | [3 • Valid Anagram](problems/hash-table/LND-27-3-valid-anagram.md) | 🟢 Easy | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/valid-anagram) | [LND-27](https://rohitroy007.atlassian.net/browse/LND-27) | 📝 |
-| 19 | ⏳ | [4 • Group Anagrams](problems/hash-table/LND-28-4-group-anagrams.md) | 🟡 Medium | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/group-anagrams) | [LND-28](https://rohitroy007.atlassian.net/browse/LND-28) | - |
+| 19 | ✅ | [4 • Group Anagrams](problems/hash-table/LND-28-4-group-anagrams.md) | 🟡 Medium | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/group-anagrams) | [LND-28](https://rohitroy007.atlassian.net/browse/LND-28) | 📝 |
 | 20 | ✅ | [1 • Two Sum](problems/hash-table/LND-29-1-two-sum.md) | 🟢 Easy | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/two-sum) | [LND-29](https://rohitroy007.atlassian.net/browse/LND-29) | 📝 |
 | 21 | ✅ | [2 • Contains Duplicate](problems/hash-table/LND-30-2-contains-duplicate.md) | 🟢 Easy | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/contains-duplicate) | [LND-30](https://rohitroy007.atlassian.net/browse/LND-30) | 📝 |
 | 22 | ⏳ | [8 • Longest Consecutive Sequence](problems/hash-table/LND-35-8-longest-consecutive-sequence.md) | 🟡 Medium | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/longest-consecutive-sequence) | [LND-35](https://rohitroy007.atlassian.net/browse/LND-35) | - |
