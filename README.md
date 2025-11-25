@@ -14,9 +14,9 @@ This workspace integrates with your Jira board to:
 
 **NEW!** Generate beautiful, print-ready flashcards for all your completed problems!
 
-### 📇 [**→ Print All Flashcards Now**](flashcards/print-all.html) ← 
+### 📇 [**→ Print All Flashcards Now**](https://htmlpreview.github.io/?https://github.com/rohitkr7/coding-practice/blob/main/flashcards/print-all.html) ←
 
-> **💡 Tip:** If viewing on GitHub, download the file or use [HTMLPreview](https://htmlpreview.github.io/?https://github.com/rohitkr7/coding-practice/blob/main/flashcards/print-all.html) to view in browser
+> **💡 Local users:** Open [`flashcards/print-all.html`](flashcards/print-all.html) directly
 
 **Features:**
 - 🖨️ **One-click printing** - Open HTML file and print
