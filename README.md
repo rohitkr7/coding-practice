@@ -10,6 +10,33 @@ This workspace integrates with your Jira board to:
 - Help you learn problem-solving approaches without giving away solutions
 - Monitor your progress and identify areas for improvement
 
+## 🎴 Printable Flashcards
+
+**NEW!** Generate beautiful, print-ready flashcards for all your completed problems!
+
+### 📇 [**→ Print All Flashcards Now**](flashcards/print-all.html) ←
+
+**Features:**
+- 🖨️ **One-click printing** - Open HTML file and print
+- 🎯 **Smart content** - Problem + hints on front, solution + algorithm on back
+- 🎨 **Color-coded** - Green (Easy), Yellow (Medium), Red (Hard)
+- 📏 **A4-optimized** - Perfect size for printing and studying
+- 🔢 **LeetCode numbers** - Shows #242, #1, etc. instead of Jira IDs
+- ⚡ **Auto-generated** - Created automatically when you document solutions
+
+**Quick Start:**
+1. Open [`flashcards/print-all.html`](flashcards/print-all.html) in browser
+2. Press ⌘P (Mac) or Ctrl+P (Windows)
+3. Enable "Background graphics" in print settings
+4. Print or Save as PDF
+5. Cut and study!
+
+**Current Status:** 4 problems ready to print (8 cards total)
+
+**Learn more:** See [`flashcards/README.md`](flashcards/README.md) for details
+
+---
+
 ## 📋 Jira Board
 
 Your Jira Board: [LND Project](https://rohitroy007.atlassian.net/jira/software/c/projects/LND/boards/35)
