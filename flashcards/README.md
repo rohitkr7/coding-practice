@@ -11,11 +11,11 @@ flashcards/
 ├── README.md              ← You are here
 ├── print-all.html         ← Open in browser to print all cards
 ├── individual/            ← One markdown file per problem
-│   ├── LND-27-valid-anagram.md
-│   ├── LND-28-group-anagrams.md
-│   ├── LND-29-two-sum.md
-│   └── LND-30-contains-duplicate.md
-└── by-pattern/            ← Organized by coding pattern (coming soon)
+│   ├── LC-3-valid-anagram.md
+│   ├── LC-4-group-anagrams.md
+│   ├── LC-1-two-sum.md
+│   └── LC-2-contains-duplicate.md
+└── by-pattern/            ← Organized by coding pattern (19 files)
 ```
 
 ---
