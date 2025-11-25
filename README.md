@@ -1,5 +1,7 @@
 # Learning & Development Tracker
 
+> **🏷️ Topics:** `leetcode` • `coding-interview` • `algorithms` • `data-structures` • `java` • `flashcards` • `interview-preparation` • `coding-patterns` • `study-guide` • `spaced-repetition`
+
 Welcome to your personalized Learning & Development workspace! This repository helps you track and solve coding problems systematically using proven algorithmic patterns.
 
 ## 🎯 Purpose
