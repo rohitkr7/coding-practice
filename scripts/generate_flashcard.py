@@ -28,6 +28,28 @@ def extract_problem_info(file_path):
         pattern_match = re.search(r'\*\*Pattern:\*\*\s*(.+?)(?:\s*\n|\s*$)', content)
         pattern = pattern_match.group(1).strip() if pattern_match else "Unknown"
         
+        # Extract LeetCode link if available
+        leetcode_match = re.search(r'\*\*LeetCode:\*\*\s*(https?://[^\s]+)', content)
+        leetcode_url = leetcode_match.group(1).strip() if leetcode_match else None
+        
+        # Extract LeetCode problem number from URL
+        # URL format: https://leetcode.com/problems/valid-anagram or https://leetcode.com/problems/valid-anagram/description
+        leetcode_num = None
+        if leetcode_url:
+            # Try to find the problem slug and map it, or extract from URL if number is present
+            slug_match = re.search(r'/problems/([^/]+)', leetcode_url)
+            if slug_match:
+                slug = slug_match.group(1)
+                # Common LeetCode problem mappings (add more as needed)
+                leetcode_numbers = {
+                    'two-sum': '1',
+                    'valid-anagram': '242',
+                    'group-anagrams': '49',
+                    'contains-duplicate': '217',
+                    # Add more mappings as you solve more problems
+                }
+                leetcode_num = leetcode_numbers.get(slug, None)
+        
         # Extract problem statement
         problem_match = re.search(r'## 📝 Problem Statement\s*\n\s*(.+?)(?:\n##|\Z)', content, re.DOTALL)
         problem_text = problem_match.group(1).strip() if problem_match else ""
@@ -48,6 +70,8 @@ def extract_problem_info(file_path):
         solution_code = code_match.group(1).strip() if code_match else ""
         
         return {
+            'leetcode_num': leetcode_num,
+            'leetcode_url': leetcode_url,
             'jira_id': jira_id,
             'title': title,
             'difficulty': difficulty,
@@ -320,8 +344,9 @@ def generate_flashcard_markdown(info):
     insight_line1 = formatted_insight_lines[0]
     insight_line2 = formatted_insight_lines[1]
     
-    # Format header line with title and difficulty
-    header_text = f"{info['jira_id']}  {clean_title[:30]}"
+    # Format header line with LeetCode number (or Jira ID as fallback) and title  
+    problem_id = info['leetcode_num'] if info.get('leetcode_num') else info['jira_id']
+    header_text = f"#{problem_id}  {clean_title[:30]}"
     header_line = format_card_line(f"{header_text}  {diff_emoji} {info['difficulty']}", CARD_WIDTH)
     
     # Format pattern line
@@ -333,14 +358,18 @@ def generate_flashcard_markdown(info):
     hint1 = format_card_line(f"• {hints[0]}", CARD_WIDTH)
     hint2 = format_card_line(f"• {hints[1]}", CARD_WIDTH)
     
+    # Use LeetCode number in heading
+    problem_id = info['leetcode_num'] if info.get('leetcode_num') else info['jira_id']
+    
     flashcard = f"""---
 id: {info['jira_id']}
+leetcode_num: {info.get('leetcode_num', 'N/A')}
 title: {clean_title}
 pattern: {info['pattern']}
 difficulty: {info['difficulty']}
 ---
 
-# {info['jira_id']}: {clean_title}
+# #{problem_id}: {clean_title}
 
 ## 🎴 FRONT (Problem)
 
@@ -371,7 +400,7 @@ difficulty: {info['difficulty']}
 
 ```
 {top_border}
-│  {format_card_line(f"{clean_title[:30]} - SOLUTION", CARD_WIDTH)}  │
+│  {format_card_line(f"#{problem_id}  {clean_title[:25]} - SOLUTION", CARD_WIDTH)}  │
 {mid_border}
 │  {format_card_line('', CARD_WIDTH)}  │
 │  {format_card_line('💡 KEY INSIGHT:', CARD_WIDTH)}  │
@@ -403,14 +432,33 @@ difficulty: {info['difficulty']}
 def generate_print_html(flashcards_dir):
     """Generate a single HTML file for printing all flashcards"""
     
-    flashcards = []
+    import re
+    
+    flashcards_data = []
     individual_dir = flashcards_dir / 'individual'
     
     for md_file in sorted(individual_dir.glob('*.md')):
         with open(md_file, 'r', encoding='utf-8') as f:
             content = f.read()
-            # Extract front and back sections
-            flashcards.append(content)
+            
+            # Extract problem ID and title from frontmatter
+            id_match = re.search(r'^id:\s*(.+)$', content, re.MULTILINE)
+            title_match = re.search(r'^title:\s*(.+)$', content, re.MULTILINE)
+            diff_match = re.search(r'^difficulty:\s*(\w+)$', content, re.MULTILINE)
+            
+            # Extract FRONT card content (inside the code block)
+            front_match = re.search(r'## 🎴 FRONT.*?```\n(.*?)```', content, re.DOTALL)
+            # Extract BACK card content
+            back_match = re.search(r'## 🎴 BACK.*?```\n(.*?)```', content, re.DOTALL)
+            
+            if front_match and back_match:
+                flashcards_data.append({
+                    'id': id_match.group(1) if id_match else 'Unknown',
+                    'title': title_match.group(1) if title_match else 'Unknown',
+                    'difficulty': diff_match.group(1) if diff_match else 'Unknown',
+                    'front': front_match.group(1).strip(),
+                    'back': back_match.group(1).strip()
+                })
     
     html = """<!DOCTYPE html>
 <html lang="en">
@@ -420,8 +468,8 @@ def generate_print_html(flashcards_dir):
     <title>LeetCode Flashcards - Print Ready</title>
     <style>
         @page {
-            size: 4in 6in;
-            margin: 0;
+            size: A4;
+            margin: 0.3cm;
         }
         
         * {
@@ -437,13 +485,16 @@ def generate_print_html(flashcards_dir):
         }
         
         .flashcard {
-            width: 4in;
-            height: 6in;
-            border: 2px solid #333;
+            width: 19cm;    /* Slightly narrower for better centering */
+            height: auto;   /* Height adjusts to content */
+            min-height: 12cm; /* Minimum height */
+            border: 3px solid #333;
             page-break-after: always;
-            padding: 0.25in;
+            padding: 1cm;   /* Even padding on all sides */
             position: relative;
             background: white;
+            margin: 1cm auto; /* Center horizontally and vertically */
+            box-sizing: border-box;
         }
         
         .flashcard.front {
@@ -454,9 +505,9 @@ def generate_print_html(flashcards_dir):
             background: #e9ecef;
         }
         
-        .flashcard.easy { border-color: #28a745; }
-        .flashcard.medium { border-color: #ffc107; }
-        .flashcard.hard { border-color: #dc3545; }
+        .flashcard.easy { border-color: #28a745; border-width: 3px; }
+        .flashcard.medium { border-color: #ffc107; border-width: 3px; }
+        .flashcard.hard { border-color: #dc3545; border-width: 3px; }
         
         .header {
             font-weight: bold;
@@ -501,7 +552,23 @@ def generate_print_html(flashcards_dir):
             }
             .flashcard {
                 margin: 20px auto;
-                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                border-radius: 4px;
+            }
+        }
+        
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+                padding: 0;
+            }
+            .flashcard {
+                margin: 1cm auto;  /* Keep centering when printing */
+                box-shadow: none;
+            }
+            @page {
+                margin: 0.3cm;
             }
         }
         
@@ -513,18 +580,51 @@ def generate_print_html(flashcards_dir):
                 display: none;
             }
         }
+        
+        pre {
+            white-space: pre;
+            font-family: 'Courier New', monospace;
+            font-size: 10pt;  /* Bigger font since card is bigger */
+            line-height: 1.4;
+            margin: 0 auto;
+            padding: 0;
+            display: table;  /* Makes pre element shrink-wrap and center */
+        }
     </style>
 </head>
 <body>
-    <div class="no-print" style="text-align: center; padding: 20px; background: white; margin-bottom: 20px;">
-        <h1>🎴 LeetCode Flashcards</h1>
-        <p><strong>Print Instructions:</strong> File → Print → Select "Print Backgrounds" → Print</p>
-        <p>Each problem has 2 cards: Front (Problem) and Back (Solution)</p>
+    <div class="no-print" style="text-align: center; padding: 20px; background: white; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <h1>🎴 LeetCode Flashcards - Print Ready</h1>
+        <p style="margin: 10px 0;"><strong>Total Problems:</strong> {len(flashcards_data)} problems × 2 cards = {len(flashcards_data) * 2} total cards</p>
+        <p style="margin: 10px 0;"><strong>Print Instructions:</strong></p>
+        <ol style="text-align: left; display: inline-block; margin: 10px auto;">
+            <li>File → Print (⌘P / Ctrl+P)</li>
+            <li>✅ Check "Print background graphics"</li>
+            <li>Select printer or "Save as PDF"</li>
+            <li>Print double-sided for front/back (optional)</li>
+            <li>Cut along borders (4×6 inches each)</li>
+        </ol>
+        <p style="margin-top: 15px; color: #666;">💡 Tip: Print on cardstock for durability!</p>
     </div>
 """
     
     # Add flashcard HTML for each problem
-    html += f"<p class='no-print'>Total flashcards: {len(flashcards) * 2}</p>\n"
+    for card in flashcards_data:
+        diff_class = card['difficulty'].lower()
+        
+        # FRONT card
+        html += f"""
+    <div class="flashcard front {diff_class}">
+        <pre>{card['front']}</pre>
+    </div>
+    
+    <!-- BACK card -->
+    <div class="flashcard back {diff_class}">
+        <pre>{card['back']}</pre>
+    </div>
+    
+"""
+    
     html += "</body></html>"
     
     return html
