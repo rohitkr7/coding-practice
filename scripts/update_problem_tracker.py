@@ -249,9 +249,9 @@ def generate_tracker_markdown(problems_by_pattern):
     
     return "\n".join(lines)
 
-def update_readme(tracker_content):
+def update_readme(tracker_content, repo_root):
     """Update README.md with the tracker content"""
-    readme_path = Path(__file__).parent / "README.md"
+    readme_path = repo_root / "README.md"
     
     if not readme_path.exists():
         print(f"README.md not found at {readme_path}")
@@ -287,7 +287,8 @@ def update_readme(tracker_content):
 def main():
     """Main function"""
     script_dir = Path(__file__).parent
-    problems_dir = script_dir / "problems"
+    repo_root = script_dir.parent  # Go up one level from scripts/ to LnD/
+    problems_dir = repo_root / "problems"
     
     if not problems_dir.exists():
         print(f"Error: Problems directory not found at {problems_dir}")
@@ -302,7 +303,7 @@ def main():
     tracker_content = generate_tracker_markdown(problems_by_pattern)
     
     print("💾 Updating README.md...")
-    update_readme(tracker_content)
+    update_readme(tracker_content, repo_root)
     
     print("✅ Done!")
 
