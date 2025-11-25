@@ -10,12 +10,12 @@ This workflow helps you revise the last 5 problems you've solved to reinforce le
 ## Workflow Steps
 
 ### 1. Fetch Recently Solved Problems
-- Connect to Jira board: https://rohitroy007.atlassian.net/jira/software/c/projects/LND/boards/35
-- Filter for problems marked as "Completed" or "Done"
-- Sort by completion date (most recent first)
+- Search locally in the `problems/` directory for files with status "✅ Completed"
+- Use file modification timestamps to determine completion order
+- Sort by modification date (most recent first)
 - Display the last 5 solved problems with:
   - Problem name and ID
-  - Date completed
+  - Date completed (from file modification time)
   - Pattern(s) used
   - Time complexity
   - Space complexity
@@ -49,10 +49,13 @@ After your recall attempt, I'll:
   - **Difficult recall** → Review tomorrow
   - **No recall** → Redo the problem today
 
-### 6. Update Jira
-- Add revision notes to Jira tickets
-- Update custom fields for next review date
-- Track revision count for each problem
+### 6. Track Revision Progress
+- Add revision notes as comments in the problem markdown files
+- Create a local revision log to track:
+  - Next review date for each problem
+  - Revision count and quality ratings
+  - Patterns that need more practice
+- Optional: Sync revision notes to Jira if needed
 
 ## Commands
 
