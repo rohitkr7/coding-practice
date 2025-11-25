@@ -1,7 +1,17 @@
 # Jira credentials and sensitive data
 *.env
-.env.local
+.env*
+!.env.template
 credentials.json
+*credentials*
+!*credentials*.md
+!*credentials*.sh
+!*credentials*.py
+*.key
+*.pem
+*secret*
+*token*
+!*token*.md
 
 # Personal notes that shouldn't be shared
 notes/personal/
