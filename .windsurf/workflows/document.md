@@ -99,6 +99,36 @@ Update the markdown file with all sections:
 - ✅ Status changed to "Completed"
 - ✅ Updated timestamp
 - ✅ All sections filled in
+
+### 10. Update Problem Tracker
+Run the tracker update script:
+```bash
+./scripts/update_tracker.sh
+```
+This updates README.md with current progress.
+
+### 11. Generate Flashcard 🎴
+**IMPORTANT:** Auto-generate a printable flashcard for this problem:
+```bash
+python3 scripts/generate_flashcard.py <problem-file-path>
+```
+
+The flashcard will include:
+- **FRONT:** Problem statement + pattern-specific hints
+- **BACK:** Key insight + algorithm steps + complexity
+- Saved to: `flashcards/individual/`
+
+**Why this matters:**
+- Creates a physical study aid immediately
+- Won't forget to make flashcard later
+- Part of spaced repetition system
+- Print and review regularly
+
+**Verification:**
+- ✅ Check flashcard was created in `flashcards/individual/`
+- ✅ Verify FRONT has clear problem + hints
+- ✅ Verify BACK has algorithm + complexity
+- ✅ All borders aligned correctly
 - ✅ Code with comments
 - ✅ Visual explanation
 - ✅ Complexity analysis
