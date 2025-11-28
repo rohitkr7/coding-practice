@@ -124,18 +124,57 @@ The flashcard will include:
 - Part of spaced repetition system
 - Print and review regularly
 
+**Flashcard Quality Guidelines:**
+
+**✅ GOOD Hints (Specific & Actionable):**
+- "Have we seen this element before?" (Hash Table)
+- "Need all sorted or just top k?" (Top K Elements)
+- "Can frequency be used as index?" (Top K Elements)
+- "Can we use two pointers moving inward?" (Two Pointers)
+- "What defines the window boundaries?" (Sliding Window)
+- "What are the subproblems?" (Dynamic Programming)
+
+**❌ BAD Hints (Generic & Vague):**
+- "What's the key observation?" ← Too generic!
+- "What data structure fits best?" ← Not helpful without context!
+- "How to solve this?" ← No value!
+- "Think about the pattern" ← States the obvious!
+
+**Hint Creation Rules:**
+1. **Be Pattern-Specific:** Hint should directly relate to the pattern technique
+2. **Guide Thinking:** Should trigger the right mental model
+3. **Actionable:** Should suggest a concrete approach or question
+4. **Not a Spoiler:** Don't reveal the full solution
+5. **Memorable:** Should stick in your mind during review
+
+**Algorithm/Pseudocode Quality:**
+- ✅ Use actual steps from the solution
+- ✅ Include concrete operations (create HashMap, traverse buckets, etc.)
+- ✅ Show flow: what happens first, second, etc.
+- ❌ Don't be too abstract ("apply pattern logic")
+- ❌ Don't just repeat generic steps
+
+**Example - Top K Elements Pattern:**
+```
+GOOD Pseudocode:
+1. Count frequencies with HashMap
+2. Create buckets[n+1] or use heap
+3. Place elements in bucket[frequency]
+4. Traverse high→low, collect k items
+
+BAD Pseudocode:
+1. Identify base case
+2. Apply pattern logic
+3. Optimize with key data structure
+```
+
 **Verification:**
 - ✅ Check flashcard was created in `flashcards/individual/`
-- ✅ Verify FRONT has clear problem + hints
-- ✅ Verify BACK has algorithm + complexity
+- ✅ Verify FRONT has clear problem + **specific** hints (not generic!)
+- ✅ Verify BACK has **concrete** algorithm steps (not abstract!)
+- ✅ Verify hints are pattern-specific and actionable
+- ✅ Verify complexity is accurate
 - ✅ All borders aligned correctly
-- ✅ Code with comments
-- ✅ Visual explanation
-- ✅ Complexity analysis
-- ✅ Test cases
-- ✅ Key learnings
-- ✅ Similar problems
-- ✅ Quick reference
 
 ### 10. Update README Problem Tracker
 After documenting the solution, update the centralized problem tracker:

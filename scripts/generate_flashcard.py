@@ -6,8 +6,36 @@ Creates front (problem + hints) and back (solution + complexity) cards.
 
 import os
 import re
+import json
 from pathlib import Path
 import sys
+
+def load_leetcode_mappings():
+    """Load LeetCode problem slug to number mappings from JSON file"""
+    try:
+        script_dir = Path(__file__).parent
+        mapping_file = script_dir / 'leetcode_mappings.json'
+        
+        with open(mapping_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            return data.get('mappings', {})
+    except FileNotFoundError:
+        print("⚠️  Warning: leetcode_mappings.json not found. Using empty mappings.")
+        return {}
+    except json.JSONDecodeError as e:
+        print(f"⚠️  Warning: Error parsing leetcode_mappings.json: {e}")
+        return {}
+    except Exception as e:
+        print(f"⚠️  Warning: Error loading mappings: {e}")
+        return {}
+
+def normalize_filename(filename):
+    """Normalize filename by removing multiple consecutive hyphens"""
+    # Replace multiple hyphens with single hyphen
+    filename = re.sub(r'-+', '-', filename)
+    # Remove leading/trailing hyphens
+    filename = filename.strip('-')
+    return filename
 
 def extract_problem_info(file_path):
     """Extract all necessary info from a problem file"""
@@ -36,18 +64,12 @@ def extract_problem_info(file_path):
         # URL format: https://leetcode.com/problems/valid-anagram or https://leetcode.com/problems/valid-anagram/description
         leetcode_num = None
         if leetcode_url:
-            # Try to find the problem slug and map it, or extract from URL if number is present
+            # Try to find the problem slug and map it using external JSON mappings
             slug_match = re.search(r'/problems/([^/]+)', leetcode_url)
             if slug_match:
                 slug = slug_match.group(1)
-                # Common LeetCode problem mappings (add more as needed)
-                leetcode_numbers = {
-                    'two-sum': '1',
-                    'valid-anagram': '242',
-                    'group-anagrams': '49',
-                    'contains-duplicate': '217',
-                    # Add more mappings as you solve more problems
-                }
+                # Load mappings from JSON file
+                leetcode_numbers = load_leetcode_mappings()
                 leetcode_num = leetcode_numbers.get(slug, None)
         
         # Extract problem statement
@@ -183,6 +205,21 @@ def get_pattern_hints(pattern, title):
             "BFS or DFS? Why?",
             "How to track visited nodes?"
         ]
+    elif 'top k' in pattern_lower or 'heap' in pattern_lower:
+        return [
+            "Need all sorted or just top k?",
+            "Can frequency be used as index?"
+        ]
+    elif 'interval' in pattern_lower or 'merge' in pattern_lower:
+        return [
+            "Sort by start or end time?",
+            "How to detect overlaps?"
+        ]
+    elif 'linked list' in pattern_lower:
+        return [
+            "Fast & slow pointer technique?",
+            "How to handle edge cases (null)?"
+        ]
     else:
         # Generic but slightly better
         return [
@@ -303,6 +340,13 @@ def generate_flashcard_markdown(info):
             '3. Shrink window: remove left if invalid',
             '4. Track optimal answer'
         ]
+    elif 'top k' in pattern_lower or 'heap' in pattern_lower:
+        pseudo_steps = [
+            '1. Count frequencies with HashMap',
+            '2. Create buckets[n+1] or use heap',
+            '3. Place elements in bucket[frequency]',
+            '4. Traverse high→low, collect k items'
+        ]
     else:
         pseudo_steps = [
             '1. Identify base case',
@@ -326,6 +370,8 @@ def generate_flashcard_markdown(info):
             insight_text = 'Expand/shrink window based on condition'
         elif 'binary search' in pattern_lower:
             insight_text = 'Binary search on sorted space to find target'
+        elif 'top k' in pattern_lower:
+            insight_text = 'Use frequency as array index for O(n) bucket sort'
         else:
             insight_text = 'Apply pattern to optimize brute force'
     
@@ -650,7 +696,13 @@ def main():
                     info = extract_problem_info(problem_file)
                     if info:
                         flashcard_md = generate_flashcard_markdown(info)
-                        output_file = flashcards_dir / 'individual' / f"{info['jira_id']}-{info['title'].replace(' ', '-').lower()}.md"
+                        # Clean title: remove number prefix and normalize
+                        clean_title = re.sub(r'^\d+\s*-\s*', '', info['title'])
+                        # Use LeetCode number if available, otherwise use Jira ID
+                        problem_id = info['leetcode_num'] if info.get('leetcode_num') else info['jira_id']
+                        filename = f"LC-{problem_id}-{clean_title.replace(' ', '-').lower()}.md"
+                        filename = normalize_filename(filename)
+                        output_file = flashcards_dir / 'individual' / filename
                         with open(output_file, 'w', encoding='utf-8') as out:
                             out.write(flashcard_md)
                         print(f"  ✅ {info['jira_id']}: {info['title']}")
@@ -676,7 +728,13 @@ def main():
             sys.exit(1)
         
         flashcard_md = generate_flashcard_markdown(info)
-        output_file = flashcards_dir / 'individual' / f"{info['jira_id']}-{info['title'].replace(' ', '-').lower()}.md"
+        # Clean title: remove number prefix and normalize
+        clean_title = re.sub(r'^\d+\s*-\s*', '', info['title'])
+        # Use LeetCode number if available, otherwise use Jira ID
+        problem_id = info['leetcode_num'] if info.get('leetcode_num') else info['jira_id']
+        filename = f"LC-{problem_id}-{clean_title.replace(' ', '-').lower()}.md"
+        filename = normalize_filename(filename)
+        output_file = flashcards_dir / 'individual' / filename
         
         with open(output_file, 'w', encoding='utf-8') as f:
             f.write(flashcard_md)

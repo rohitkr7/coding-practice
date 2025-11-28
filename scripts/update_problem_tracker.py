@@ -58,7 +58,8 @@ def get_all_problems(problems_dir):
     # Walk through all subdirectories
     for root, dirs, files in os.walk(problems_dir):
         for file in files:
-            if file.endswith('.md') and file.startswith('LND-'):
+            # Include both LC-* and LND-* prefixed problem files
+            if file.endswith('.md') and (file.startswith('LC-') or file.startswith('LND-')):
                 file_path = os.path.join(root, file)
                 relative_path = os.path.relpath(file_path, problems_dir)
                 
