@@ -2,7 +2,7 @@
 
 **Jira Ticket:** [LND-37](https://rohitroy007.atlassian.net/browse/LND-37)  
 **LeetCode:** https://leetcode.com/problems/product-of-array-except-self  
-**Pattern:** Bitwise Xor  
+**Pattern:** Array Manipulation / Prefix-Suffix Products  
 **Difficulty:** Medium  
 **Status:** To Do  
 **Priority:** Medium
@@ -43,11 +43,15 @@ Category: Array & Hashing
 - What are the edge cases?
 
 ### Pattern Recognition
-**Why Bitwise Xor?**
-- 
+**Why Array Manipulation / Prefix-Suffix Products?**
+- Need to compute products from both left and right directions
+- Cannot use division operator (eliminates simple total/current approach)
+- Requires O(n) time complexity
 
 **What clues in the problem point to this pattern?**
-- 
+- "Product of all elements EXCEPT self" → need left × right products
+- "Without division" constraint → must use prefix/suffix approach
+- "O(n) time" requirement → single or double pass solution
 
 ---
 
@@ -151,8 +155,8 @@ Status: ⏳ Not Tested
 2. 
 
 ### Pattern Insights
-- When to use bitwise xor:
-- When NOT to use this pattern:
+- When to use prefix-suffix products: When you need information from both directions (before and after each element) without nested loops
+- When NOT to use this pattern: When division is allowed and no zeros exist (simpler total product / current element approach works)
 
 ---
 
@@ -166,7 +170,7 @@ Status: ⏳ Not Tested
 
 ## 📚 Resources
 
-- [Pattern Guide](../../PATTERNS_GUIDE.md#bitwise-xor)
+- [Pattern Guide](../../PATTERNS_GUIDE.md#array-manipulation)
 - LeetCode Discussion: https://leetcode.com/problems/product-of-array-except-self/discuss/
 
 ---

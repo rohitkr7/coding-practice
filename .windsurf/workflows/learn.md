@@ -20,35 +20,67 @@ Automatically analyze a problem file and provide structured learning guidance al
   - Current status
   - Problem description and examples
 
-### 2. Core Concepts Teaching
+### 2. Problem Understanding & Clarification
+**CRITICAL: Spend significant time here before jumping to solutions**
+
+Break down the problem statement:
+- **What are we given?** (Inputs, data types, constraints)
+- **What are we asked to find?** (Output, return type, format)
+- **What does the problem really mean?** (Rephrase in simpler terms)
+- **What are the constraints?** (Size limits, value ranges, special conditions)
+- **What assumptions can we make?** (Sorted? Unique? Non-empty?)
+- **What assumptions should we NOT make?** (Common misconceptions)
+
+Walk through examples step-by-step:
+- **Trace Example 1:** What happens at each step?
+- **Trace Example 2:** How does this differ from Example 1?
+- **Create a mental model:** What's the relationship between input and output?
+- **Identify transformations:** How does input become output?
+
+Ask clarifying questions to deepen understanding:
+- What if the input is empty?
+- What if there's only one element?
+- Can values repeat?
+- Are there any special values to watch for?
+- What's the expected behavior in edge cases?
+
+### 3. Initial Intuitions & Observations
+Before discussing any specific pattern or approach:
+- What do you notice about the examples?
+- What patterns or relationships do you see in the data?
+- What's your gut feeling about how to approach this?
+- What simpler problem does this remind you of?
+- If you had to explain this to a friend, how would you describe it?
+
+### 4. Core Concepts Teaching
 Explain the fundamental concepts needed:
 - What data structures are involved?
 - What algorithms might be relevant?
 - What mathematical concepts apply?
 - What are the prerequisites?
 
-### 3. Pattern Recognition Guidance
+### 5. Pattern Recognition Guidance
 Help identify why this pattern applies:
 - What clues in the problem statement point to this pattern?
 - What are the characteristics of this pattern?
 - When should this pattern be used vs. alternatives?
 - What are common variations of this pattern?
 
-### 4. Approach Analysis
+### 6. Approach Analysis
 Walk through different approaches:
 - **Brute Force:** What's the obvious solution? What's its complexity?
 - **Optimized Approaches:** What improvements can we make? Why?
 - **Trade-offs:** Time vs. space complexity considerations
 - **Pattern Application:** How does the identified pattern help?
 
-### 5. Key Insights & Hints
+### 7. Key Insights & Hints
 Provide the "aha!" moments WITHOUT giving the solution:
 - What's the key insight that unlocks this problem?
 - What relationship between data elements should we notice?
 - What property can we exploit?
 - What's the clever trick or observation?
 
-### 6. Implementation Guidance
+### 8. Implementation Guidance
 Guide with questions and hints:
 - What data structure should we use? Why?
 - What should we track/store as we iterate?
@@ -56,7 +88,7 @@ Guide with questions and hints:
 - What edge cases need special handling?
 - Provide pseudocode structure, not complete code
 
-### 7. Edge Cases Discussion
+### 9. Edge Cases Discussion
 Help identify corner cases:
 - Empty input
 - Single element
@@ -65,7 +97,7 @@ Help identify corner cases:
 - Maximum/minimum constraints
 - Special values (zero, null, etc.)
 
-### 8. Complexity Analysis
+### 10. Complexity Analysis
 Teach how to analyze:
 - Time complexity: What operations? How many times?
 - Space complexity: What extra space? Why needed?
@@ -75,6 +107,9 @@ Teach how to analyze:
 ## Teaching Principles
 
 ### DO:
+- ✅ **FIRST:** Thoroughly explain what the problem is asking (spend significant time here)
+- ✅ Break down the problem statement into simple, understandable parts
+- ✅ Walk through examples step-by-step to build intuition
 - ✅ Ask clarifying questions to guide thinking
 - ✅ Provide hints and nudges in the right direction
 - ✅ Explain concepts and patterns thoroughly
@@ -85,6 +120,8 @@ Teach how to analyze:
 - ✅ Suggest what to think about next
 
 ### DON'T:
+- ❌ Jump directly to solutions or approaches without problem understanding
+- ❌ Assume the user understands what the problem is asking
 - ❌ Give complete code solutions upfront
 - ❌ Solve the problem for the user
 - ❌ Provide answers without explanation
@@ -102,6 +139,38 @@ Structure the response as:
 - Pattern: [Pattern Name]
 - Difficulty: [Easy/Medium/Hard]
 - LeetCode: [URL]
+
+---
+
+## 📖 Understanding the Problem
+
+### What are we given?
+[Input types, data structures, initial conditions]
+
+### What are we asked to find?
+[Output type, expected result format]
+
+### What does this problem really mean?
+[Rephrase in simpler terms, explain the core task]
+
+### Constraints & Assumptions
+[Size limits, value ranges, special conditions]
+[What we CAN assume vs. what we should NOT assume]
+
+### Example Walkthrough
+[Step-by-step trace of Example 1]
+[Step-by-step trace of Example 2]
+[Mental model of input → output transformation]
+
+---
+
+## 💭 Initial Intuitions
+
+[Before discussing patterns or approaches]
+- What do you notice in the examples?
+- What relationships or patterns do you see?
+- What simpler problem does this remind you of?
+- How would you explain this to a friend?
 
 ---
 
