@@ -5,11 +5,13 @@ description: Start learning a new coding problem with guided hints
 # Start Problem Learning Workflow
 
 ## Purpose
+
 Automatically analyze a problem file and provide structured learning guidance aligned with Rohit's learning preferences (hints and guidance, not complete solutions).
 
 ## Workflow Steps
 
 ### 1. Problem File Analysis
+
 - Read the problem markdown file provided by the user
 - Extract key metadata:
   - Problem title and number
@@ -21,9 +23,11 @@ Automatically analyze a problem file and provide structured learning guidance al
   - Problem description and examples
 
 ### 2. Problem Understanding & Clarification
+
 **CRITICAL: Spend significant time here before jumping to solutions**
 
 Break down the problem statement:
+
 - **What are we given?** (Inputs, data types, constraints)
 - **What are we asked to find?** (Output, return type, format)
 - **What does the problem really mean?** (Rephrase in simpler terms)
@@ -32,12 +36,14 @@ Break down the problem statement:
 - **What assumptions should we NOT make?** (Common misconceptions)
 
 Walk through examples step-by-step:
+
 - **Trace Example 1:** What happens at each step?
 - **Trace Example 2:** How does this differ from Example 1?
 - **Create a mental model:** What's the relationship between input and output?
 - **Identify transformations:** How does input become output?
 
 Ask clarifying questions to deepen understanding:
+
 - What if the input is empty?
 - What if there's only one element?
 - Can values repeat?
@@ -45,51 +51,80 @@ Ask clarifying questions to deepen understanding:
 - What's the expected behavior in edge cases?
 
 ### 3. Initial Intuitions & Observations
+
 Before discussing any specific pattern or approach:
+
 - What do you notice about the examples?
 - What patterns or relationships do you see in the data?
 - What's your gut feeling about how to approach this?
 - What simpler problem does this remind you of?
 - If you had to explain this to a friend, how would you describe it?
 
-### 4. Core Concepts Teaching
+### 4. **PAUSE FOR USER ENGAGEMENT** 🛑
+
+**CRITICAL: Stop here and wait for user response**
+
+After presenting the problem understanding and initial intuition prompts, STOP and ask the user to share their thoughts:
+
+- Ask them to think about how they would approach the problem
+- Request they share any patterns they notice
+- Ask if they want to see the core concepts or if they want to try thinking more first
+- Only proceed to Core Concepts after the user explicitly responds
+
+This creates active learning rather than passive reading.
+
+### 5. Core Concepts Teaching
+
+**ONLY show this section after user has shared their thoughts and wants to proceed**
+
 Explain the fundamental concepts needed:
+
 - What data structures are involved?
 - What algorithms might be relevant?
 - What mathematical concepts apply?
 - What are the prerequisites?
 
-### 5. Pattern Recognition Guidance
+### 6. Pattern Recognition Guidance
+
 Help identify why this pattern applies:
+
 - What clues in the problem statement point to this pattern?
 - What are the characteristics of this pattern?
 - When should this pattern be used vs. alternatives?
 - What are common variations of this pattern?
 
-### 6. Approach Analysis
+### 7. Approach Analysis
+
 Walk through different approaches:
+
 - **Brute Force:** What's the obvious solution? What's its complexity?
 - **Optimized Approaches:** What improvements can we make? Why?
 - **Trade-offs:** Time vs. space complexity considerations
 - **Pattern Application:** How does the identified pattern help?
 
-### 7. Key Insights & Hints
+### 8. Key Insights & Hints
+
 Provide the "aha!" moments WITHOUT giving the solution:
+
 - What's the key insight that unlocks this problem?
 - What relationship between data elements should we notice?
 - What property can we exploit?
 - What's the clever trick or observation?
 
-### 8. Implementation Guidance
+### 9. Implementation Guidance
+
 Guide with questions and hints:
+
 - What data structure should we use? Why?
 - What should we track/store as we iterate?
 - What are the loop conditions?
 - What edge cases need special handling?
 - Provide pseudocode structure, not complete code
 
-### 9. Edge Cases Discussion
+### 10. Edge Cases Discussion
+
 Help identify corner cases:
+
 - Empty input
 - Single element
 - Duplicate values
@@ -97,8 +132,10 @@ Help identify corner cases:
 - Maximum/minimum constraints
 - Special values (zero, null, etc.)
 
-### 10. Complexity Analysis
+### 11. Complexity Analysis
+
 Teach how to analyze:
+
 - Time complexity: What operations? How many times?
 - Space complexity: What extra space? Why needed?
 - Best/average/worst case scenarios
@@ -107,10 +144,14 @@ Teach how to analyze:
 ## Teaching Principles
 
 ### DO:
+
 - ✅ **FIRST:** Thoroughly explain what the problem is asking (spend significant time here)
 - ✅ Break down the problem statement into simple, understandable parts
 - ✅ Walk through examples step-by-step to build intuition
 - ✅ Ask clarifying questions to guide thinking
+- ✅ **PAUSE after Initial Intuitions and wait for user to engage**
+- ✅ Ask user to share their thinking before showing core concepts
+- ✅ Only reveal core concepts after user has attempted their own thinking
 - ✅ Provide hints and nudges in the right direction
 - ✅ Explain concepts and patterns thoroughly
 - ✅ Use visual examples and walkthroughs
@@ -120,13 +161,17 @@ Teach how to analyze:
 - ✅ Suggest what to think about next
 
 ### DON'T:
+
 - ❌ Jump directly to solutions or approaches without problem understanding
 - ❌ Assume the user understands what the problem is asking
+- ❌ **Show core concepts before user has thought about the problem**
+- ❌ Skip the engagement pause - always wait for user response
 - ❌ Give complete code solutions upfront
 - ❌ Solve the problem for the user
 - ❌ Provide answers without explanation
 - ❌ Skip the learning process
 - ❌ Just show the optimal solution
+- ❌ Continue past Initial Intuitions without user confirmation
 
 ## Output Format
 
@@ -174,7 +219,22 @@ Structure the response as:
 
 ---
 
+## 🛑 YOUR TURN TO THINK
+
+**Stop here! Before I show you the core concepts and solution approaches:**
+
+1. **Take a moment** to think about how you might solve this
+2. **Share your thoughts:** What approach would you try? What data structures come to mind?
+3. **Ask yourself:** Have I seen anything similar? What patterns do I notice?
+
+**Let me know when you're ready to see the core concepts, or if you want to discuss your ideas first!**
+
+[STOP HERE - Wait for user response before showing Core Concepts]
+
+---
+
 ## 🧠 Core Concepts
+**[Only show this section after user has shared their thoughts]**
 
 [Explain fundamental concepts needed]
 

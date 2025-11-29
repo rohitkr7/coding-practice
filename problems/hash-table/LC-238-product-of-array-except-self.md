@@ -38,17 +38,21 @@ Category: Array & Hashing
 ## 🤔 Initial Thoughts
 
 ### Understanding the Problem
+
 - What are we asked to find/compute?
 - What are the inputs and outputs?
 - What are the edge cases?
 
 ### Pattern Recognition
+
 **Why Array Manipulation / Prefix-Suffix Products?**
+
 - Need to compute products from both left and right directions
 - Cannot use division operator (eliminates simple total/current approach)
 - Requires O(n) time complexity
 
 **What clues in the problem point to this pattern?**
+
 - "Product of all elements EXCEPT self" → need left × right products
 - "Without division" constraint → must use prefix/suffix approach
 - "O(n) time" requirement → single or double pass solution
@@ -58,20 +62,25 @@ Category: Array & Hashing
 ## 💡 Approach
 
 ### Brute Force (if applicable)
+
 **Idea:**
-- 
+
+-
 
 **Time Complexity:** O(?)  
-**Space Complexity:** O(?)  
+**Space Complexity:** O(?)
 
 ### Optimized Approach
+
 **Idea:**
-- 
+
+-
 
 **Algorithm Steps:**
-1. 
-2. 
-3. 
+
+1.
+2.
+3.
 
 **Time Complexity:** O(?)  
 **Space Complexity:** O(?)
@@ -81,11 +90,11 @@ Category: Array & Hashing
 ## 🎨 Visual Explanation
 
 ```
-Example: 
+Example:
 
-Step 1: 
-Step 2: 
-Step 3: 
+Step 1:
+Step 2:
+Step 3:
 ```
 
 ---
@@ -99,33 +108,37 @@ def solution():
 ```
 
 ### Code Explanation
-- 
+
+-
 
 ---
 
 ## 🧪 Test Cases
 
 ### Test Case 1: Basic Example
+
 ```
-Input: 
-Expected Output: 
-Actual Output: 
+Input:
+Expected Output:
+Actual Output:
 Status: ⏳ Not Tested
 ```
 
 ### Test Case 2: Edge Case - Empty Input
+
 ```
-Input: 
-Expected Output: 
-Actual Output: 
+Input:
+Expected Output:
+Actual Output:
 Status: ⏳ Not Tested
 ```
 
 ### Test Case 3: Edge Case - Single Element
+
 ```
-Input: 
-Expected Output: 
-Actual Output: 
+Input:
+Expected Output:
+Actual Output:
 Status: ⏳ Not Tested
 ```
 
@@ -134,27 +147,34 @@ Status: ⏳ Not Tested
 ## 📊 Complexity Analysis
 
 ### Time Complexity: O(?)
+
 **Breakdown:**
-- 
+
+-
 
 ### Space Complexity: O(?)
+
 **Breakdown:**
-- 
+
+-
 
 ---
 
 ## 🎓 Key Learnings
 
 ### What I Learned
-1. 
-2. 
-3. 
+
+1.
+2.
+3.
 
 ### Mistakes I Made
-1. 
-2. 
+
+1.
+2.
 
 ### Pattern Insights
+
 - When to use prefix-suffix products: When you need information from both directions (before and after each element) without nested loops
 - When NOT to use this pattern: When division is allowed and no zeros exist (simpler total product / current element approach works)
 
@@ -162,9 +182,9 @@ Status: ⏳ Not Tested
 
 ## 🔗 Similar Problems
 
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 ---
 
