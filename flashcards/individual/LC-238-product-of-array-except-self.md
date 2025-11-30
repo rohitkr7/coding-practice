@@ -23,9 +23,8 @@ difficulty: Medium
 │                                                      │
 │                                                      │
 │  💡 HINTS:                                           │
-│  • Can we split into left × right products?          │
-│  • What's the product BEFORE and AFTER each index?   │
-│  • Can we reuse the output array for storage?        │
+│  • Have we seen this element before?                 │
+│  • What gives O(1) lookup/insert?                    │
 │                                                      │
 │  🎯 PATTERN: Array Manipulation / Prefix-Suffix      │
 │                                                      │
@@ -42,19 +41,17 @@ difficulty: Medium
 ├──────────────────────────────────────────────────────┤
 │                                                      │
 │  💡 KEY INSIGHT:                                     │
-│  result[i] = (product of all left) × (all right)     │
-│  Use two passes: prefix forward, suffix backward     │
+│  Apply pattern to optimize brute force               │
 │                                                      │
 │                                                      │
 │  🔢 ALGORITHM:                                       │
-│  1. Build prefix products in result array            │
-│     result[i] = product of nums[0..i-1]              │
-│  2. Multiply by suffix products (right-to-left)      │
-│     Use single variable, update as you go            │
-│  3. Return result (no extra arrays needed!)          │
+│  1. Identify base case                               │
+│  2. Apply pattern logic                              │
+│  3. Optimize with key data structure                 │
 │                                                      │
 │                                                      │
-│  ⏱️  O(n)  💾 O(1) [except output]                  │
+│                                                      │
+│  ⏱️  O(n)  💾 O(1)                                   │
 │                                                      │
 └──────────────────────────────────────────────────────┘
 ```
@@ -62,7 +59,6 @@ difficulty: Medium
 ---
 
 **Print Instructions:**
-
 - Cut along the dotted lines
 - Fold in half (front/back)
 - Use for spaced repetition review
