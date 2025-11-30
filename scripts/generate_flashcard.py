@@ -506,31 +506,31 @@ def generate_print_html(flashcards_dir):
                     'back': back_match.group(1).strip()
                 })
     
-    html = """<!DOCTYPE html>
+    html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeetCode Flashcards - Print Ready</title>
     <style>
-        @page {
+        @page {{
             size: A4;
             margin: 0.3cm;
-        }
+        }}
         
-        * {
+        * {{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
+        }}
         
-        body {
+        body {{
             font-family: 'Courier New', monospace;
             font-size: 9pt;
             line-height: 1.3;
-        }
+        }}
         
-        .flashcard {
+        .flashcard {{
             width: 19cm;    /* Slightly narrower for better centering */
             height: auto;   /* Height adjusts to content */
             min-height: 12cm; /* Minimum height */
@@ -541,40 +541,40 @@ def generate_print_html(flashcards_dir):
             background: white;
             margin: 1cm auto; /* Center horizontally and vertically */
             box-sizing: border-box;
-        }
+        }}
         
-        .flashcard.front {
+        .flashcard.front {{
             background: #f8f9fa;
-        }
+        }}
         
-        .flashcard.back {
+        .flashcard.back {{
             background: #e9ecef;
-        }
+        }}
         
-        .flashcard.easy { border-color: #28a745; border-width: 3px; }
-        .flashcard.medium { border-color: #ffc107; border-width: 3px; }
-        .flashcard.hard { border-color: #dc3545; border-width: 3px; }
+        .flashcard.easy {{ border-color: #28a745; border-width: 3px; }}
+        .flashcard.medium {{ border-color: #ffc107; border-width: 3px; }}
+        .flashcard.hard {{ border-color: #dc3545; border-width: 3px; }}
         
-        .header {
+        .header {{
             font-weight: bold;
             font-size: 10pt;
             padding-bottom: 0.1in;
             border-bottom: 1px solid #666;
             margin-bottom: 0.15in;
-        }
+        }}
         
-        .content {
+        .content {{
             font-size: 8pt;
             white-space: pre-wrap;
-        }
+        }}
         
-        .hints, .solution {
+        .hints, .solution {{
             margin-top: 0.15in;
             padding-top: 0.15in;
             border-top: 1px dashed #999;
-        }
+        }}
         
-        .complexity {
+        .complexity {{
             position: absolute;
             bottom: 0.25in;
             left: 0.25in;
@@ -583,51 +583,51 @@ def generate_print_html(flashcards_dir):
             border-top: 1px solid #999;
             font-size: 8pt;
             font-weight: bold;
-        }
+        }}
         
-        code {
+        code {{
             background: #f4f4f4;
             padding: 0.05in;
             font-size: 7pt;
-        }
+        }}
         
-        @media screen {
-            body {
+        @media screen {{
+            body {{
                 background: #ddd;
                 padding: 20px;
-            }
-            .flashcard {
+            }}
+            .flashcard {{
                 margin: 20px auto;
                 box-shadow: 0 4px 8px rgba(0,0,0,0.2);
                 border-radius: 4px;
-            }
-        }
+            }}
+        }}
         
-        @media print {
-            body {
+        @media print {{
+            body {{
                 background: white;
                 margin: 0;
                 padding: 0;
-            }
-            .flashcard {
+            }}
+            .flashcard {{
                 margin: 1cm auto;  /* Keep centering when printing */
                 box-shadow: none;
-            }
-            @page {
+            }}
+            @page {{
                 margin: 0.3cm;
-            }
-        }
+            }}
+        }}
         
-        @media print {
-            body {
+        @media print {{
+            body {{
                 background: white;
-            }
-            .no-print {
+            }}
+            .no-print {{
                 display: none;
-            }
-        }
+            }}
+        }}
         
-        pre {
+        pre {{
             white-space: pre;
             font-family: 'Courier New', monospace;
             font-size: 10pt;  /* Bigger font since card is bigger */
@@ -635,7 +635,7 @@ def generate_print_html(flashcards_dir):
             margin: 0 auto;
             padding: 0;
             display: table;  /* Makes pre element shrink-wrap and center */
-        }
+        }}
     </style>
 </head>
 <body>
