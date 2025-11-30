@@ -229,10 +229,10 @@ Happy Learning! 🚀
 <!-- PROBLEM_TRACKER_START -->
 ## 📊 Problem Tracker
 
-### Overall Progress: 6/77 Problems (7%)
+### Overall Progress: 7/77 Problems (9%)
 
 ```
-[███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 7%
+[████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 9%
 ```
 
 ### 📈 Progress by Difficulty
@@ -240,7 +240,7 @@ Happy Learning! 🚀
 | Difficulty | Solved | Total | Progress |
 |------------|--------|-------|----------|
 | 🟢 Easy | 3 | 21 | `[██░░░░░░░░░░░░░░░░░░] 14%` 14% |
-| 🟡 Medium | 3 | 51 | `[█░░░░░░░░░░░░░░░░░░░] 5%` 5% |
+| 🟡 Medium | 4 | 51 | `[█░░░░░░░░░░░░░░░░░░░] 7%` 7% |
 | 🔴 Hard | 0 | 5 | `[░░░░░░░░░░░░░░░░░░░░] 0%` 0% |
 
 ---
@@ -373,11 +373,11 @@ Happy Learning! 🚀
 | 41 | ⏳ | [15 • Minimum Window Substring](problems/sliding-window/LC-76-minimum-window-substring.md) | 🔴 Hard | Sliding Window | [📝 LC](https://leetcode.com/problems/minimum-window-substring) | [LND-122](https://rohitroy007.atlassian.net/browse/LND-122) | - |
 
 ### String Manipulation
-**Progress:** 0/1 completed (0%)
+**Progress:** 1/1 completed (100%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 42 | ⏳ | [7 • Encode and Decode Strings](problems/string-manipulation/LC-271-encode-and-decode-strings.md) | 🟡 Medium | String Manipulation | [📝 LC](https://leetcode.com/problems/encode-and-decode-strings) | [LND-32](https://rohitroy007.atlassian.net/browse/LND-32) | - |
+| 42 | ✅ | [7 • Encode and Decode Strings](problems/string-manipulation/LC-271-encode-and-decode-strings.md) | 🟡 Medium | String Manipulation | [📝 LC](https://leetcode.com/problems/encode-and-decode-strings) | [LND-32](https://rohitroy007.atlassian.net/browse/LND-32) | 📝 |
 
 ### Subsets
 **Progress:** 0/2 completed (0%)
