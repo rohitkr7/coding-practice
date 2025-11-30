@@ -1,7 +1,8 @@
 # 7 - Encode and Decode Strings
 
 **Jira Ticket:** [LND-32](https://rohitroy007.atlassian.net/browse/LND-32)  
-**LeetCode:** https://leetcode.com/problems/encode-and-decode-strings  
+**LeetCode:** https://leetcode.com/problems/encode-and-decode-strings
+**NeetCode:** https://neetcode.io/problems/string-encode-and-decode/question
 **Pattern:** String Manipulation
 **Difficulty:** Medium  
 **Status:** ✅ Completed  
