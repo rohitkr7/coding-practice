@@ -23,8 +23,8 @@ difficulty: Medium
 │  Out=[["lint","code","love","you"]]                  │
 │                                                      │
 │  💡 HINTS:                                           │
-│  • What's the key observation?                       │
-│  • What data structure fits best?                    │
+│  • Can delimiters appear in the data itself?         │
+│  • How can length information help avoid collisions  │
 │                                                      │
 │  🎯 PATTERN: String Manipulation                     │
 │                                                      │
@@ -41,13 +41,13 @@ difficulty: Medium
 ├──────────────────────────────────────────────────────┤
 │                                                      │
 │  💡 KEY INSIGHT:                                     │
-│  Apply pattern to optimize brute force               │
-│                                                      │
+│  Use length#string format - once we know length,     │
+│  we can safely extract exact chars (delimiters       │
 │                                                      │
 │  🔢 ALGORITHM:                                       │
-│  1. Identify base case                               │
-│  2. Apply pattern logic                              │
-│  3. Optimize with key data structure                 │
+│  1. Encode: append length + "#" + string             │
+│  2. Decode: read length, skip "#", extract chars     │
+│  3. Reset pointers: j = i after each extraction      │
 │                                                      │
 │                                                      │
 │                                                      │

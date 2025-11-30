@@ -128,6 +128,64 @@ Run the tracker update script:
 
 This updates README.md with current progress.
 
+### 10a. Validate Flashcard Script for Pattern Support 🔍
+
+**CRITICAL:** Before generating flashcards, ensure the pattern is supported in the script:
+
+**Check if pattern exists:**
+
+1. View `scripts/generate_flashcard.py`
+2. Search for the pattern name in:
+   - `get_pattern_hints()` function (~line 168)
+   - Pseudocode generation section (~line 320)
+   - Key insight generation (~line 373)
+3. If pattern is **not found**, add it before generating flashcards
+
+**Example - Adding a new pattern:**
+
+For "String Manipulation" pattern, add to:
+
+**1. Hints function (~line 220):**
+
+```python
+elif 'string' in pattern_lower:
+    return [
+        "Can delimiters appear in the data itself?",
+        "How can length information help avoid collisions?"
+    ]
+```
+
+**2. Pseudocode generation (~line 350):**
+
+```python
+elif 'string' in pattern_lower:
+    pseudo_steps = [
+        '1. Encode: append length + "#" + string',
+        '2. Decode: read length, skip "#", extract chars',
+        '3. Reset pointers: j = i after each extraction'
+    ]
+```
+
+**3. Key insight (~line 375):**
+
+```python
+elif 'string' in pattern_lower:
+    insight_text = 'Use length#string format - once we know length, we can safely extract exact chars (delimiters OK!)'
+```
+
+**Why this matters:**
+
+- ❌ Without pattern support: Generic "What's the key observation?" hints
+- ✅ With pattern support: Specific, actionable hints that actually help learning
+- Prevents wasted time printing generic flashcards
+
+**Validation:**
+
+- ✅ Pattern name is in all three locations (hints, pseudocode, insight)
+- ✅ Hints are pattern-specific and actionable (not generic!)
+- ✅ Algorithm steps are concrete (not "apply pattern logic")
+- ✅ Key insight describes the actual technique used
+
 ### 11. Generate Flashcard 🎴
 
 **IMPORTANT:** Auto-generate a printable flashcard for this problem:

@@ -220,6 +220,11 @@ def get_pattern_hints(pattern, title):
             "Fast & slow pointer technique?",
             "How to handle edge cases (null)?"
         ]
+    elif 'string' in pattern_lower:
+        return [
+            "Can delimiters appear in the data itself?",
+            "How can length information help avoid collisions?"
+        ]
     else:
         # Generic but slightly better
         return [
@@ -347,6 +352,12 @@ def generate_flashcard_markdown(info):
             '3. Place elements in bucket[frequency]',
             '4. Traverse high→low, collect k items'
         ]
+    elif 'string' in pattern_lower:
+        pseudo_steps = [
+            '1. Encode: append length + "#" + string',
+            '2. Decode: read length, skip "#", extract chars',
+            '3. Reset pointers: j = i after each extraction'
+        ]
     else:
         pseudo_steps = [
             '1. Identify base case',
@@ -372,6 +383,8 @@ def generate_flashcard_markdown(info):
             insight_text = 'Binary search on sorted space to find target'
         elif 'top k' in pattern_lower:
             insight_text = 'Use frequency as array index for O(n) bucket sort'
+        elif 'string' in pattern_lower:
+            insight_text = 'Use length#string format - once we know length, we can safely extract exact chars (delimiters OK!)'
         else:
             insight_text = 'Apply pattern to optimize brute force'
     
