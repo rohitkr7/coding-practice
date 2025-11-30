@@ -229,10 +229,10 @@ Happy Learning! 🚀
 <!-- PROBLEM_TRACKER_START -->
 ## 📊 Problem Tracker
 
-### Overall Progress: 5/77 Problems (6%)
+### Overall Progress: 6/77 Problems (7%)
 
 ```
-[███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 6%
+[███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 7%
 ```
 
 ### 📈 Progress by Difficulty
@@ -240,7 +240,7 @@ Happy Learning! 🚀
 | Difficulty | Solved | Total | Progress |
 |------------|--------|-------|----------|
 | 🟢 Easy | 3 | 21 | `[██░░░░░░░░░░░░░░░░░░] 14%` 14% |
-| 🟡 Medium | 2 | 51 | `[░░░░░░░░░░░░░░░░░░░░] 3%` 3% |
+| 🟡 Medium | 3 | 51 | `[█░░░░░░░░░░░░░░░░░░░] 5%` 5% |
 | 🔴 Hard | 0 | 5 | `[░░░░░░░░░░░░░░░░░░░░] 0%` 0% |
 
 ---
@@ -259,24 +259,30 @@ Happy Learning! 🚀
 
 ---
 
+### Array Manipulation / Prefix-Suffix Products
+**Progress:** 1/1 completed (100%)
+
+| # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
+|---|--------|---------|------------|---------|-----------|------|-------|
+| 1 | ✅ | [6 • Product of Array Except Self](problems/hash-table/LC-238-product-of-array-except-self.md) | 🟡 Medium | Array Manipulation /... | [📝 LC](https://leetcode.com/problems/product-of-array-except-self) | [LND-37](https://rohitroy007.atlassian.net/browse/LND-37) | 📝 |
+
 ### Binary Search
 **Progress:** 0/4 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 1 | ⏳ | [23 • Find Minimum in Rotated Sorted Array](problems/binary-search/LC-153-find-minimum-in-rotated-sorted-array.md) | 🟡 Medium | Binary Search | [📝 LC](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | [LND-134](https://rohitroy007.atlassian.net/browse/LND-134) | - |
-| 2 | ⏳ | [24 • Search in Rotated Sorted Array](problems/binary-search/LC-33-search-in-rotated-sorted-array.md) | 🟡 Medium | Binary Search | [📝 LC](https://leetcode.com/problems/search-in-rotated-sorted-array) | [LND-143](https://rohitroy007.atlassian.net/browse/LND-143) | - |
-| 3 | ⏳ | [21 • Binary Search](problems/binary-search/LC-704-binary-search.md) | 🟢 Easy | Binary Search | [📝 LC](https://leetcode.com/problems/binary-search) | [LND-139](https://rohitroy007.atlassian.net/browse/LND-139) | - |
-| 4 | ⏳ | [22 • Search a 2D Matrix](problems/binary-search/LC-74-search-a-2d-matrix.md) | 🟡 Medium | Binary Search | [📝 LC](https://leetcode.com/problems/search-a-2d-matrix) | [LND-133](https://rohitroy007.atlassian.net/browse/LND-133) | - |
+| 2 | ⏳ | [23 • Find Minimum in Rotated Sorted Array](problems/binary-search/LC-153-find-minimum-in-rotated-sorted-array.md) | 🟡 Medium | Binary Search | [📝 LC](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | [LND-134](https://rohitroy007.atlassian.net/browse/LND-134) | - |
+| 3 | ⏳ | [24 • Search in Rotated Sorted Array](problems/binary-search/LC-33-search-in-rotated-sorted-array.md) | 🟡 Medium | Binary Search | [📝 LC](https://leetcode.com/problems/search-in-rotated-sorted-array) | [LND-143](https://rohitroy007.atlassian.net/browse/LND-143) | - |
+| 4 | ⏳ | [21 • Binary Search](problems/binary-search/LC-704-binary-search.md) | 🟢 Easy | Binary Search | [📝 LC](https://leetcode.com/problems/binary-search) | [LND-139](https://rohitroy007.atlassian.net/browse/LND-139) | - |
+| 5 | ⏳ | [22 • Search a 2D Matrix](problems/binary-search/LC-74-search-a-2d-matrix.md) | 🟡 Medium | Binary Search | [📝 LC](https://leetcode.com/problems/search-a-2d-matrix) | [LND-133](https://rohitroy007.atlassian.net/browse/LND-133) | - |
 
 ### Bitwise Xor
-**Progress:** 0/5 completed (0%)
+**Progress:** 0/4 completed (0%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
-| 5 | ⏳ | [74 • Reverse Bits](problems/bitwise-xor/LC-190-reverse-bits.md) | 🟢 Easy | Bitwise Xor | [📝 LC](https://leetcode.com/problems/reverse-bits) | [LND-93](https://rohitroy007.atlassian.net/browse/LND-93) | - |
-| 6 | ⏳ | [72 • Number of 1 Bits](problems/bitwise-xor/LC-191-number-of-1-bits.md) | 🟢 Easy | Bitwise Xor | [📝 LC](https://leetcode.com/problems/number-of-1-bits) | [LND-96](https://rohitroy007.atlassian.net/browse/LND-96) | - |
-| 7 | ⏳ | [6 • Product of Array Except Self](problems/bitwise-xor/LC-238-product-of-array-except-self.md) | 🟡 Medium | Bitwise Xor | [📝 LC](https://leetcode.com/problems/product-of-array-except-self) | [LND-37](https://rohitroy007.atlassian.net/browse/LND-37) | - |
+| 6 | ⏳ | [74 • Reverse Bits](problems/bitwise-xor/LC-190-reverse-bits.md) | 🟢 Easy | Bitwise Xor | [📝 LC](https://leetcode.com/problems/reverse-bits) | [LND-93](https://rohitroy007.atlassian.net/browse/LND-93) | - |
+| 7 | ⏳ | [72 • Number of 1 Bits](problems/bitwise-xor/LC-191-number-of-1-bits.md) | 🟢 Easy | Bitwise Xor | [📝 LC](https://leetcode.com/problems/number-of-1-bits) | [LND-96](https://rohitroy007.atlassian.net/browse/LND-96) | - |
 | 8 | ⏳ | [75 • Missing Number](problems/bitwise-xor/LC-268-missing-number.md) | 🟢 Easy | Bitwise Xor | [📝 LC](https://leetcode.com/problems/missing-number) | [LND-85](https://rohitroy007.atlassian.net/browse/LND-85) | - |
 | 9 | ⏳ | [73 • Counting Bits](problems/bitwise-xor/LC-338-counting-bits.md) | 🟢 Easy | Bitwise Xor | [📝 LC](https://leetcode.com/problems/counting-bits) | [LND-91](https://rohitroy007.atlassian.net/browse/LND-91) | - |
 
