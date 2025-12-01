@@ -794,6 +794,25 @@ You Are Here! ⭐
 
 ---
 
+## 🎴 Flashcard Content
+
+**HINTS:**
+- What do anagrams have in common when sorted?
+- Can sorted string be a key?
+- What data structure groups things?
+
+**KEY INSIGHT:**
+Use sorted string as HashMap key - all anagrams will have the same sorted representation and map to the same key.
+
+**ALGORITHM:**
+1. Create HashMap<String, List<String>>
+2. For each string: sort it
+3. Use sorted string as key
+4. Add original string to list at that key
+5. Return all values from HashMap
+
+---
+
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#hash-table)

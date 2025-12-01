@@ -721,6 +721,25 @@ public boolean containsDuplicate(int[] nums) {
 
 ---
 
+## 🎴 Flashcard Content
+
+**HINTS:**
+- Have we seen this element before?
+- What data structure gives O(1) lookup?
+- Do we need to track indices or just existence?
+
+**KEY INSIGHT:**
+Use HashSet to track seen elements - if we see an element that's already in the set, we found a duplicate!
+
+**ALGORITHM:**
+1. Create empty HashSet
+2. For each number in array
+3. If number exists in set: return true
+4. Add number to set
+5. Return false (no duplicates found)
+
+---
+
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#two-pointers)

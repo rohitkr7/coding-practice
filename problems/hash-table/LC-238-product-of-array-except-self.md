@@ -519,6 +519,25 @@ Status: ✅ Passed
 
 ---
 
+## 🎴 Flashcard Content
+
+**HINTS:**
+- Can we use prefix and suffix products?
+- How to avoid division?
+- Can we reuse the output array to save space?
+
+**KEY INSIGHT:**
+Use two passes - prefix products left→right, then multiply by suffix products right→left, storing in result array to achieve O(1) space.
+
+**ALGORITHM:**
+1. Create result array
+2. Forward pass: Store prefix products in result
+3. Backward pass: Multiply by suffix products
+4. Each result[i] = (product of all left) × (product of all right)
+5. Return result array
+
+---
+
 ## 📚 Resources
 
 - [Pattern Guide](../../PATTERNS_GUIDE.md#array-manipulation)

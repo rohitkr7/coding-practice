@@ -91,6 +91,25 @@ def extract_problem_info(file_path):
         code_match = re.search(r'```java\s*\n(.*?)\n```', content, re.DOTALL)
         solution_code = code_match.group(1).strip() if code_match else ""
         
+        # Extract flashcard content if available
+        flashcard_section = re.search(r'## 🎴 Flashcard Content\s*\n\s*\*\*HINTS:\*\*\s*\n(.*?)\n\s*\*\*KEY INSIGHT:\*\*\s*\n(.*?)\n\s*\*\*ALGORITHM:\*\*\s*\n(.*?)(?:\n##|\n---|\Z)', content, re.DOTALL)
+        
+        flashcard_hints = []
+        flashcard_insight = ""
+        flashcard_algorithm = []
+        
+        if flashcard_section:
+            # Extract hints
+            hints_text = flashcard_section.group(1).strip()
+            flashcard_hints = [h.strip().lstrip('-').strip() for h in hints_text.split('\n') if h.strip() and h.strip().startswith('-')]
+            
+            # Extract key insight
+            flashcard_insight = flashcard_section.group(2).strip()
+            
+            # Extract algorithm steps
+            algo_text = flashcard_section.group(3).strip()
+            flashcard_algorithm = [step.strip() for step in algo_text.split('\n') if step.strip() and any(step.strip().startswith(f'{i}.') for i in range(1, 10))]
+        
         return {
             'leetcode_num': leetcode_num,
             'leetcode_url': leetcode_url,
@@ -103,6 +122,9 @@ def extract_problem_info(file_path):
             'time_complexity': time_complexity,
             'space_complexity': space_complexity,
             'solution_code': solution_code,
+            'flashcard_hints': flashcard_hints,
+            'flashcard_insight': flashcard_insight,
+            'flashcard_algorithm': flashcard_algorithm,
             'file_path': file_path
         }
     except Exception as e:
@@ -165,9 +187,24 @@ def extract_problem_summary(problem_text):
     
     return ' '.join(summary_parts)
 
-def get_pattern_hints(pattern, title):
-    """Generate specific, actionable hints based on pattern"""
+def get_pattern_hints(pattern, title, extracted_hints=None):
+    """Generate specific, actionable hints based on pattern or use extracted hints"""
+    
+    # Prioritize extracted hints from Flashcard Content section
+    if extracted_hints and len(extracted_hints) >= 2:
+        return extracted_hints[:3]  # Return up to 3 hints
+    
+    # Fallback to pattern-based hints if no extracted content
     pattern_lower = pattern.lower()
+    title_lower = title.lower()
+    
+    # Check for specific problems first (keeping for backwards compatibility)
+    if 'consecutive' in title_lower:
+        return [
+            "How to check if num-1 or num+1 exist quickly?",
+            "How to avoid counting same sequence twice?",
+            "Should we iterate over array or unique values?"
+        ]
     
     # Pattern-specific hints
     if 'hash' in pattern_lower or 'array' in pattern_lower:
@@ -321,59 +358,83 @@ def generate_flashcard_markdown(info):
     if len(code_lines) > main_logic_start + 10:
         compact_code += '\n    // ...'
     
-    # Create pseudocode summary based on pattern
-    pattern_lower = info['pattern'].lower()
-    if 'hash' in pattern_lower:
-        pseudo_steps = [
-            '1. Create HashMap to store value→index',
-            '2. For each element:',
-            '   - Check if complement exists in map',
-            '   - If yes: return indices',
-            '   - If no: add current to map'
-        ]
-    elif 'two pointer' in pattern_lower:
-        pseudo_steps = [
-            '1. Initialize left=0, right=n-1',
-            '2. While left < right:',
-            '   - Check condition',
-            '   - Move pointers based on comparison'
-        ]
-    elif 'sliding window' in pattern_lower:
-        pseudo_steps = [
-            '1. Initialize window boundaries',
-            '2. Expand window: add right element',
-            '3. Shrink window: remove left if invalid',
-            '4. Track optimal answer'
-        ]
-    elif 'top k' in pattern_lower or 'heap' in pattern_lower:
-        pseudo_steps = [
-            '1. Count frequencies with HashMap',
-            '2. Create buckets[n+1] or use heap',
-            '3. Place elements in bucket[frequency]',
-            '4. Traverse high→low, collect k items'
-        ]
-    elif 'string' in pattern_lower:
-        pseudo_steps = [
-            '1. Encode: append length + "#" + string',
-            '2. Decode: read length, skip "#", extract chars',
-            '3. Reset pointers: j = i after each extraction'
-        ]
+    # Use extracted algorithm steps if available, otherwise generate from pattern
+    if info.get('flashcard_algorithm') and len(info['flashcard_algorithm']) > 0:
+        pseudo_steps = info['flashcard_algorithm']
     else:
-        pseudo_steps = [
-            '1. Identify base case',
-            '2. Apply pattern logic',
-            '3. Optimize with key data structure'
-        ]
+        # Fallback to pattern-based generation (keeping for backwards compatibility)
+        pattern_lower = info['pattern'].lower()
+        title_lower = clean_title.lower()
+        
+        if 'consecutive' in title_lower:
+            pseudo_steps = [
+                '1. Build HashSet for O(1) lookups',
+                '2. Iterate over HashSet (not array!)',
+                "3. If num-1 doesn't exist: sequence start",
+                '4. Count consecutive: num→num+1→num+2...',
+                '5. Track max length'
+            ]
+        elif 'hash' in pattern_lower:
+            # Default hash table pattern (Two Sum style)
+            pseudo_steps = [
+                '1. Create HashMap to store value→index',
+                '2. For each element:',
+                '   - Check if complement exists in map',
+                '   - If yes: return indices',
+                '   - If no: add current to map'
+            ]
+        elif 'two pointer' in pattern_lower:
+            pseudo_steps = [
+                '1. Initialize left=0, right=n-1',
+                '2. While left < right:',
+                '   - Check condition',
+                '   - Move pointers based on comparison'
+            ]
+        elif 'sliding window' in pattern_lower:
+            pseudo_steps = [
+                '1. Initialize window boundaries',
+                '2. Expand window: add right element',
+                '3. Shrink window: remove left if invalid',
+                '4. Track optimal answer'
+            ]
+        elif 'top k' in pattern_lower or 'heap' in pattern_lower:
+            pseudo_steps = [
+                '1. Count frequencies with HashMap',
+                '2. Create buckets[n+1] or use heap',
+                '3. Place elements in bucket[frequency]',
+                '4. Traverse high→low, collect k items'
+            ]
+        elif 'string' in pattern_lower:
+            pseudo_steps = [
+                '1. Encode: append length + "#" + string',
+                '2. Decode: read length, skip "#", extract chars',
+                '3. Reset pointers: j = i after each extraction'
+            ]
+        else:
+            pseudo_steps = [
+                '1. Identify base case',
+                '2. Apply pattern logic',
+                '3. Optimize with key data structure'
+            ]
     
     pseudocode = '\n'.join(pseudo_steps)
     
-    # Extract better key insight - look for specific patterns in the text
-    insight_text = info['key_insight'][:200] if info['key_insight'] else ''
+    # Use extracted key insight if available
+    if info.get('flashcard_insight'):
+        insight_text = info['flashcard_insight']
+    else:
+        # Extract better key insight from existing content
+        insight_text = info['key_insight'][:200] if info['key_insight'] else ''
     
-    # If no good insight found, create one from pattern
+    # If still no good insight found, create one from pattern (fallback)
     if not insight_text or len(insight_text) < 20:
         pattern_lower = info['pattern'].lower()
-        if 'hash' in pattern_lower:
+        title_lower = clean_title.lower()
+        
+        # Check for specific problems
+        if 'consecutive' in title_lower:
+            insight_text = "Only count from sequence starts (where num-1 doesn't exist). Iterate over HashSet, not array!"
+        elif 'hash' in pattern_lower:
             insight_text = 'Use HashMap to store seen elements for O(1) lookup'
         elif 'two pointer' in pattern_lower:
             insight_text = 'Use two pointers from opposite ends moving inward'
@@ -412,10 +473,10 @@ def generate_flashcard_markdown(info):
     pattern_text = f"🎯 PATTERN: {info['pattern'][:35]}"
     pattern_line = format_card_line(pattern_text, CARD_WIDTH)
     
-    # Get pattern-specific hints
-    hints = get_pattern_hints(info['pattern'], clean_title)
+    # Get pattern-specific hints (use extracted hints if available)
+    hints = get_pattern_hints(info['pattern'], clean_title, info.get('flashcard_hints'))
     hint1 = format_card_line(f"• {hints[0]}", CARD_WIDTH)
-    hint2 = format_card_line(f"• {hints[1]}", CARD_WIDTH)
+    hint2 = format_card_line(f"• {hints[1]}", CARD_WIDTH) if len(hints) > 1 else format_card_line('', CARD_WIDTH)
     
     # Use LeetCode number in heading
     problem_id = info['leetcode_num'] if info.get('leetcode_num') else info['jira_id']

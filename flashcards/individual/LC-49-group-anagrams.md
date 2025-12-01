@@ -23,8 +23,8 @@ difficulty: Medium
 │  Out=[[["bat"],["nat","tan"],["ate","eat","tea"]]]   │
 │                                                      │
 │  💡 HINTS:                                           │
-│  • Have we seen this element before?                 │
-│  • What gives O(1) lookup/insert?                    │
+│  • What do anagrams have in common when sorted?      │
+│  • Can sorted string be a key?                       │
 │                                                      │
 │  🎯 PATTERN: Hash Table / Array & Hashing            │
 │                                                      │
@@ -41,15 +41,15 @@ difficulty: Medium
 ├──────────────────────────────────────────────────────┤
 │                                                      │
 │  💡 KEY INSIGHT:                                     │
-│  Use HashMap to store seen elements for O(1)         │
-│  lookup                                              │
+│  Use sorted string as HashMap key - all anagrams     │
+│  will have the same sorted representation and map    │
 │                                                      │
 │  🔢 ALGORITHM:                                       │
-│  1. Create HashMap to store value→index              │
-│  2. For each element:                                │
-│  - Check if complement exists in map                 │
-│  - If yes: return indices                            │
-│  - If no: add current to map                         │
+│  1. Create HashMap<String, List<String>>             │
+│  2. For each string: sort it                         │
+│  3. Use sorted string as key                         │
+│  4. Add original string to list at that key          │
+│  5. Return all values from HashMap                   │
 │                                                      │
 │  ⏱️  O(n × m)  💾 O(n × m)                           │
 │                                                      │

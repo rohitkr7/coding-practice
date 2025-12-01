@@ -23,8 +23,8 @@ difficulty: Easy
 │                                                      │
 │                                                      │
 │  💡 HINTS:                                           │
-│  • Have we seen this element before?                 │
-│  • What gives O(1) lookup/insert?                    │
+│  • Do both strings need same character frequencies?  │
+│  • Can sorting help?                                 │
 │                                                      │
 │  🎯 PATTERN: Hash Table / Array & Hashing            │
 │                                                      │
@@ -41,15 +41,15 @@ difficulty: Easy
 ├──────────────────────────────────────────────────────┤
 │                                                      │
 │  💡 KEY INSIGHT:                                     │
-│  Use HashMap to store seen elements for O(1)         │
-│  lookup                                              │
+│  Count character frequencies - two strings are       │
+│  anagrams if they have identical character counts    │
 │                                                      │
 │  🔢 ALGORITHM:                                       │
-│  1. Create HashMap to store value→index              │
-│  2. For each element:                                │
-│  - Check if complement exists in map                 │
-│  - If yes: return indices                            │
-│  - If no: add current to map                         │
+│  1. Check if lengths differ (early return false)     │
+│  2. Count frequency of each char in both strings     │
+│  3. Compare frequency maps or arrays                 │
+│  4. Return true if identical, false otherwise        │
+│                                                      │
 │                                                      │
 │  ⏱️  O(n)  💾 O(1)                                   │
 │                                                      │

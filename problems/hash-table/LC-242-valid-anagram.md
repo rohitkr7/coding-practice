@@ -863,6 +863,24 @@ Auxiliary Space              | O(26 + 1) = O(1)
 
 ---
 
+## 🎴 Flashcard Content
+
+**HINTS:**
+- Do both strings need same character frequencies?
+- Can sorting help?
+- Can we use a frequency map?
+
+**KEY INSIGHT:**
+Count character frequencies - two strings are anagrams if they have identical character counts for all characters.
+
+**ALGORITHM:**
+1. Check if lengths differ (early return false)
+2. Count frequency of each char in both strings
+3. Compare frequency maps or arrays
+4. Return true if identical, false otherwise
+
+---
+
 ## 📚 Resources
 
 - **Pattern Guide:** [Frequency Counter Pattern](../../PATTERNS_GUIDE.md#hash-table-frequency-counter)

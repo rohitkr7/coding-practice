@@ -24,7 +24,7 @@ difficulty: Easy
 │                                                      │
 │  💡 HINTS:                                           │
 │  • Have we seen this element before?                 │
-│  • What gives O(1) lookup/insert?                    │
+│  • What data structure gives O(1) lookup?            │
 │                                                      │
 │  🎯 PATTERN: Hash Table / Array & Hashing            │
 │                                                      │
@@ -41,15 +41,15 @@ difficulty: Easy
 ├──────────────────────────────────────────────────────┤
 │                                                      │
 │  💡 KEY INSIGHT:                                     │
-│  Use HashMap to store seen elements for O(1)         │
-│  lookup                                              │
+│  Use HashSet to track seen elements - if we see      │
+│  an element that's already in the set, we found a    │
 │                                                      │
 │  🔢 ALGORITHM:                                       │
-│  1. Create HashMap to store value→index              │
-│  2. For each element:                                │
-│  - Check if complement exists in map                 │
-│  - If yes: return indices                            │
-│  - If no: add current to map                         │
+│  1. Create empty HashSet                             │
+│  2. For each number in array                         │
+│  3. If number exists in set: return true             │
+│  4. Add number to set                                │
+│  5. Return false (no duplicates found)               │
 │                                                      │
 │  ⏱️  O(n)  💾 O(n)                                   │
 │                                                      │

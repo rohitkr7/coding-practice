@@ -197,7 +197,62 @@ elif 'string' in pattern_lower:
 - ✅ Algorithm steps are concrete (not "apply pattern logic")
 - ✅ Key insight describes the actual technique used
 
-### 11. Generate Flashcard 🎴
+### 11. Create Flashcard Content Section 🎴
+
+**IMPORTANT:** Add a dedicated flashcard section to the problem file. This ensures accurate, problem-specific flashcard content.
+
+Add this section after the Quick Reference Card and before Resources:
+
+```markdown
+## 🎴 Flashcard Content
+
+**HINTS:**
+
+- [Hint 1 - problem-specific, actionable question]
+- [Hint 2 - guides toward the key insight]
+- [Hint 3 - highlights critical optimization or edge case]
+
+**KEY INSIGHT:**
+[One sentence capturing the core trick/insight of the solution]
+
+**ALGORITHM:**
+
+1. [Step 1 - what to do first]
+2. [Step 2 - main logic]
+3. [Step 3 - key optimization]
+4. [Step 4 - completion]
+5. [Step 5 - result (if applicable)]
+```
+
+**Guidelines:**
+
+**HINTS:**
+
+- Must be questions that guide thinking without giving away the solution
+- Should be specific to THIS problem, not generic
+- Focus on: data structure choice, key observation, critical optimization
+- Example GOOD hints for Longest Consecutive Sequence:
+  - "How to check if num-1 or num+1 exist quickly?"
+  - "How to avoid counting same sequence twice?"
+  - "Should we iterate over array or unique values?"
+- Example BAD hints (too generic):
+  - "What data structure should we use?"
+  - "What's the key observation?"
+
+**KEY INSIGHT:**
+
+- One clear sentence describing the "aha!" moment
+- Should capture what makes this solution work
+- Example: "Only count from sequence starts (where num-1 doesn't exist). Iterate over HashSet, not array!"
+
+**ALGORITHM:**
+
+- 3-5 numbered steps max
+- Use concrete actions, not vague descriptions
+- Mention key data structures and operations
+- Example: "Build HashSet for O(1) lookups" (specific) not "Create data structure" (vague)
+
+### 12. Generate Flashcard 🎴
 
 **IMPORTANT:** Auto-generate a printable flashcard for this problem:
 

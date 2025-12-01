@@ -229,10 +229,10 @@ Happy Learning! 🚀
 <!-- PROBLEM_TRACKER_START -->
 ## 📊 Problem Tracker
 
-### Overall Progress: 7/77 Problems (9%)
+### Overall Progress: 8/77 Problems (10%)
 
 ```
-[████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 9%
+[█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 10%
 ```
 
 ### 📈 Progress by Difficulty
@@ -240,7 +240,7 @@ Happy Learning! 🚀
 | Difficulty | Solved | Total | Progress |
 |------------|--------|-------|----------|
 | 🟢 Easy | 3 | 21 | `[██░░░░░░░░░░░░░░░░░░] 14%` 14% |
-| 🟡 Medium | 4 | 51 | `[█░░░░░░░░░░░░░░░░░░░] 7%` 7% |
+| 🟡 Medium | 5 | 51 | `[█░░░░░░░░░░░░░░░░░░░] 9%` 9% |
 | 🔴 Hard | 0 | 5 | `[░░░░░░░░░░░░░░░░░░░░] 0%` 0% |
 
 ---
@@ -307,12 +307,12 @@ Happy Learning! 🚀
 | 17 | ⏳ | [29 • Linked List Cycle](problems/fast-slow-pointers/LC-141-linked-list-cycle.md) | 🟢 Easy | Fast Slow Pointers | [📝 LC](https://leetcode.com/problems/linked-list-cycle) | [LND-14](https://rohitroy007.atlassian.net/browse/LND-14) | - |
 
 ### Hash Table / Array & Hashing
-**Progress:** 4/5 completed (80%)
+**Progress:** 5/5 completed (100%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
 | 18 | ✅ | [1 • Two Sum](problems/hash-table/LC-1-two-sum.md) | 🟢 Easy | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/two-sum) | [LND-29](https://rohitroy007.atlassian.net/browse/LND-29) | 📝 |
-| 19 | ⏳ | [8 • Longest Consecutive Sequence](problems/hash-table/LC-128-longest-consecutive-sequence.md) | 🟡 Medium | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/longest-consecutive-sequence) | [LND-35](https://rohitroy007.atlassian.net/browse/LND-35) | - |
+| 19 | ✅ | [8 • Longest Consecutive Sequence](problems/hash-table/LC-128-longest-consecutive-sequence.md) | 🟡 Medium | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/longest-consecutive-sequence) | [LND-35](https://rohitroy007.atlassian.net/browse/LND-35) | 📝 |
 | 20 | ✅ | [2 • Contains Duplicate](problems/hash-table/LC-217-contains-duplicate.md) | 🟢 Easy | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/contains-duplicate) | [LND-30](https://rohitroy007.atlassian.net/browse/LND-30) | 📝 |
 | 21 | ✅ | [3 • Valid Anagram](problems/hash-table/LC-242-valid-anagram.md) | 🟢 Easy | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/valid-anagram) | [LND-27](https://rohitroy007.atlassian.net/browse/LND-27) | 📝 |
 | 22 | ✅ | [4 • Group Anagrams](problems/hash-table/LC-49-group-anagrams.md) | 🟡 Medium | Hash Table / Array &... | [📝 LC](https://leetcode.com/problems/group-anagrams) | [LND-28](https://rohitroy007.atlassian.net/browse/LND-28) | 📝 |

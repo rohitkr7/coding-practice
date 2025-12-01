@@ -1,32 +1,32 @@
 ---
-id: LND-37
-leetcode_num: 238
-title: Product of Array Except Self
-pattern: Array Manipulation / Prefix-Suffix Products
+id: LND-35
+leetcode_num: 128
+title: Longest Consecutive Sequence
+pattern: Hash Table / Array & Hashing
 difficulty: Medium
 ---
 
-# #238: Product of Array Except Self
+# #128: Longest Consecutive Sequence
 
 ## 🎴 FRONT (Problem)
 
 ```
 ┌──────────────────────────────────────────────────────┐
-│  #238  Product of Array Except Self  🟡 Medium       │
+│  #128  Longest Consecutive Sequence  🟡 Medium       │
 ├──────────────────────────────────────────────────────┤
 │                                                      │
-│  Given an integer array nums, return an array        │
-│  answer such that answer[i] is equal to the          │
-│  product of all the elements of nums except          │
-│  nums[i]. The pro... Ex: In=[nums = [1,2,3,4]]       │
-│  Out=[[24,12,8,6]]                                   │
+│  Given an unsorted array of integers nums, return    │
+│  the length of the longest consecutive elements      │
+│  sequence. You must write an algorithm that runs     │
+│  in ... Ex: In=[nums = [100,4,200,1,3,2]] Out=[4]    │
+│                                                      │
 │                                                      │
 │                                                      │
 │  💡 HINTS:                                           │
-│  • Can we use prefix and suffix products?            │
-│  • How to avoid division?                            │
+│  • How to check if num-1 or num+1 exist quickly?     │
+│  • How to avoid counting same sequence twice?        │
 │                                                      │
-│  🎯 PATTERN: Array Manipulation / Prefix-Suffix      │
+│  🎯 PATTERN: Hash Table / Array & Hashing            │
 │                                                      │
 └──────────────────────────────────────────────────────┘
 ```
@@ -37,21 +37,21 @@ difficulty: Medium
 
 ```
 ┌──────────────────────────────────────────────────────┐
-│  #238  Product of Array Except S - SOLUTION          │
+│  #128  Longest Consecutive Seque - SOLUTION          │
 ├──────────────────────────────────────────────────────┤
 │                                                      │
 │  💡 KEY INSIGHT:                                     │
-│  Use two passes - prefix products left→right,        │
-│  then multiply by suffix products right→left,        │
+│  Only count from sequence starts (where num-1        │
+│  doesn't exist). Iterate over HashSet, not array!    │
 │                                                      │
 │  🔢 ALGORITHM:                                       │
-│  1. Create result array                              │
-│  2. Forward pass: Store prefix products in result    │
-│  3. Backward pass: Multiply by suffix products       │
-│  4. Each result[i] = (product of all left) × (produ  │
-│  5. Return result array                              │
+│  1. Build HashSet for O(1) lookups                   │
+│  2. Iterate over HashSet (not array!)                │
+│  3. If num-1 doesn't exist: sequence start           │
+│  4. Count consecutive: num→num+1→num+2...            │
+│  5. Track max length                                 │
 │                                                      │
-│  ⏱️  O(n)  💾 O(1)                                   │
+│  ⏱️  O(n)  💾 O(n)                                   │
 │                                                      │
 └──────────────────────────────────────────────────────┘
 ```
