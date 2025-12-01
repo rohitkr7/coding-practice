@@ -5,11 +5,23 @@ description: Start learning a new coding problem with guided hints
 # Start Problem Learning Workflow
 
 ## Purpose
+
 Automatically analyze a problem file and provide structured learning guidance aligned with Rohit's learning preferences (hints and guidance, not complete solutions).
+
+## Code Language Preference
+
+**IMPORTANT:** All code examples, pseudocode, and implementation guidance MUST use Java syntax.
+
+- ✅ Use Java-style syntax for all examples
+- ✅ Use Java naming conventions (camelCase for variables/methods, PascalCase for classes)
+- ✅ Use Java data structures (HashSet, HashMap, ArrayList, etc.)
+- ❌ Never use Python syntax or Python-specific constructs
+- If showing plain pseudocode, use Java-like syntax
 
 ## Workflow Steps
 
 ### 1. Problem File Analysis
+
 - Read the problem markdown file provided by the user
 - Extract key metadata:
   - Problem title and number
@@ -21,9 +33,11 @@ Automatically analyze a problem file and provide structured learning guidance al
   - Problem description and examples
 
 ### 2. Problem Understanding & Clarification
+
 **CRITICAL: Spend significant time here before jumping to solutions**
 
 Break down the problem statement:
+
 - **What are we given?** (Inputs, data types, constraints)
 - **What are we asked to find?** (Output, return type, format)
 - **What does the problem really mean?** (Rephrase in simpler terms)
@@ -32,12 +46,14 @@ Break down the problem statement:
 - **What assumptions should we NOT make?** (Common misconceptions)
 
 Walk through examples step-by-step:
+
 - **Trace Example 1:** What happens at each step?
 - **Trace Example 2:** How does this differ from Example 1?
 - **Create a mental model:** What's the relationship between input and output?
 - **Identify transformations:** How does input become output?
 
 Ask clarifying questions to deepen understanding:
+
 - What if the input is empty?
 - What if there's only one element?
 - Can values repeat?
@@ -45,7 +61,9 @@ Ask clarifying questions to deepen understanding:
 - What's the expected behavior in edge cases?
 
 ### 3. Initial Intuitions & Observations
+
 Before discussing any specific pattern or approach:
+
 - What do you notice about the examples?
 - What patterns or relationships do you see in the data?
 - What's your gut feeling about how to approach this?
@@ -53,9 +71,11 @@ Before discussing any specific pattern or approach:
 - If you had to explain this to a friend, how would you describe it?
 
 ### 4. **PAUSE FOR USER ENGAGEMENT** 🛑
+
 **CRITICAL: Stop here and wait for user response**
 
 After presenting the problem understanding and initial intuition prompts, STOP and ask the user to share their thoughts:
+
 - Ask them to think about how they would approach the problem
 - Request they share any patterns they notice
 - Ask if they want to see the core concepts or if they want to try thinking more first
@@ -64,37 +84,47 @@ After presenting the problem understanding and initial intuition prompts, STOP a
 This creates active learning rather than passive reading.
 
 ### 5. Core Concepts Teaching
+
 **ONLY show this section after user has shared their thoughts and wants to proceed**
 
 Explain the fundamental concepts needed:
+
 - What data structures are involved?
 - What algorithms might be relevant?
 - What mathematical concepts apply?
 - What are the prerequisites?
 
 ### 6. Pattern Recognition Guidance
+
 Help identify why this pattern applies:
+
 - What clues in the problem statement point to this pattern?
 - What are the characteristics of this pattern?
 - When should this pattern be used vs. alternatives?
 - What are common variations of this pattern?
 
 ### 7. Approach Analysis
+
 Walk through different approaches:
+
 - **Brute Force:** What's the obvious solution? What's its complexity?
 - **Optimized Approaches:** What improvements can we make? Why?
 - **Trade-offs:** Time vs. space complexity considerations
 - **Pattern Application:** How does the identified pattern help?
 
 ### 8. Key Insights & Hints
+
 Provide the "aha!" moments WITHOUT giving the solution:
+
 - What's the key insight that unlocks this problem?
 - What relationship between data elements should we notice?
 - What property can we exploit?
 - What's the clever trick or observation?
 
 ### 9. Implementation Guidance
+
 Guide with questions and hints:
+
 - What data structure should we use? Why?
 - What should we track/store as we iterate?
 - What are the loop conditions?
@@ -102,7 +132,9 @@ Guide with questions and hints:
 - Provide pseudocode structure, not complete code
 
 ### 10. Edge Cases Discussion
+
 Help identify corner cases:
+
 - Empty input
 - Single element
 - Duplicate values
@@ -111,7 +143,9 @@ Help identify corner cases:
 - Special values (zero, null, etc.)
 
 ### 11. Complexity Analysis
+
 Teach how to analyze:
+
 - Time complexity: What operations? How many times?
 - Space complexity: What extra space? Why needed?
 - Best/average/worst case scenarios
@@ -120,6 +154,7 @@ Teach how to analyze:
 ## Teaching Principles
 
 ### DO:
+
 - ✅ **FIRST:** Thoroughly explain what the problem is asking (spend significant time here)
 - ✅ Break down the problem statement into simple, understandable parts
 - ✅ Walk through examples step-by-step to build intuition
@@ -136,6 +171,7 @@ Teach how to analyze:
 - ✅ Suggest what to think about next
 
 ### DON'T:
+
 - ❌ Jump directly to solutions or approaches without problem understanding
 - ❌ Assume the user understands what the problem is asking
 - ❌ **Show core concepts before user has thought about the problem**

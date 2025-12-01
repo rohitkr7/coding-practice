@@ -8,6 +8,16 @@ description: Start learning a new coding problem with guided hints
 
 Automatically analyze a problem file and provide structured learning guidance aligned with Rohit's learning preferences (hints and guidance, not complete solutions).
 
+## Code Language Preference
+
+**IMPORTANT:** All code examples, pseudocode, and implementation guidance MUST use Java syntax.
+
+- ✅ Use Java-style syntax for all examples
+- ✅ Use Java naming conventions (camelCase for variables/methods, PascalCase for classes)
+- ✅ Use Java data structures (HashSet, HashMap, ArrayList, etc.)
+- ❌ Never use Python syntax or Python-specific constructs
+- If showing plain pseudocode, use Java-like syntax
+
 ## Workflow Steps
 
 ### 1. Problem File Analysis

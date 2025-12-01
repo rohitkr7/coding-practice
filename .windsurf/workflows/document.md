@@ -8,6 +8,17 @@ description: Document a completed solution with detailed explanations
 
 Help document a completed problem solution with comprehensive comments, explanations, and learning notes for future reference.
 
+## Code Language Preference
+
+**IMPORTANT:** All code examples, documentation, and implementation guidance MUST use Java syntax.
+
+- ✅ Use Java-style syntax for all examples
+- ✅ Use Java naming conventions (camelCase for variables/methods, PascalCase for classes)
+- ✅ Use Java data structures (HashSet, HashMap, ArrayList, LinkedList, PriorityQueue, etc.)
+- ✅ Include JavaDoc-style comments for methods
+- ❌ Never use Python syntax or Python-specific constructs
+- If showing plain pseudocode, use Java-like syntax
+
 ## Workflow Steps
 
 ### 1. Solution Review

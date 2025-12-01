@@ -8,6 +8,17 @@ description: Refine solution with crisp inline comments and complexity annotatio
 
 Generate a well-documented, LeetCode-ready solution with compact inline comments, complexity annotations, and clear explanations—displayed in chat only, without modifying any files.
 
+## Code Language Preference
+
+**IMPORTANT:** All code examples and refinements MUST use Java syntax unless the user's original code is in a different language.
+
+- ✅ Prefer Java-style syntax for all examples
+- ✅ Use Java naming conventions (camelCase for variables/methods, PascalCase for classes)
+- ✅ Use Java data structures (HashSet, HashMap, ArrayList, etc.)
+- ✅ Include JavaDoc-style comments for methods
+- ✅ If user's code is already in another language, maintain that language but follow its best practices
+- If showing plain pseudocode, use Java-like syntax
+
 ## Key Differences from /document
 
 - **Refine:** Code-focused, inline comments only, shown in chat
