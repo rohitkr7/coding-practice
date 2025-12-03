@@ -15,48 +15,86 @@
 
 ## 📝 Problem Statement
 
-Problem URL: https://leetcode.com/problems/valid-palindrome
-Problem Description:
-Solve the Valid Palindrome coding problem according to the LeetCode description.
-Visit the problem URL for the complete description and examples.
-Difficulty: Easy
-Category: Two Pointers
+**LeetCode #125:** [Valid Palindrome](https://leetcode.com/problems/valid-palindrome)
+
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+
+Given a string `s`, return `true` if it is a palindrome, or `false` otherwise.
+
+**Example 1:**
+
+```
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome.
+```
+
+**Example 2:**
+
+```
+Input: s = "race a car"
+Output: false
+Explanation: "raceacar" is not a palindrome.
+```
+
+**Example 3:**
+
+```
+Input: s = " "
+Output: true
+Explanation: s is an empty string "" after removing non-alphanumeric characters.
+Since an empty string reads the same forward and backward, it is a palindrome.
+```
+
+**Constraints:**
+
+- `1 <= s.length <= 2 * 10^5`
+- `s` consists only of printable ASCII characters.
 
 ---
 
 ## 🤔 Initial Thoughts
 
 ### Understanding the Problem
+
 - What are we asked to find/compute?
 - What are the inputs and outputs?
 - What are the edge cases?
 
 ### Pattern Recognition
+
 **Why Two Pointers?**
-- 
+
+-
 
 **What clues in the problem point to this pattern?**
-- 
+
+-
 
 ---
 
 ## 💡 Approach
 
 ### Brute Force (if applicable)
+
 **Idea:**
-- 
+
+-
 
 **Time Complexity:** O(?)  
-**Space Complexity:** O(?)  
+**Space Complexity:** O(?)
 
 ### Optimized Approach
+
 **Idea:**
-- 
+
+-
 
 **Algorithm Steps:**
-1. 
-2. 
-3. 
+
+1.
+2.
+3.
 
 **Time Complexity:** O(?)  
 **Space Complexity:** O(?)
@@ -66,11 +104,11 @@ Category: Two Pointers
 ## 🎨 Visual Explanation
 
 ```
-Example: 
+Example:
 
-Step 1: 
-Step 2: 
-Step 3: 
+Step 1:
+Step 2:
+Step 3:
 ```
 
 ---
@@ -84,33 +122,37 @@ def solution():
 ```
 
 ### Code Explanation
-- 
+
+-
 
 ---
 
 ## 🧪 Test Cases
 
 ### Test Case 1: Basic Example
+
 ```
-Input: 
-Expected Output: 
-Actual Output: 
+Input:
+Expected Output:
+Actual Output:
 Status: ⏳ Not Tested
 ```
 
 ### Test Case 2: Edge Case - Empty Input
+
 ```
-Input: 
-Expected Output: 
-Actual Output: 
+Input:
+Expected Output:
+Actual Output:
 Status: ⏳ Not Tested
 ```
 
 ### Test Case 3: Edge Case - Single Element
+
 ```
-Input: 
-Expected Output: 
-Actual Output: 
+Input:
+Expected Output:
+Actual Output:
 Status: ⏳ Not Tested
 ```
 
@@ -119,27 +161,34 @@ Status: ⏳ Not Tested
 ## 📊 Complexity Analysis
 
 ### Time Complexity: O(?)
+
 **Breakdown:**
-- 
+
+-
 
 ### Space Complexity: O(?)
+
 **Breakdown:**
-- 
+
+-
 
 ---
 
 ## 🎓 Key Learnings
 
 ### What I Learned
-1. 
-2. 
-3. 
+
+1.
+2.
+3.
 
 ### Mistakes I Made
-1. 
-2. 
+
+1.
+2.
 
 ### Pattern Insights
+
 - When to use two pointers:
 - When NOT to use this pattern:
 
@@ -147,9 +196,9 @@ Status: ⏳ Not Tested
 
 ## 🔗 Similar Problems
 
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 ---
 
