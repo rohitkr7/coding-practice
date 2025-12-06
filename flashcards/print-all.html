@@ -133,7 +133,7 @@
 <body>
     <div class="no-print" style="text-align: center; padding: 20px; background: white; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
         <h1>🎴 LeetCode Flashcards - Print Ready</h1>
-        <p style="margin: 10px 0;"><strong>Total Problems:</strong> 8 problems × 2 cards = 16 total cards</p>
+        <p style="margin: 10px 0;"><strong>Total Problems:</strong> 9 problems × 2 cards = 18 total cards</p>
         <p style="margin: 10px 0;"><strong>Print Instructions:</strong></p>
         <ol style="text-align: left; display: inline-block; margin: 10px auto;">
             <li>File → Print (⌘P / Ctrl+P)</li>
@@ -184,6 +184,50 @@
 │  - If no: add current to map                         │
 │                                                      │
 │  ⏱️  O(n)  💾 O(n)                                   │
+│                                                      │
+└──────────────────────────────────────────────────────┘</pre>
+    </div>
+    
+
+    <div class="flashcard front easy">
+        <pre>┌──────────────────────────────────────────────────────┐
+│  #125  Valid Palindrome  🟢 Easy                     │
+├──────────────────────────────────────────────────────┤
+│                                                      │
+│  **LeetCode #125:** [Valid                           │
+│  Palindrome](https://leetcode.com/problems/valid-pa  │
+│  Ex: In=[s = "A man, a plan, a canal: Panama"]       │
+│  Out=[true]                                          │
+│                                                      │
+│                                                      │
+│                                                      │
+│  💡 HINTS:                                           │
+│  • Check symmetry without reversing?                 │
+│  • What if special chars scattered?                  │
+│                                                      │
+│  🎯 PATTERN: Two Pointers                            │
+│                                                      │
+└──────────────────────────────────────────────────────┘</pre>
+    </div>
+    
+    <!-- BACK card -->
+    <div class="flashcard back easy">
+        <pre>┌──────────────────────────────────────────────────────┐
+│  #125  Valid Palindrome - SOLUTION                   │
+├──────────────────────────────────────────────────────┤
+│                                                      │
+│  💡 KEY INSIGHT:                                     │
+│  Use two pointers from edges, skip                   │
+│  non-alphanumeric independently with bounds          │
+│                                                      │
+│  🔢 ALGORITHM:                                       │
+│  1. Initialize `left = 0`, `right = length - 1`      │
+│  2. Skip non-alphanumeric from left (with `left < r  │
+│  3. Skip non-alphanumeric from right (with `left <   │
+│  4. Compare `toLowerCase(s[left])` with `toLowerCas  │
+│  5. Move both pointers inward; return false on mism  │
+│                                                      │
+│  ⏱️  O(n)  💾 O(1)                                   │
 │                                                      │
 └──────────────────────────────────────────────────────┘</pre>
     </div>

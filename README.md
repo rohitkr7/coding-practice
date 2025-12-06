@@ -229,17 +229,17 @@ Happy Learning! 🚀
 <!-- PROBLEM_TRACKER_START -->
 ## 📊 Problem Tracker
 
-### Overall Progress: 8/77 Problems (10%)
+### Overall Progress: 9/77 Problems (11%)
 
 ```
-[█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 10%
+[█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 11%
 ```
 
 ### 📈 Progress by Difficulty
 
 | Difficulty | Solved | Total | Progress |
 |------------|--------|-------|----------|
-| 🟢 Easy | 3 | 21 | `[██░░░░░░░░░░░░░░░░░░] 14%` 14% |
+| 🟢 Easy | 4 | 21 | `[███░░░░░░░░░░░░░░░░░] 19%` 19% |
 | 🟡 Medium | 5 | 51 | `[█░░░░░░░░░░░░░░░░░░░] 9%` 9% |
 | 🔴 Hard | 0 | 5 | `[░░░░░░░░░░░░░░░░░░░░] 0%` 0% |
 
@@ -450,13 +450,13 @@ Happy Learning! 🚀
 | 70 | ⏳ | [43 • Find Median from Data Stream](problems/two-heaps/LC-295-find-median-from-data-stream.md) | 🔴 Hard | Two Heaps | [📝 LC](https://leetcode.com/problems/find-median-from-data-stream) | [LND-22](https://rohitroy007.atlassian.net/browse/LND-22) | - |
 
 ### Two Pointers
-**Progress:** 0/7 completed (0%)
+**Progress:** 1/7 completed (14%)
 
 | # | Status | Problem | Difficulty | Pattern | Resources | Jira | Notes |
 |---|--------|---------|------------|---------|-----------|------|-------|
 | 71 | ⏳ | [11 • Container With Most Water](problems/two-pointers/LC-11-container-with-most-water.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/container-with-most-water) | [LND-116](https://rohitroy007.atlassian.net/browse/LND-116) | - |
 | 72 | ⏳ | [12 • Best Time to Buy and Sell Stock](problems/two-pointers/LC-121-best-time-to-buy-and-sell-stock.md) | 🟢 Easy | Two Pointers | [📝 LC](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | [LND-117](https://rohitroy007.atlassian.net/browse/LND-117) | - |
-| 73 | ⏳ | [9 • Valid Palindrome](problems/two-pointers/LC-125-valid-palindrome.md) | 🟢 Easy | Two Pointers | [📝 LC](https://leetcode.com/problems/valid-palindrome) | [LND-119](https://rohitroy007.atlassian.net/browse/LND-119) | - |
+| 73 | ✅ | [9 • Valid Palindrome](problems/two-pointers/LC-125-valid-palindrome.md) | 🟢 Easy | Two Pointers | [📝 LC](https://leetcode.com/problems/valid-palindrome) | [LND-119](https://rohitroy007.atlassian.net/browse/LND-119) | 📝 |
 | 74 | ⏳ | [27 • Reorder List](problems/two-pointers/LC-143-reorder-list.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/reorder-list) | [LND-141](https://rohitroy007.atlassian.net/browse/LND-141) | - |
 | 75 | ⏳ | [10 • 3Sum](problems/two-pointers/LC-15-3sum.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/3sum) | [LND-121](https://rohitroy007.atlassian.net/browse/LND-121) | - |
 | 76 | ⏳ | [28 • Remove Nth Node From End of List](problems/two-pointers/LC-19-remove-nth-node-from-end-of-list.md) | 🟡 Medium | Two Pointers | [📝 LC](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | [LND-132](https://rohitroy007.atlassian.net/browse/LND-132) | - |
