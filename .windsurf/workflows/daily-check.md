@@ -16,38 +16,46 @@ A quick 30-second check-in to see what problems need revision today and track yo
 
 ### 2. Show Today's Dashboard
 
-Display a clean, motivating dashboard:
+Display a clean, motivating dashboard with enhanced visual indicators:
 
 ```
 📅 Daily Check-In - [Current Date]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🔥 Revision Streak: [X days]
-📊 Total Problems Solved: [Y problems]
+🔥 Revision Streak: [X days] | 📈 Revision Debt: [Y days] | ⚡ Pattern Mastery: [Z%]
+📊 Total Problems Solved: [Y problems] | 🎯 Weekly Goal: [X/7 revisions]
 ⏰ Last Revision: [Date or "Not yet today"]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🚨 DUE TODAY ([count] problems):
-[List each problem due today with format:]
-  • [Problem ID] - [Problem Name] | [Pattern] | Last reviewed: [X] days ago
+🚨 DUE TODAY ([count] problems) - Priority Order:
+[List by pattern weakness priority:]
+  🔴 [Problem ID] - [Problem Name] | [Pattern] | Overdue: [X] days | Difficulty: ⭐⭐⭐
+  🟡 [Problem ID] - [Problem Name] | [Pattern] | Due today | Last: [X] days ago
 
-⚠️  OVERDUE ([count] problems):
-[List overdue problems - problems that should have been reviewed before today]
-  • [Problem ID] - [Problem Name] | [Pattern] | Due: [X] days ago
+⚠️  REVISION DEBT ([count] problems) - [Total days overdue]:
+[List overdue problems by urgency:]
+  🔴 [Problem ID] - [Problem Name] | [Pattern] | [X] days overdue | Priority: HIGH
+  🟠 [Problem ID] - [Problem Name] | [Pattern] | [X] days overdue | Priority: MED
+
+📊 PATTERN ANALYSIS:
+  🔴 Weak: [Pattern Names] ([X] problems overdue)
+  🟡 Needs Practice: [Pattern Names] ([X] problems due)
+  🟢 Strong: [Pattern Names] ([X] problems mastered)
 
 📆 UPCOMING THIS WEEK ([count] problems):
-[List problems due in next 7 days]
-  • [Problem ID] - [Problem Name] | [Pattern] | Due: [Day of week]
+[Smart scheduling by pattern and difficulty:]
+  • [Problem ID] - [Problem Name] | [Pattern] | [Day] | Next interval: [X] days
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-✨ QUICK ACTIONS:
-  • Type '/revise' to review today's problems
-  • Type '/learn' to solve a new problem
-  • Type 'skip' to see this tomorrow (be honest!)
+✨ SMART ACTIONS (Ordered by Impact):
+  🎯 Priority: '/revise [pattern]' - Focus on weakest pattern first
+  📚 Standard: '/revise' - Review all due problems  
+  🚫 Blocked: '/learn' (BLOCKED - Clear revision debt first!)
+  ⏭️  Skip: Update next check-in (adds 1 day to revision debt)
   
-💡 TIP: Just 15 minutes of revision today keeps your patterns sharp!
+💡 TIP: Pattern mastery = consistency! Focus on your red patterns first.
 ```
 
 ### 3. Update Last Check-In Time
@@ -85,16 +93,43 @@ Suggestion:
 Remember: Quality over quantity! Better to deeply review 3 problems than rush through 10.
 ```
 
-**If problems are overdue:**
+**If problems are overdue (Revision Debt > 0):**
 ```
-⚠️  You have [X] overdue reviews. No judgment—life happens!
+⚠️  Revision Debt: [X] days across [Y] problems
 
-Recovery Plan:
-  • Today: Focus on the most overdue (oldest first)
-  • Tomorrow: Catch up on the rest
-  • By [Date]: Back on track!
+🚨 ENFORCEMENT ACTIVE:
+  • '/learn' workflow blocked until debt < 3 days
+  • Streak bonus paused until caught up
+  • Pattern mastery calculation affected
 
-Your patterns aren't lost, they just need a refresh. Let's go! 💪
+📋 SMART RECOVERY PLAN:
+  🎯 Today: [List 3 highest priority problems by pattern weakness]
+  📅 Tomorrow: [List next 3 problems]
+  🏁 Target: Debt-free by [Date]
+
+💪 Recovery Motivation:
+  • Clearing debt = +5 streak bonus
+  • Pattern mastery will jump +15% when caught up
+  • You've successfully recovered [X] times before!
+
+Your patterns aren't lost, they just need activation! 🧠⚡
+```
+
+**If revision debt >= 7 days (Critical):**
+```
+🚨 CRITICAL: [X] days revision debt - Pattern retention at risk!
+
+🛑 EMERGENCY MODE ACTIVATED:
+  • All workflows except /revise are blocked
+  • Simplified recovery: 2 problems per day maximum
+  • Focus ONLY on strongest patterns first (easier wins)
+  • Weekly reset available: Type '/reset-debt' (lose streak but clear debt)
+
+🎯 EMERGENCY RECOVERY:
+  Today: [Easiest 2 problems from strongest patterns]
+  Goal: Reduce debt to <7 days, then normal recovery plan
+
+Remember: Even experts have rough weeks. This is temporary! 💪
 ```
 
 ### 5. Streak Motivation

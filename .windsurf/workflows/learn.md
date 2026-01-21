@@ -20,6 +20,41 @@ Automatically analyze a problem file and provide structured learning guidance al
 
 ## Workflow Steps
 
+### 0. Revision Check (Smart Integration)
+
+**CRITICAL: Check for pending revisions before learning new problems**
+
+- Automatically load `tracking/revision-tracker.json`
+- Check for problems due today or overdue
+- **If revision debt >= 3 days**: Block `/learn` workflow
+- **If 1-5 problems due**: Show gentle prompt
+- **If 0 problems due**: Proceed with learning
+
+**Revision Prompt Display:**
+```
+⚡ Quick Revision Check
+━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 You have [X] problems due for revision:
+  🟡 [Problem] - [Pattern] | Due: [timeframe]
+  🔴 [Problem] - [Pattern] | Overdue: [X] days
+
+🎯 RECOMMENDATION:
+  • Spend 10 minutes on revisions first → '/revise'
+  • Then come back to learn something new
+  
+💡 Spaced repetition strengthens existing patterns before adding new ones!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━
+Continue learning anyway? [y/N] (Press N to revise first)
+```
+
+**Enforcement Levels:**
+- **0 problems due**: ✅ Proceed immediately
+- **1-2 problems due**: ⚠️ Gentle prompt (can skip)
+- **3-5 problems due**: 🟡 Strong recommendation (requires confirmation)
+- **6+ problems or debt ≥3 days**: 🛑 Hard block until revised
+
 ### 1. Problem File Analysis
 
 - Read the problem markdown file provided by the user
@@ -32,7 +67,15 @@ Automatically analyze a problem file and provide structured learning guidance al
   - Current status
   - Problem description and examples
 
-### 2. Problem Understanding & Clarification
+### 2. Update Learning Tracker
+
+**Upon completion of problem learning:**
+- Add problem to `tracking/revision-tracker.json`
+- Set initial review date: tomorrow (1-day interval)
+- Increment `total_problems_solved` counter
+- Update `last_check_in` timestamp
+
+### 3. Problem Understanding & Clarification
 
 **CRITICAL: Spend significant time here before jumping to solutions**
 

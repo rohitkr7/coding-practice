@@ -1,8 +1,66 @@
 {
-  "last_check_in": "2026-01-20",
-  "current_streak": 1,
+  "last_check_in": "2026-01-21",
+  "current_streak": 2,
   "best_streak": 1,
-  "total_problems_solved": 0,
-  "last_revision_session": null,
-  "problems": {}
+  "total_problems_solved": 5,
+  "last_revision_session": "2026-01-20",
+  "revision_debt_days": 0,
+  "weekly_revision_goal": 7,
+  "weekly_revisions_done": 2,
+  "pattern_performance": {
+    "Two Pointers": {
+      "avg_quality": 5.0,
+      "recent_qualities": [5],
+      "total_reviews": 1,
+      "multiplier": 1.3,
+      "mastery_level": "Strong"
+    },
+    "Hash Table": {
+      "avg_quality": 5.0,
+      "recent_qualities": [5],
+      "total_reviews": 1,
+      "multiplier": 1.3,
+      "mastery_level": "Strong"
+    }
+  },
+  "problems": {
+    "LC-125": {
+      "name": "Valid Palindrome",
+      "pattern": "Two Pointers",
+      "difficulty": "Easy",
+      "date_solved": "2025-12-06",
+      "revisions": [
+        {
+          "date": "2026-01-20",
+          "quality": 5,
+          "base_interval": 21,
+          "applied_multiplier": 1.0,
+          "final_interval": 21,
+          "next_review": "2026-02-10"
+        }
+      ],
+      "next_review": "2026-02-10",
+      "priority_score": 1,
+      "days_overdue": 0
+    },
+    "LC-242": {
+      "name": "Valid Anagram",
+      "pattern": "Hash Table", 
+      "difficulty": "Easy",
+      "date_solved": "2025-12-01",
+      "revisions": [
+        {
+          "date": "2026-01-20",
+          "quality": 5,
+          "base_interval": 21,
+          "applied_multiplier": 1.0,
+          "final_interval": 21,
+          "next_review": "2026-02-10"
+        }
+      ],
+      "next_review": "2026-02-10",
+      "priority_score": 1,
+      "days_overdue": 0
+    }
+  }
 }
