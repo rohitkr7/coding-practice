@@ -20,9 +20,64 @@ Automatically analyze a problem file and provide structured learning guidance al
 
 ## Workflow Steps
 
-### 1. Problem File Analysis
+### 1. Smart Problem Selection
 
-- Read the problem markdown file provided by the user
+**CRITICAL: Intelligently suggest next problem based on learning progress**
+
+- Analyze current pattern mastery from `tracking/revision-tracker.json`
+- Identify knowledge gaps and recommend next learning targets
+- Scan `problems/` directory for available problems
+- Consider pattern distribution and difficulty progression
+- Present 2-3 smart recommendations with clear rationale
+
+**Smart Selection Logic:**
+```
+🧠 Analyzing Your Learning Profile...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 CURRENT MASTERY:
+  🟢 Strong: [List strong patterns] ([X] problems each)
+  🟡 Learning: [List developing patterns] ([X] problems each)  
+  🔴 Missing: [List unlearned patterns]
+
+🎯 RECOMMENDED NEXT STEPS:
+  
+  1. 🔥 [Problem Name] ([Pattern]) - [Difficulty]
+     💡 Why: [Builds on your Two Pointers strength + introduces Sliding Window]
+     📂 File: problems/[pattern]/[filename].md
+     ⏱️  Est. Time: 45-60 minutes
+     
+  2. 📚 [Problem Name] ([Pattern]) - [Difficulty]  
+     💡 Why: [Foundation pattern - unlocks 15+ future problems]
+     📂 File: problems/[pattern]/[filename].md
+     ⏱️  Est. Time: 60-90 minutes
+     
+  3. ⚡ [Problem Name] ([Pattern]) - [Difficulty]
+     💡 Why: [Quick win - similar to problems you've mastered]
+     📂 File: problems/[pattern]/[filename].md
+     ⏱️  Est. Time: 30-45 minutes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🤔 What interests you most?
+  • Type '1', '2', or '3' to select a recommendation
+  • Type 'random' for surprise selection
+  • Type 'pattern:X' to focus on specific pattern
+  • Or specify your own: 'problems/[path]/[file].md'
+```
+
+**Pattern Priority Algorithm:**
+1. **Foundational First**: Prioritize patterns that unlock many other problems
+2. **Progressive Difficulty**: Build from Easy → Medium → Hard within patterns
+3. **Complementary Skills**: Suggest patterns that build on existing strengths
+4. **Frequency-Based**: Focus on most commonly used interview patterns
+5. **Recency Balance**: Avoid suggesting same pattern repeatedly
+
+### 2. Problem File Analysis
+
+**After user selects a problem:**
+
+- Read the selected problem markdown file
 - Extract key metadata:
   - Problem title and number
   - Jira ticket reference
@@ -32,7 +87,7 @@ Automatically analyze a problem file and provide structured learning guidance al
   - Current status
   - Problem description and examples
 
-### 2. Problem Understanding & Clarification
+### 3. Problem Understanding & Clarification
 
 **CRITICAL: Spend significant time here before jumping to solutions**
 
@@ -60,7 +115,7 @@ Ask clarifying questions to deepen understanding:
 - Are there any special values to watch for?
 - What's the expected behavior in edge cases?
 
-### 3. Initial Intuitions & Observations
+### 4. Initial Intuitions & Observations
 
 Before discussing any specific pattern or approach:
 
@@ -70,7 +125,7 @@ Before discussing any specific pattern or approach:
 - What simpler problem does this remind you of?
 - If you had to explain this to a friend, how would you describe it?
 
-### 4. **PAUSE FOR USER ENGAGEMENT** 🛑
+### 5. **PAUSE FOR USER ENGAGEMENT** 🛑
 
 **CRITICAL: Stop here and wait for user response**
 
@@ -83,7 +138,7 @@ After presenting the problem understanding and initial intuition prompts, STOP a
 
 This creates active learning rather than passive reading.
 
-### 5. Core Concepts Teaching
+### 6. Core Concepts Teaching
 
 **ONLY show this section after user has shared their thoughts and wants to proceed**
 
@@ -94,7 +149,7 @@ Explain the fundamental concepts needed:
 - What mathematical concepts apply?
 - What are the prerequisites?
 
-### 6. Pattern Recognition Guidance
+### 7. Pattern Recognition Guidance
 
 Help identify why this pattern applies:
 
@@ -103,7 +158,7 @@ Help identify why this pattern applies:
 - When should this pattern be used vs. alternatives?
 - What are common variations of this pattern?
 
-### 7. Approach Analysis
+### 8. Approach Analysis
 
 Walk through different approaches:
 
@@ -112,7 +167,7 @@ Walk through different approaches:
 - **Trade-offs:** Time vs. space complexity considerations
 - **Pattern Application:** How does the identified pattern help?
 
-### 8. Key Insights & Hints
+### 9. Key Insights & Hints
 
 Provide the "aha!" moments WITHOUT giving the solution:
 
@@ -121,7 +176,7 @@ Provide the "aha!" moments WITHOUT giving the solution:
 - What property can we exploit?
 - What's the clever trick or observation?
 
-### 9. Implementation Guidance
+### 10. Implementation Guidance
 
 Guide with questions and hints:
 
@@ -131,7 +186,7 @@ Guide with questions and hints:
 - What edge cases need special handling?
 - Provide pseudocode structure, not complete code
 
-### 10. Edge Cases Discussion
+### 11. Edge Cases Discussion
 
 Help identify corner cases:
 
@@ -142,7 +197,7 @@ Help identify corner cases:
 - Maximum/minimum constraints
 - Special values (zero, null, etc.)
 
-### 11. Complexity Analysis
+### 12. Complexity Analysis
 
 Teach how to analyze:
 

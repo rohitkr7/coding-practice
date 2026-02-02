@@ -20,44 +20,64 @@ Automatically analyze a problem file and provide structured learning guidance al
 
 ## Workflow Steps
 
-### 0. Revision Check (Smart Integration)
+### 1. Smart Problem Selection
 
-**CRITICAL: Check for pending revisions before learning new problems**
+**CRITICAL: Intelligently suggest next problem based on learning progress**
 
-- Automatically load `tracking/revision-tracker.json`
-- Check for problems due today or overdue
-- **If revision debt >= 3 days**: Block `/learn` workflow
-- **If 1-5 problems due**: Show gentle prompt
-- **If 0 problems due**: Proceed with learning
+- Analyze current pattern mastery from `tracking/revision-tracker.json`
+- Identify knowledge gaps and recommend next learning targets
+- Scan `problems/` directory for available problems
+- Consider pattern distribution and difficulty progression
+- Present 2-3 smart recommendations with clear rationale
 
-**Revision Prompt Display:**
+**Smart Selection Logic:**
 ```
-⚡ Quick Revision Check
-━━━━━━━━━━━━━━━━━━━━━━━━━
+🧠 Analyzing Your Learning Profile...
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-📋 You have [X] problems due for revision:
-  🟡 [Problem] - [Pattern] | Due: [timeframe]
-  🔴 [Problem] - [Pattern] | Overdue: [X] days
+📊 CURRENT MASTERY:
+  🟢 Strong: [List strong patterns] ([X] problems each)
+  🟡 Learning: [List developing patterns] ([X] problems each)  
+  🔴 Missing: [List unlearned patterns]
 
-🎯 RECOMMENDATION:
-  • Spend 10 minutes on revisions first → '/revise'
-  • Then come back to learn something new
+🎯 RECOMMENDED NEXT STEPS:
   
-💡 Spaced repetition strengthens existing patterns before adding new ones!
+  1. 🔥 [Problem Name] ([Pattern]) - [Difficulty]
+     💡 Why: [Builds on your Two Pointers strength + introduces Sliding Window]
+     📂 File: problems/[pattern]/[filename].md
+     ⏱️  Est. Time: 45-60 minutes
+     
+  2. 📚 [Problem Name] ([Pattern]) - [Difficulty]  
+     💡 Why: [Foundation pattern - unlocks 15+ future problems]
+     📂 File: problems/[pattern]/[filename].md
+     ⏱️  Est. Time: 60-90 minutes
+     
+  3. ⚡ [Problem Name] ([Pattern]) - [Difficulty]
+     💡 Why: [Quick win - similar to problems you've mastered]
+     📂 File: problems/[pattern]/[filename].md
+     ⏱️  Est. Time: 30-45 minutes
 
-━━━━━━━━━━━━━━━━━━━━━━━━━
-Continue learning anyway? [y/N] (Press N to revise first)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🤔 What interests you most?
+  • Type '1', '2', or '3' to select a recommendation
+  • Type 'random' for surprise selection
+  • Type 'pattern:X' to focus on specific pattern
+  • Or specify your own: 'problems/[path]/[file].md'
 ```
 
-**Enforcement Levels:**
-- **0 problems due**: ✅ Proceed immediately
-- **1-2 problems due**: ⚠️ Gentle prompt (can skip)
-- **3-5 problems due**: 🟡 Strong recommendation (requires confirmation)
-- **6+ problems or debt ≥3 days**: 🛑 Hard block until revised
+**Pattern Priority Algorithm:**
+1. **Foundational First**: Prioritize patterns that unlock many other problems
+2. **Progressive Difficulty**: Build from Easy → Medium → Hard within patterns
+3. **Complementary Skills**: Suggest patterns that build on existing strengths
+4. **Frequency-Based**: Focus on most commonly used interview patterns
+5. **Recency Balance**: Avoid suggesting same pattern repeatedly
 
-### 1. Problem File Analysis
+### 2. Problem File Analysis
 
-- Read the problem markdown file provided by the user
+**After user selects a problem:**
+
+- Read the selected problem markdown file
 - Extract key metadata:
   - Problem title and number
   - Jira ticket reference
@@ -66,14 +86,6 @@ Continue learning anyway? [y/N] (Press N to revise first)
   - Difficulty level
   - Current status
   - Problem description and examples
-
-### 2. Update Learning Tracker
-
-**Upon completion of problem learning:**
-- Add problem to `tracking/revision-tracker.json`
-- Set initial review date: tomorrow (1-day interval)
-- Increment `total_problems_solved` counter
-- Update `last_check_in` timestamp
 
 ### 3. Problem Understanding & Clarification
 
@@ -103,7 +115,7 @@ Ask clarifying questions to deepen understanding:
 - Are there any special values to watch for?
 - What's the expected behavior in edge cases?
 
-### 3. Initial Intuitions & Observations
+### 4. Initial Intuitions & Observations
 
 Before discussing any specific pattern or approach:
 
@@ -113,7 +125,7 @@ Before discussing any specific pattern or approach:
 - What simpler problem does this remind you of?
 - If you had to explain this to a friend, how would you describe it?
 
-### 4. **PAUSE FOR USER ENGAGEMENT** 🛑
+### 5. **PAUSE FOR USER ENGAGEMENT** 🛑
 
 **CRITICAL: Stop here and wait for user response**
 
@@ -126,7 +138,7 @@ After presenting the problem understanding and initial intuition prompts, STOP a
 
 This creates active learning rather than passive reading.
 
-### 5. Core Concepts Teaching
+### 6. Core Concepts Teaching
 
 **ONLY show this section after user has shared their thoughts and wants to proceed**
 
@@ -137,7 +149,7 @@ Explain the fundamental concepts needed:
 - What mathematical concepts apply?
 - What are the prerequisites?
 
-### 6. Pattern Recognition Guidance
+### 7. Pattern Recognition Guidance
 
 Help identify why this pattern applies:
 
@@ -146,7 +158,7 @@ Help identify why this pattern applies:
 - When should this pattern be used vs. alternatives?
 - What are common variations of this pattern?
 
-### 7. Approach Analysis
+### 8. Approach Analysis
 
 Walk through different approaches:
 
@@ -155,7 +167,7 @@ Walk through different approaches:
 - **Trade-offs:** Time vs. space complexity considerations
 - **Pattern Application:** How does the identified pattern help?
 
-### 8. Key Insights & Hints
+### 9. Key Insights & Hints
 
 Provide the "aha!" moments WITHOUT giving the solution:
 
@@ -164,7 +176,7 @@ Provide the "aha!" moments WITHOUT giving the solution:
 - What property can we exploit?
 - What's the clever trick or observation?
 
-### 9. Implementation Guidance
+### 10. Implementation Guidance
 
 Guide with questions and hints:
 
@@ -174,7 +186,7 @@ Guide with questions and hints:
 - What edge cases need special handling?
 - Provide pseudocode structure, not complete code
 
-### 10. Edge Cases Discussion
+### 11. Edge Cases Discussion
 
 Help identify corner cases:
 
@@ -185,7 +197,7 @@ Help identify corner cases:
 - Maximum/minimum constraints
 - Special values (zero, null, etc.)
 
-### 11. Complexity Analysis
+### 12. Complexity Analysis
 
 Teach how to analyze:
 
